@@ -8,7 +8,7 @@
  * @subpackage Reseller_Store
  * @category   Core
  * @author     Bryan Focht
- * @since      NEXT
+ * @since      1.0.3
  */
 
 // Tell the plugin to not add the price or cart form to the post.
@@ -19,7 +19,7 @@ remove_filter( 'the_excerpt', 'rstore_append_add_to_cart_form' );
 /**
  * Returns true when viewing a single reseller store product.
  *
- * @since  NEXT
+ * @since  1.0.3
  *
  * @return bool
  */
@@ -32,7 +32,7 @@ function t_rstore_single_product() {
  * Load a custom template for reseller store product pages.
  *
  * @filter template_include
- * @since  NEXT
+ * @since  1.0.3
  *
  * @param  string $template The path of the template to include.
  *
@@ -50,7 +50,7 @@ add_filter( 'template_include', 't_rstore_template_single_product' );
  * Set product image  to thumbnail for Reseller Store Products.
  *
  * @filter primer_featured_image_size
- * @since NEXT
+ * @since 1.0.3
  *
  * @param string $size default value for image size.
  *
@@ -68,7 +68,7 @@ add_filter( 'primer_featured_image_size', 't_rstore_featured_image_size' );
  * Prevent Reseller_Store product image from loading as the header image
  *
  * @filter primer_use_featured_hero_image
- * @since NEXT
+ * @since 1.0.3
  *
  * @return boolean False if a Reseller_Store product, else true
  *
@@ -87,7 +87,7 @@ add_filter( 'primer_use_featured_hero_image', 't_rstore_use_featured_hero_image'
  * @filter primer_the_page_title
  * @uses   [get_the_title](https://developer.wordpress.org/reference/functions/get_the_title/) To retreive the shop page title.
  *
- * @since  NEXT
+ * @since  1.0.3
  *
  * @param  string $title  The page title.
  *

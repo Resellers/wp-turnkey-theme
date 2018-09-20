@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
  * @package Turnkey
- * @since   NEXT
+ * @since   1.0.3
  */
 
 ?>
@@ -19,7 +19,7 @@
 	 *
 	 * @hooked primer_wc_shop_messages - 10
 	 *
-	 * @since NEXT
+	 * @since 1.0.3
 	 */
 	do_action( 'primer_before_post_content' );
 
@@ -44,7 +44,7 @@
 	/**
 	 * Fires inside the `article` element, after the content.
 	 *
-	 * @since NEXT
+	 * @since 1.0.3
 	 */
 	do_action( 'primer_after_post_content' );
 

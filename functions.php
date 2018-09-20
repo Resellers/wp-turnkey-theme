@@ -23,7 +23,7 @@
  *
  * @var string
  */
-define( 'PRIMER_CHILD_VERSION', '1.8.6' );
+define( 'PRIMER_CHILD_VERSION', '1.0.3' );
 
 /**
  * Load Reseller Store compatibility file.
