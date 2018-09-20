@@ -1,0 +1,171 @@
+button,
+a.button,
+input,
+select,
+textarea {
+	font-size: 100%; /* Corrects font size not being inherited in all browsers */
+	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+	font-family: $sans-font-family;
+}
+
+button,
+a.button,
+a.button:visited,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.fl-builder-content a.fl-button,
+.fl-builder-content a.fl-button:visited {
+	background: #fff;
+	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+	-webkit-appearance: none; /* Corrects inability to style clickable 'input' types in iOS */
+	-webkit-font-smoothing: auto;
+	//display: inline-block;
+	font-size: rem-calc(16);
+	color: $secondary-color;
+	border: 1px solid $secondary-color;
+	letter-spacing: rem-calc(1.33);
+	border-radius: 6px;
+	padding: 8px 32px;
+	line-height: rem-calc(30);
+
+	&:hover {
+		color: contrast-color($color-background-button, #000, #fff, 50%);
+		background: darken($color-background-button, 5%);
+	}
+
+	&:focus
+	&:active {
+		background: darken($color-background-button, 10%);
+	}
+
+	&.large {
+		font-size: rem-calc(14);
+		letter-spacing: rem-calc(0.6);
+		padding: 12px 55px;
+	}
+
+	&:hover * {
+		color: white;
+	}
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	padding: 0; /* Addresses excess padding in IE8/9 */
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
+	-webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+	-webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+a.button::-moz-focus-inner,
+input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+	border: 0;
+	padding: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea,
+.select2-container .select2-choice {
+	color: $color-text-input;
+	background-color: $color-text-input-background;
+	border: none;
+	transform: 200ms background linear;
+	border-radius: 6px;
+	resize: none;
+	padding: 0.75em;
+	-webkit-appearance: none;
+
+	&:focus {
+		color: $color-text-input-focus;
+		outline: none;
+		background-color: darken($color-text-input-background, 1%);
+	}
+}
+
+.select2-container .select2-choice {
+	padding: 0.35rem 0.75rem;
+}
+
+.select2-drop-active,
+.select2-drop.select2-drop-above.select2-drop-active,
+.select2-container .select2-choice,
+.select2-container-active .select2-choice,
+.select2-dropdown-open.select2-drop-above .select2-choice,
+.select2-dropdown-open.select2-drop-above .select2-choices {
+	border: none;
+}
+
+label {
+	font-family: $header-font-family;
+	font-weight: bold;
+}
+
+textarea {
+	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+	vertical-align: top; /* Improves readability and alignment in all browsers */
+	width: 100%;
+}
+
+fieldset {
+	border: 1px solid rgba(117, 117, 117, 0.28);
+	padding: 25px;
+	margin-bottom: rem-calc(20);
+}
+
+legend {
+	color: $body-secondary-color;
+	font-size: rem-calc(16);
+	font-family: $sans-font-family;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 0 15px;
+}
+
+
+
+.search-form {
+	display: flex;
+	width: 100%;
+	margin: 1.5em auto 0;
+
+	.search-field {
+		flex-grow: 1;
+		width: auto;
+		border-right: none;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+		//border: 1px solid #ff0000;
+	}
+
+	.search-submit {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		white-space: nowrap;
+		min-width: unset;
+	}
+}

@@ -1,0 +1,11 @@
+/* email marketing plugin specific css */
+
+.widget.gem-form {
+	@extend .gd-boxes;
+
+	a {
+		float: right;
+		font-size: emCalc(8);
+		font-size: rem-calc(8);
+	}
+}

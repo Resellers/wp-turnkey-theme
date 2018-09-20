@@ -1,0 +1,9 @@
+a {
+	color: $color-link;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color-link-hover;
+	}
+}
