@@ -71,6 +71,9 @@ https://fontawesome.com
 
 Props [@bfocht](https://github.com/bfocht)
 
+### 1.0.4 ###
+* Fix: html bug fix in topnav
+
 ### 1.0.3 ###
 * Updated: brand and color palette updates
 

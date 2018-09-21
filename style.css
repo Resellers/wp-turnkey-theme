@@ -2,14 +2,14 @@
  * Theme Name: Turnkey Storefront
  * Theme URI: https://github.com/Resellers/wp-turnkey-theme
  * Author: Bryan Focht
- * Author URI: https://github.com/Resellers/wp-turnkey-theme
+ * Author URI: https://plus.google.com/u/0/+BryanFocht
  * Description: This is a Primer child theme with a business-oriented design for the Reseller Store plugin.
  * Version: 1.0.3
  * License: GPL-2.0
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: turnkey
  * Template: primer
- * Tags: reseller, storefront, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, left-sidebar, one-column, right-sidebar, rtl-language-support, sticky-post, threaded-comments, three-columns, translation-ready, two-columns
+ * Tags: custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, left-sidebar, one-column, right-sidebar, rtl-language-support, sticky-post, threaded-comments, three-columns, translation-ready, two-columns
  *
  * This theme, like WordPress, is licensed under the GPL.
  * Use it to make something cool, have fun, and share what you've learned with others.
@@ -51,8 +51,7 @@ html, body {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-html,
-body {
+html, body {
   font-size: 100%; }
 
 body {
@@ -150,8 +149,7 @@ html, body {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-html,
-body {
+html, body {
   font-size: 100%; }
 
 body {
@@ -229,20 +227,138 @@ select {
   .row:after, .navigation:after, #content:after, body.error404 #primary:after, .site-branding-container:after, .featured-content .entry-header .entry-header-row:after, .footer-widget-area:after, .featured-content .featured-content-inner:after {
     clear: both; }
   .row.collapse > .column, .collapse.navigation > .column, .collapse#content > .column, body.error404 .collapse#primary > .column, .collapse.site-branding-container > .column, .featured-content .entry-header .collapse.entry-header-row > .column, .collapse.footer-widget-area > .column, .featured-content .collapse.featured-content-inner > .column,
-  .row.collapse > .columns, .collapse.navigation > .columns, .collapse#content > .columns, body.error404 .collapse#primary > .columns, .collapse.site-branding-container > .columns, .featured-content .entry-header .collapse.entry-header-row > .columns, .collapse.footer-widget-area > .columns, .featured-content .collapse.featured-content-inner > .columns, .navigation
-  .row.collapse > .nav-links, .collapse.navigation > .nav-links, .navigation .collapse#content > .nav-links, body.error404 .navigation .collapse#primary > .nav-links, .navigation body.error404 .collapse#primary > .nav-links, .navigation .collapse.site-branding-container > .nav-links, .featured-content .entry-header .navigation .collapse.entry-header-row > .nav-links, .navigation .featured-content .entry-header .collapse.entry-header-row > .nav-links, .navigation .collapse.footer-widget-area > .nav-links, .featured-content .navigation .collapse.featured-content-inner > .nav-links, .navigation .featured-content .collapse.featured-content-inner > .nav-links,
-  .row.collapse > #primary, .collapse.navigation > #primary, .collapse#content > #primary, body.error404 .collapse#primary > #primary, .collapse.site-branding-container > #primary, .featured-content .entry-header .collapse.entry-header-row > #primary, .collapse.footer-widget-area > #primary, .featured-content .collapse.featured-content-inner > #primary,
-  .row.collapse > #secondary, .collapse.navigation > #secondary, .collapse#content > #secondary, body.error404 .collapse#primary > #secondary, .collapse.site-branding-container > #secondary, .featured-content .entry-header .collapse.entry-header-row > #secondary, .collapse.footer-widget-area > #secondary, .featured-content .collapse.featured-content-inner > #secondary,
-  .row.collapse > #tertiary, .collapse.navigation > #tertiary, .collapse#content > #tertiary, body.error404 .collapse#primary > #tertiary, .collapse.site-branding-container > #tertiary, .featured-content .entry-header .collapse.entry-header-row > #tertiary, .collapse.footer-widget-area > #tertiary, .featured-content .collapse.featured-content-inner > #tertiary,
-  .row.collapse > .site-branding, .collapse.navigation > .site-branding, .collapse#content > .site-branding, body.error404 .collapse#primary > .site-branding, .collapse.site-branding-container > .site-branding, .featured-content .entry-header .collapse.entry-header-row > .site-branding, .collapse.footer-widget-area > .site-branding, .featured-content .collapse.featured-content-inner > .site-branding, .site-footer
-  .row.collapse > .site-info, .site-footer .collapse.navigation > .site-info, .site-footer .collapse#content > .site-info, body.error404 .site-footer .collapse#primary > .site-info, .site-footer body.error404 .collapse#primary > .site-info, .site-footer .collapse.site-branding-container > .site-info, .featured-content .entry-header .site-footer .collapse.entry-header-row > .site-info, .site-footer .featured-content .entry-header .collapse.entry-header-row > .site-info, .site-footer .collapse.footer-widget-area > .site-info, .featured-content .site-footer .collapse.featured-content-inner > .site-info, .site-footer .featured-content .collapse.featured-content-inner > .site-info,
-  .row.collapse > .site-header-wrapper, .collapse.navigation > .site-header-wrapper, .collapse#content > .site-header-wrapper, body.error404 .collapse#primary > .site-header-wrapper, .collapse.site-branding-container > .site-header-wrapper, .featured-content .entry-header .collapse.entry-header-row > .site-header-wrapper, .collapse.footer-widget-area > .site-header-wrapper, .featured-content .collapse.featured-content-inner > .site-header-wrapper, .featured-content .entry-header
-  .row.collapse > .entry-header-column, .featured-content .entry-header .collapse.navigation > .entry-header-column, .featured-content .entry-header .collapse#content > .entry-header-column, body.error404 .featured-content .entry-header .collapse#primary > .entry-header-column, .featured-content .entry-header body.error404 .collapse#primary > .entry-header-column, .featured-content .entry-header .collapse.site-branding-container > .entry-header-column, .featured-content .entry-header .collapse.entry-header-row > .entry-header-column, .featured-content .entry-header .collapse.footer-widget-area > .entry-header-column, .featured-content .entry-header .collapse.featured-content-inner > .entry-header-column, .footer-widget-area.columns-1
-  .row.collapse > .footer-widget, .footer-widget-area.columns-1 .collapse.navigation > .footer-widget, .footer-widget-area.columns-1 .collapse#content > .footer-widget, body.error404 .footer-widget-area.columns-1 .collapse#primary > .footer-widget, .footer-widget-area.columns-1 body.error404 .collapse#primary > .footer-widget, .footer-widget-area.columns-1 .collapse.site-branding-container > .footer-widget, .featured-content .entry-header .footer-widget-area.columns-1 .collapse.entry-header-row > .footer-widget, .footer-widget-area.columns-1 .featured-content .entry-header .collapse.entry-header-row > .footer-widget, .footer-widget-area.columns-1 .collapse.footer-widget-area > .footer-widget, .featured-content .footer-widget-area.columns-1 .collapse.featured-content-inner > .footer-widget, .footer-widget-area.columns-1 .featured-content .collapse.featured-content-inner > .footer-widget, .footer-widget-area.columns-2
-  .row.collapse > .footer-widget, .footer-widget-area.columns-2 .collapse.navigation > .footer-widget, .footer-widget-area.columns-2 .collapse#content > .footer-widget, body.error404 .footer-widget-area.columns-2 .collapse#primary > .footer-widget, .footer-widget-area.columns-2 body.error404 .collapse#primary > .footer-widget, .footer-widget-area.columns-2 .collapse.site-branding-container > .footer-widget, .featured-content .entry-header .footer-widget-area.columns-2 .collapse.entry-header-row > .footer-widget, .footer-widget-area.columns-2 .featured-content .entry-header .collapse.entry-header-row > .footer-widget, .footer-widget-area.columns-2 .collapse.footer-widget-area > .footer-widget, .featured-content .footer-widget-area.columns-2 .collapse.featured-content-inner > .footer-widget, .footer-widget-area.columns-2 .featured-content .collapse.featured-content-inner > .footer-widget, .footer-widget-area.columns-3
-  .row.collapse > .footer-widget, .footer-widget-area.columns-3 .collapse.navigation > .footer-widget, .footer-widget-area.columns-3 .collapse#content > .footer-widget, body.error404 .footer-widget-area.columns-3 .collapse#primary > .footer-widget, .footer-widget-area.columns-3 body.error404 .collapse#primary > .footer-widget, .footer-widget-area.columns-3 .collapse.site-branding-container > .footer-widget, .featured-content .entry-header .footer-widget-area.columns-3 .collapse.entry-header-row > .footer-widget, .footer-widget-area.columns-3 .featured-content .entry-header .collapse.entry-header-row > .footer-widget, .footer-widget-area.columns-3 .collapse.footer-widget-area > .footer-widget, .featured-content .footer-widget-area.columns-3 .collapse.featured-content-inner > .footer-widget, .footer-widget-area.columns-3 .featured-content .collapse.featured-content-inner > .footer-widget, .footer-widget-area.columns-4
-  .row.collapse > .footer-widget, .footer-widget-area.columns-4 .collapse.navigation > .footer-widget, .footer-widget-area.columns-4 .collapse#content > .footer-widget, body.error404 .footer-widget-area.columns-4 .collapse#primary > .footer-widget, .footer-widget-area.columns-4 body.error404 .collapse#primary > .footer-widget, .footer-widget-area.columns-4 .collapse.site-branding-container > .footer-widget, .featured-content .entry-header .footer-widget-area.columns-4 .collapse.entry-header-row > .footer-widget, .footer-widget-area.columns-4 .featured-content .entry-header .collapse.entry-header-row > .footer-widget, .footer-widget-area.columns-4 .collapse.footer-widget-area > .footer-widget, .featured-content .footer-widget-area.columns-4 .collapse.featured-content-inner > .footer-widget, .footer-widget-area.columns-4 .featured-content .collapse.featured-content-inner > .footer-widget, .featured-content
-  .row.collapse > article, .featured-content .collapse.navigation > article, .featured-content .collapse#content > article, body.error404 .featured-content .collapse#primary > article, .featured-content body.error404 .collapse#primary > article, .featured-content .collapse.site-branding-container > article, .featured-content .entry-header .collapse.entry-header-row > article, .featured-content .collapse.footer-widget-area > article, .featured-content .collapse.featured-content-inner > article {
+  .row.collapse > .columns,
+  .collapse.navigation > .columns,
+  .collapse#content > .columns,
+  body.error404 .collapse#primary > .columns,
+  .collapse.site-branding-container > .columns,
+  .featured-content .entry-header .collapse.entry-header-row > .columns,
+  .collapse.footer-widget-area > .columns,
+  .featured-content .collapse.featured-content-inner > .columns,
+  .navigation .row.collapse > .nav-links,
+  .collapse.navigation > .nav-links,
+  .navigation .collapse#content > .nav-links,
+  body.error404 .navigation .collapse#primary > .nav-links,
+  .navigation body.error404 .collapse#primary > .nav-links,
+  .navigation .collapse.site-branding-container > .nav-links,
+  .featured-content .entry-header .navigation .collapse.entry-header-row > .nav-links,
+  .navigation .featured-content .entry-header .collapse.entry-header-row > .nav-links,
+  .navigation .collapse.footer-widget-area > .nav-links,
+  .featured-content .navigation .collapse.featured-content-inner > .nav-links,
+  .navigation .featured-content .collapse.featured-content-inner > .nav-links,
+  .row.collapse > #primary,
+  .collapse.navigation > #primary,
+  .collapse#content > #primary,
+  body.error404 .collapse#primary > #primary,
+  .collapse.site-branding-container > #primary,
+  .featured-content .entry-header .collapse.entry-header-row > #primary,
+  .collapse.footer-widget-area > #primary,
+  .featured-content .collapse.featured-content-inner > #primary,
+  .row.collapse > #secondary,
+  .collapse.navigation > #secondary,
+  .collapse#content > #secondary,
+  body.error404 .collapse#primary > #secondary,
+  .collapse.site-branding-container > #secondary,
+  .featured-content .entry-header .collapse.entry-header-row > #secondary,
+  .collapse.footer-widget-area > #secondary,
+  .featured-content .collapse.featured-content-inner > #secondary,
+  .row.collapse > #tertiary,
+  .collapse.navigation > #tertiary,
+  .collapse#content > #tertiary,
+  body.error404 .collapse#primary > #tertiary,
+  .collapse.site-branding-container > #tertiary,
+  .featured-content .entry-header .collapse.entry-header-row > #tertiary,
+  .collapse.footer-widget-area > #tertiary,
+  .featured-content .collapse.featured-content-inner > #tertiary,
+  .row.collapse > .site-branding,
+  .collapse.navigation > .site-branding,
+  .collapse#content > .site-branding,
+  body.error404 .collapse#primary > .site-branding,
+  .collapse.site-branding-container > .site-branding,
+  .featured-content .entry-header .collapse.entry-header-row > .site-branding,
+  .collapse.footer-widget-area > .site-branding,
+  .featured-content .collapse.featured-content-inner > .site-branding,
+  .site-footer .row.collapse > .site-info,
+  .site-footer .collapse.navigation > .site-info,
+  .site-footer .collapse#content > .site-info,
+  body.error404 .site-footer .collapse#primary > .site-info,
+  .site-footer body.error404 .collapse#primary > .site-info,
+  .site-footer .collapse.site-branding-container > .site-info,
+  .featured-content .entry-header .site-footer .collapse.entry-header-row > .site-info,
+  .site-footer .featured-content .entry-header .collapse.entry-header-row > .site-info,
+  .site-footer .collapse.footer-widget-area > .site-info,
+  .featured-content .site-footer .collapse.featured-content-inner > .site-info,
+  .site-footer .featured-content .collapse.featured-content-inner > .site-info,
+  .row.collapse > .site-header-wrapper,
+  .collapse.navigation > .site-header-wrapper,
+  .collapse#content > .site-header-wrapper,
+  body.error404 .collapse#primary > .site-header-wrapper,
+  .collapse.site-branding-container > .site-header-wrapper,
+  .featured-content .entry-header .collapse.entry-header-row > .site-header-wrapper,
+  .collapse.footer-widget-area > .site-header-wrapper,
+  .featured-content .collapse.featured-content-inner > .site-header-wrapper,
+  .featured-content .entry-header .row.collapse > .entry-header-column,
+  .featured-content .entry-header .collapse.navigation > .entry-header-column,
+  .featured-content .entry-header .collapse#content > .entry-header-column,
+  body.error404 .featured-content .entry-header .collapse#primary > .entry-header-column,
+  .featured-content .entry-header body.error404 .collapse#primary > .entry-header-column,
+  .featured-content .entry-header .collapse.site-branding-container > .entry-header-column,
+  .featured-content .entry-header .collapse.entry-header-row > .entry-header-column,
+  .featured-content .entry-header .collapse.footer-widget-area > .entry-header-column,
+  .featured-content .entry-header .collapse.featured-content-inner > .entry-header-column,
+  .footer-widget-area.columns-1 .row.collapse > .footer-widget,
+  .footer-widget-area.columns-1 .collapse.navigation > .footer-widget,
+  .footer-widget-area.columns-1 .collapse#content > .footer-widget,
+  body.error404 .footer-widget-area.columns-1 .collapse#primary > .footer-widget,
+  .footer-widget-area.columns-1 body.error404 .collapse#primary > .footer-widget,
+  .footer-widget-area.columns-1 .collapse.site-branding-container > .footer-widget,
+  .featured-content .entry-header .footer-widget-area.columns-1 .collapse.entry-header-row > .footer-widget,
+  .footer-widget-area.columns-1 .featured-content .entry-header .collapse.entry-header-row > .footer-widget,
+  .footer-widget-area.columns-1 .collapse.footer-widget-area > .footer-widget,
+  .featured-content .footer-widget-area.columns-1 .collapse.featured-content-inner > .footer-widget,
+  .footer-widget-area.columns-1 .featured-content .collapse.featured-content-inner > .footer-widget,
+  .footer-widget-area.columns-2 .row.collapse > .footer-widget,
+  .footer-widget-area.columns-2 .collapse.navigation > .footer-widget,
+  .footer-widget-area.columns-2 .collapse#content > .footer-widget,
+  body.error404 .footer-widget-area.columns-2 .collapse#primary > .footer-widget,
+  .footer-widget-area.columns-2 body.error404 .collapse#primary > .footer-widget,
+  .footer-widget-area.columns-2 .collapse.site-branding-container > .footer-widget,
+  .featured-content .entry-header .footer-widget-area.columns-2 .collapse.entry-header-row > .footer-widget,
+  .footer-widget-area.columns-2 .featured-content .entry-header .collapse.entry-header-row > .footer-widget,
+  .footer-widget-area.columns-2 .collapse.footer-widget-area > .footer-widget,
+  .featured-content .footer-widget-area.columns-2 .collapse.featured-content-inner > .footer-widget,
+  .footer-widget-area.columns-2 .featured-content .collapse.featured-content-inner > .footer-widget,
+  .footer-widget-area.columns-3 .row.collapse > .footer-widget,
+  .footer-widget-area.columns-3 .collapse.navigation > .footer-widget,
+  .footer-widget-area.columns-3 .collapse#content > .footer-widget,
+  body.error404 .footer-widget-area.columns-3 .collapse#primary > .footer-widget,
+  .footer-widget-area.columns-3 body.error404 .collapse#primary > .footer-widget,
+  .footer-widget-area.columns-3 .collapse.site-branding-container > .footer-widget,
+  .featured-content .entry-header .footer-widget-area.columns-3 .collapse.entry-header-row > .footer-widget,
+  .footer-widget-area.columns-3 .featured-content .entry-header .collapse.entry-header-row > .footer-widget,
+  .footer-widget-area.columns-3 .collapse.footer-widget-area > .footer-widget,
+  .featured-content .footer-widget-area.columns-3 .collapse.featured-content-inner > .footer-widget,
+  .footer-widget-area.columns-3 .featured-content .collapse.featured-content-inner > .footer-widget,
+  .footer-widget-area.columns-4 .row.collapse > .footer-widget,
+  .footer-widget-area.columns-4 .collapse.navigation > .footer-widget,
+  .footer-widget-area.columns-4 .collapse#content > .footer-widget,
+  body.error404 .footer-widget-area.columns-4 .collapse#primary > .footer-widget,
+  .footer-widget-area.columns-4 body.error404 .collapse#primary > .footer-widget,
+  .footer-widget-area.columns-4 .collapse.site-branding-container > .footer-widget,
+  .featured-content .entry-header .footer-widget-area.columns-4 .collapse.entry-header-row > .footer-widget,
+  .footer-widget-area.columns-4 .featured-content .entry-header .collapse.entry-header-row > .footer-widget,
+  .footer-widget-area.columns-4 .collapse.footer-widget-area > .footer-widget,
+  .featured-content .footer-widget-area.columns-4 .collapse.featured-content-inner > .footer-widget,
+  .footer-widget-area.columns-4 .featured-content .collapse.featured-content-inner > .footer-widget,
+  .featured-content .row.collapse > article,
+  .featured-content .collapse.navigation > article,
+  .featured-content .collapse#content > article,
+  body.error404 .featured-content .collapse#primary > article,
+  .featured-content body.error404 .collapse#primary > article,
+  .featured-content .collapse.site-branding-container > article,
+  .featured-content .entry-header .collapse.entry-header-row > article,
+  .featured-content .collapse.footer-widget-area > article,
+  .featured-content .collapse.featured-content-inner > article {
     padding-left: 0;
     padding-right: 0; }
   .row.collapse .row, .collapse.navigation .row, .collapse#content .row, body.error404 .collapse#primary .row, .collapse.site-branding-container .row, .featured-content .entry-header .collapse.entry-header-row .row, .collapse.footer-widget-area .row, .featured-content .collapse.featured-content-inner .row, .row.collapse .navigation, .collapse.navigation .navigation, .collapse#content .navigation, body.error404 .collapse#primary .navigation, .collapse.site-branding-container .navigation, .featured-content .entry-header .collapse.entry-header-row .navigation, .collapse.footer-widget-area .navigation, .featured-content .collapse.featured-content-inner .navigation, .row.collapse #content, .collapse.navigation #content, .collapse#content #content, body.error404 .collapse#primary #content, .collapse.site-branding-container #content, .featured-content .entry-header .collapse.entry-header-row #content, .collapse.footer-widget-area #content, .featured-content .collapse.featured-content-inner #content, .row.collapse body.error404 #primary, body.error404 .row.collapse #primary, .collapse.navigation body.error404 #primary, body.error404 .collapse.navigation #primary, .collapse#content body.error404 #primary, body.error404 .collapse#content #primary, body.error404 .collapse#primary #primary, .collapse.site-branding-container body.error404 #primary, body.error404 .collapse.site-branding-container #primary, .featured-content .entry-header .collapse.entry-header-row body.error404 #primary, body.error404 .featured-content .entry-header .collapse.entry-header-row #primary, .collapse.footer-widget-area body.error404 #primary, body.error404 .collapse.footer-widget-area #primary, .featured-content .collapse.featured-content-inner body.error404 #primary, body.error404 .featured-content .collapse.featured-content-inner #primary, .row.collapse .site-branding-container, .collapse.navigation .site-branding-container, .collapse#content .site-branding-container, body.error404 .collapse#primary .site-branding-container, .collapse.site-branding-container .site-branding-container, .featured-content .entry-header .collapse.entry-header-row .site-branding-container, .collapse.footer-widget-area .site-branding-container, .featured-content .collapse.featured-content-inner .site-branding-container, .row.collapse .featured-content .entry-header .entry-header-row, .featured-content .entry-header .row.collapse .entry-header-row, .collapse.navigation .featured-content .entry-header .entry-header-row, .featured-content .entry-header .collapse.navigation .entry-header-row, .collapse#content .featured-content .entry-header .entry-header-row, .featured-content .entry-header .collapse#content .entry-header-row, body.error404 .collapse#primary .featured-content .entry-header .entry-header-row, .featured-content .entry-header body.error404 .collapse#primary .entry-header-row, .collapse.site-branding-container .featured-content .entry-header .entry-header-row, .featured-content .entry-header .collapse.site-branding-container .entry-header-row, .featured-content .entry-header .collapse.entry-header-row .entry-header-row, .collapse.footer-widget-area .featured-content .entry-header .entry-header-row, .featured-content .entry-header .collapse.footer-widget-area .entry-header-row, .featured-content .collapse.featured-content-inner .entry-header .entry-header-row, .featured-content .entry-header .collapse.featured-content-inner .entry-header-row, .row.collapse .footer-widget-area, .collapse.navigation .footer-widget-area, .collapse#content .footer-widget-area, body.error404 .collapse#primary .footer-widget-area, .collapse.site-branding-container .footer-widget-area, .featured-content .entry-header .collapse.entry-header-row .footer-widget-area, .collapse.footer-widget-area .footer-widget-area, .featured-content .collapse.featured-content-inner .footer-widget-area, .row.collapse .featured-content .featured-content-inner, .featured-content .row.collapse .featured-content-inner, .collapse.navigation .featured-content .featured-content-inner, .featured-content .collapse.navigation .featured-content-inner, .collapse#content .featured-content .featured-content-inner, .featured-content .collapse#content .featured-content-inner, body.error404 .collapse#primary .featured-content .featured-content-inner, .featured-content body.error404 .collapse#primary .featured-content-inner, .collapse.site-branding-container .featured-content .featured-content-inner, .featured-content .collapse.site-branding-container .featured-content-inner, .featured-content .entry-header .collapse.entry-header-row .featured-content-inner, .collapse.footer-widget-area .featured-content .featured-content-inner, .featured-content .collapse.footer-widget-area .featured-content-inner, .featured-content .collapse.featured-content-inner .featured-content-inner {
@@ -1024,16 +1140,13 @@ select {
   .large-2 {
     width: 16.66667%; }
   .large-3, body.layout-three-column-default #secondary,
-  body.layout-three-column-reversed #secondary,
-  body.layout-three-column-center #secondary, #tertiary, .footer-widget-area.columns-4 .footer-widget {
+  body.layout-three-column-reversed #secondary, body.layout-three-column-center #secondary, #tertiary, .footer-widget-area.columns-4 .footer-widget {
     width: 25%; }
   .large-4, #secondary, .footer-widget-area.columns-3 .footer-widget {
     width: 33.33333%; }
   .large-5 {
     width: 41.66667%; }
-  .large-6, body.layout-three-column-default #primary,
-  body.layout-three-column-reversed #primary,
-  body.layout-three-column-center #primary, .footer-widget-area.columns-2 .footer-widget {
+  .large-6, body.layout-three-column-default #primary, body.layout-three-column-reversed #primary, body.layout-three-column-center #primary, .footer-widget-area.columns-2 .footer-widget {
     width: 50%; }
   .large-7 {
     width: 58.33333%; }
@@ -2308,7 +2421,7 @@ body.no-max-width .main-navigation {
       color: #fff; }
     .navigation.pagination .nav-links {
       float: right; }
-      .navigation.pagination .nav-links .page-numbers:not(.prev):not(.next) {
+      .navigation.pagination .nav-links .page-numbers {
         display: none; } }
 
 .comment-navigation .nav-previous,

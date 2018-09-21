@@ -48,7 +48,7 @@
 				<div class="account-info">
 					<div class="row">
 						<div class="medium-4 large-3 large-offset-5 columns">
-							<a href="<?php echo rstore()->api->url( 'account', 'products' ); ?>" class="link" rel="nofollow"><h3 class="logged-in"><span class="firstname"></span>&nbsp<span class="lastname"></span></a></h3></a>
+							<a href="<?php echo rstore()->api->url( 'account', 'products' ); ?>" class="link" rel="nofollow"><h3 class="logged-in"><span class="firstname"></span>&nbsp;<span class="lastname"></span></h3></a>
 							<p><?php esc_html_e( 'Customer #', 'turnkey' ); ?>: <span class="shopper-id"></span></p>
 							<a href="<?php echo rstore()->api->url( 'account', 'products' ); ?>" class="link" rel="nofollow"><i class="fas fa-caret-right"></i> <?php esc_html_e( 'My Products', 'turnkey' ); ?></a>
 							<a href="<?php echo rstore()->api->url( 'account' ); ?>" class="link" rel="nofollow"><i class="fas fa-caret-right"></i> <?php esc_html_e( 'Account Settings', 'turnkey' ); ?></a>
