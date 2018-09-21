@@ -4,7 +4,7 @@
 **Requires at least:** 4.6  
 **Tested up to:**      4.9  
 **Requires PHP:**      5.4  
-**Stable tag:**        1.0.3  
+**Stable tag:**        1.0.4  
 **License:**           GPL-2.0  
 **License URI:**       https://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -72,6 +72,9 @@ https://fontawesome.com
 ## Changelog ##
 
 Props [@bfocht](https://github.com/bfocht)
+
+### 1.0.4 ###
+* Fix: html bug fix in topnav
 
 ### 1.0.3 ###
 * Updated: brand and color palette updates
