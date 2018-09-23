@@ -1920,7 +1920,7 @@ input[type="submit"],
   letter-spacing: 0.08313rem;
   -webkit-border-radius: 6px;
   border-radius: 6px;
-  padding: 8px 32px;
+  padding: 8px 20px;
   line-height: 1.875rem; }
   button:hover,
   a.button:hover,
@@ -2670,7 +2670,15 @@ body.no-max-width .main-navigation {
   margin-bottom: 1em; }
 
 .hentry {
-  margin-bottom: 3em; }
+  margin-bottom: 3em;
+  background-color: #FFF;
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 6px 0 rgba(102, 102, 102, 0.25);
+  box-shadow: 0 1px 6px 0 rgba(102, 102, 102, 0.25); }
   .hentry .attachment-basis-featured {
     width: 100%;
     height: auto; }
@@ -3312,8 +3320,8 @@ body.layout-one-column-narrow #content {
     border-bottom: 1px solid #DDD;
     margin-top: 1.1875rem;
     position: absolute;
-    left: -1000px;
-    width: 3000px; }
+    left: 0;
+    width: 100%; }
 
 .site-header-wrapper {
   float: none;
@@ -3659,7 +3667,7 @@ body.layout-one-column-narrow #content {
   @media only screen and (max-width: 40em), only screen and (min-width: 40.063em) and (max-width: 61em) {
     .rstore-top-nav .show-for-large-up, .rstore-top-nav span.number {
       display: none; } }
-  .rstore-top-nav .search-submit .rstore-support-block a:before {
+  .rstore-top-nav .rstore-support-block a:before {
     content: "\f095";
     font-family: "Font Awesome 5 Free";
     padding: 3px; }

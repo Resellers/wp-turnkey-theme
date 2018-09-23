@@ -532,7 +532,7 @@ input[type="submit"],
   letter-spacing: 0.08313rem;
   -webkit-border-radius: 6px;
   border-radius: 6px;
-  padding: 8px 32px;
+  padding: 8px 20px;
   line-height: 1.875rem; }
   button:hover,
   a.button:hover,
@@ -835,7 +835,15 @@ legend {
   margin-bottom: 1em; }
 
 .hentry {
-  margin-bottom: 3em; }
+  margin-bottom: 3em;
+  background-color: #FFF;
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 6px 0 rgba(102, 102, 102, 0.25);
+  box-shadow: 0 1px 6px 0 rgba(102, 102, 102, 0.25); }
   .hentry .attachment-basis-featured {
     width: 100%;
     height: auto; }
