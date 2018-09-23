@@ -6,7 +6,8 @@ $entry-title-bg: rgba(0, 0, 0, 0.6) !default;
 	line-height: 1;
 	margin-bottom: 0;
 	color: $secondary-color;
-	font-size: rem-calc(19);
+	padding-top: emCalc(7);
+	font-size: emCalc(19);
 
 	a {
 		font-weight: normal;
@@ -58,6 +59,14 @@ $entry-title-bg: rgba(0, 0, 0, 0.6) !default;
 		@media #{$small-only} {
 			max-width: 70%;
 		}
+	}
+
+	.site-title-wrapper-after {
+		border-bottom: 1px solid #DDD;
+		margin-top: emCalc(19);
+		position: absolute;
+		left: -1000px;
+		width: 3000px;
 	}
 }
 

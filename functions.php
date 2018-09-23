@@ -53,7 +53,9 @@ function turnkey_move_elements() {
 	remove_action( 'primer_after_header', 'primer_add_page_title', 12 );
 	remove_action( 'primer_before_header_wrapper', 'primer_video_header', 5 );
 
+
 	add_action( 'primer_after_header', 'primer_add_hero', 7 );
+	add_action( 'primer_header', 'turnkey_after_site_header_wrapper', 5 );
 	add_action( 'primer_header', 'primer_add_primary_navigation', 11 );
 	add_action( 'primer_pre_hero', 'primer_video_header', 5 );
 
@@ -65,6 +67,18 @@ function turnkey_move_elements() {
 
 }
 add_action( 'template_redirect', 'turnkey_move_elements' );
+
+/**
+ * Add top nav menu if reseller store plugin is active.
+ *
+ * @action primer_before_header_wrapper
+ * @since  1.0.0
+ */
+function turnkey_after_site_header_wrapper() {
+
+	echo '<div class="site-title-wrapper-after"></div>';
+
+}
 
 /**
  * Set hero image target element.

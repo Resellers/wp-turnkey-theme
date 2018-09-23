@@ -4,8 +4,8 @@
 
 .rstore-top-nav {
 	@media #{$small-only} {
-		width: 100%;
-		text-align: center;
+		float: right;
+		display: inline;
 	}
 
 	@media #{$medium-up} {
@@ -91,10 +91,6 @@
 		}
 	}
 }
-
-//button.rstore-domain-search-button {
-//	height: 40px;
-//}
 
 .gd-boxes {
 	border: 1px solid $color-border-abbr;
@@ -271,27 +267,53 @@ article.rstore-list-product {
 	}
 }
 
+$rstore-large: "(min-width: 1200px)";
+$rstore-medium: "(max-width: 1200px)";
+
 .rstore-domain-search {
-	.input-group2,
-	.input-group {
-		display: flex;
-		width: 100%;
-	}
 	label {
 		width: 100%;
 	}
-	.search-field {
-		width: 100%;
+
+	@media #{$rstore-large} {
+		.input-group2,
+		.input-group {
+			display: flex;
+			width: 100%;
+		}
+
+		.search-field {
+			width: 100%;
+		}
+	}
+
+	@media #{$rstore-medium} {
+
+		input.rstore-domain-search-button {
+			width: 100%;
+		}
+
+		.search-form {
+			display:block;
+		}
+
+		.search-field {
+			width: 100%;
+			padding-right: 0;
+			padding-left: 0;
+		}
 	}
 }
 
-#rstore-popResults {
-	.search-form {
-		display: block;
-	}
+@media #{$rstore-large} {
+	#rstore-popResults {
+		.search-form {
+			display: block;
+		}
 
-	.rstore-domain-search .input-continue-btn {
-		width: unset;
+		.rstore-domain-search .input-continue-btn {
+			width: unset;
+		}
 	}
 }
 

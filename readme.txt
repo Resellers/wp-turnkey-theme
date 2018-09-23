@@ -1,6 +1,6 @@
 === Turnkey ===
 Contributors:      bfocht
-Tags:              reseller, reseller-store, storefront, products, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, left-sidebar, one-column, right-sidebar, rtl-language-support, sticky-post, threaded-comments, three-columns, translation-ready, two-columns
+Tags:              custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, left-sidebar, one-column, right-sidebar, rtl-language-support, sticky-post, threaded-comments, three-columns, translation-ready, two-columns
 Requires at least: 4.6
 Tested up to:      4.9
 Requires PHP:      5.4

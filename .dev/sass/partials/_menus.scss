@@ -5,6 +5,7 @@
 	@media #{$small-only} {
 		z-index: 9999;
 		width: 100%;
+		margin-top: emCalc(25);
 	}
 }
 
@@ -187,19 +188,6 @@
 		}
 	}
 }
-
-//
-//@media #{$medium-up} {
-//
-//	.main-navigation-container {
-//		background-color: #fff !important;
-//	}
-//
-//	.main-navigation ul li a:not(.main-navigation .menu > li ul li a), .main-navigation ul li a:visited, .main-navigation ul li a:hover, .main-navigation ul li a:visited:hover {
-//		color: #333;
-//	}
-//
-//}
 
 body.no-max-width .main-navigation {
 	max-width: none;

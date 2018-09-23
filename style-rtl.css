@@ -2175,33 +2175,34 @@ legend {
   letter-spacing: 1px;
   padding: 0 15px; }
 
-.search-form {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin: 1.5em auto 0; }
-  .search-form .search-field {
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -moz-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    width: auto;
-    border-left: none;
-    -webkit-border-top-left-radius: 0;
-    border-top-left-radius: 0;
-    -webkit-border-bottom-left-radius: 0;
-    border-bottom-left-radius: 0; }
-  .search-form .search-submit {
-    -webkit-border-top-right-radius: 0;
-    border-top-right-radius: 0;
-    -webkit-border-bottom-right-radius: 0;
-    border-bottom-right-radius: 0;
-    white-space: nowrap;
-    min-width: unset; }
+@media only screen and (min-width: 61.063em) {
+  .search-form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 1.5em auto 0; }
+    .search-form .search-field {
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      width: auto;
+      border-left: none;
+      -webkit-border-top-left-radius: 0;
+      border-top-left-radius: 0;
+      -webkit-border-bottom-left-radius: 0;
+      border-bottom-left-radius: 0; }
+    .search-form .search-submit {
+      -webkit-border-top-right-radius: 0;
+      border-top-right-radius: 0;
+      -webkit-border-bottom-right-radius: 0;
+      border-bottom-right-radius: 0;
+      white-space: nowrap;
+      min-width: unset; } }
 
 a {
   color: #39BAF3; }
@@ -2214,7 +2215,8 @@ a {
   @media only screen and (max-width: 40em) {
     .main-navigation-container {
       z-index: 9999;
-      width: 100%; } }
+      width: 100%;
+      margin-top: 1.5625rem; } }
 
 .main-navigation {
   display: none;
@@ -3265,6 +3267,7 @@ body.layout-one-column-narrow #content {
   line-height: 1;
   margin-bottom: 0;
   color: #194F6E;
+  padding-top: 0.4375rem;
   font-size: 1.1875rem; }
   .site-title a {
     font-weight: normal; }
@@ -3305,6 +3308,12 @@ body.layout-one-column-narrow #content {
   @media only screen and (max-width: 40em) {
     .site-header .site-title-wrapper {
       max-width: 70%; } }
+  .site-header .site-title-wrapper-after {
+    border-bottom: 1px solid #DDD;
+    margin-top: 1.1875rem;
+    position: absolute;
+    right: -1000px;
+    width: 3000px; }
 
 .site-header-wrapper {
   float: none;
@@ -3630,8 +3639,8 @@ body.layout-one-column-narrow #content {
   /* format the menu text */ }
   @media only screen and (max-width: 40em) {
     .rstore-top-nav {
-      width: 100%;
-      text-align: center; } }
+      float: left;
+      display: inline; } }
   @media only screen and (min-width: 40.063em) {
     .rstore-top-nav {
       float: left; } }
@@ -3802,26 +3811,36 @@ article.rstore-list-product.reseller_product .rstore-add-to-cart-form {
   background: transparent;
   border: none; }
 
-.rstore-domain-search .input-group2,
-.rstore-domain-search .input-group {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%; }
-
 .rstore-domain-search label {
   width: 100%; }
 
-.rstore-domain-search .search-field {
-  width: 100%; }
+@media (min-width: 1200px) {
+  .rstore-domain-search .input-group2,
+  .rstore-domain-search .input-group {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
+  .rstore-domain-search .search-field {
+    width: 100%; } }
 
-#rstore-popResults .search-form {
-  display: block; }
+@media (max-width: 1200px) {
+  .rstore-domain-search input.rstore-domain-search-button {
+    width: 100%; }
+  .rstore-domain-search .search-form {
+    display: block; }
+  .rstore-domain-search .search-field {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0; } }
 
-#rstore-popResults .rstore-domain-search .input-continue-btn {
-  width: unset; }
+@media (min-width: 1200px) {
+  #rstore-popResults .search-form {
+    display: block; }
+  #rstore-popResults .rstore-domain-search .input-continue-btn {
+    width: unset; } }
 
 /* email marketing plugin specific css */
 .widget.gem-form a {
