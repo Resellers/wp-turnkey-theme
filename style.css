@@ -2670,15 +2670,7 @@ body.no-max-width .main-navigation {
   margin-bottom: 1em; }
 
 .hentry {
-  margin-bottom: 3em;
-  background-color: #FFF;
-  padding-top: 40px;
-  padding-left: 50px;
-  padding-right: 50px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-box-shadow: 0 1px 6px 0 rgba(102, 102, 102, 0.25);
-  box-shadow: 0 1px 6px 0 rgba(102, 102, 102, 0.25); }
+  margin-bottom: 3em; }
   .hentry .attachment-basis-featured {
     width: 100%;
     height: auto; }
@@ -3710,6 +3702,17 @@ body.layout-one-column-narrow #content {
   margin: .3em;
   padding: 1em; }
 
+.rstore-product, .rstore-list-product {
+  margin: 0 0 20px;
+  padding: 40px 50px 20px 50px;
+  -webkit-box-shadow: 0 1px 6px 0 rgba(102, 102, 102, 0.25);
+  box-shadow: 0 1px 6px 0 rgba(102, 102, 102, 0.25);
+  background-color: #FFF;
+  color: #444;
+  border: 0;
+  -webkit-border-radius: 6px;
+  border-radius: 6px; }
+
 /* product post page */
 .single-reseller_product .product {
   margin-bottom: 0;
@@ -3775,7 +3778,8 @@ article.rstore-list-product.reseller_product .product-header header.entry-header
   font-size: 1.8rem;
   font-size: 1.8em;
   float: left;
-  padding-right: 1em; }
+  padding-right: 1em;
+  padding-left: 1em; }
 
 article.rstore-list-product.reseller_product .product-header .rstore-pricing {
   float: right;
