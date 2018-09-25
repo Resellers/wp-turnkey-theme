@@ -25,11 +25,8 @@ function turnkey_colors( $colors ) {
 	);
 
 	$primary    = '#1D6CCD'; // primary.base.
-	$primary_o  = '#3690FF'; // primary-o.base.
 	$highlight  = '#73B2FF'; // primary-o.highlight.
-	$secondary  = '#C62828'; // secondary.base.
 	$nav        = '#0862CF'; // nav.base.
-	$warning    = '#FEDC45'; // warning.
 	$background = '#F5F7F8'; // product.base.
 	$gray_light = '#AEA99C'; // gray.light.
 	$gray_base  = '#999999'; // gray.base.
@@ -60,10 +57,20 @@ function turnkey_colors( $colors ) {
 				],
 			],
 		],
+		'sub_menu_text_color'                  => [
+			'label'   => esc_html__( 'Submenu Text', 'turnkey' ),
+			'default' => $white,
+			'section' => 'colors-menu',
+			'css'     => [
+				'.main-navigation ul.sub-menu li a, .main-navigation ul.sub-menu li a:visited, .main-navigation ul.sub-menu li a:hover, .main-navigation ul.sub-menu li a:focus, .main-navigation ul.sub-menu li a:visited:hover' => [
+					'color' => '%1$s',
+				],
+			],
+		],
 		'nav_text_color'                  => [
 			'label'   => esc_html__( 'Navigation Text', 'turnkey' ),
 			'default' => $nav,
-			'section' => 'colors-buttons',
+			'section' => 'colors-menu',
 			'css'     => [
 				'.rstore-view-cart a' => [
 					'color' => '%1$s',
@@ -101,30 +108,6 @@ function turnkey_colors( $colors ) {
 		'button_text_color'                => [
 			'default' => $white,
 		],
-		'secondary_button_color'           => [
-			'label'   => esc_html__( 'Secondary', 'turnkey' ),
-			'default' => $secondary,
-			'section' => 'colors-buttons',
-			'css'     => [
-				'.hero-inner .rstore-domain-search .button, .hero-inner .rstore-add-to-cart.button' => [
-					'background'   => '%1$s',
-					'border-color' => '%1$s',
-				],
-				'.rstore-retail-price' => [
-					'color' => '%1$s',
-				],
-			],
-		],
-		'secondary_button_text_color'      => [
-			'label'   => esc_html__( 'Secondary Text', 'turnkey' ),
-			'default' => '#333333',
-			'section' => 'colors-buttons',
-			'css'     => [
-				'.hero-inner .rstore-domain-search .button, .hero-inner .rstore-add-to-cart.button' => [
-					'color' => '%1$s',
-				],
-			],
-		],
 		// Background colors.
 		'background_color'                 => [
 			'default' => $background,
@@ -161,7 +144,7 @@ function turnkey_colors( $colors ) {
 		// Border colors.
 		'search_form_field'                => [
 			'label'   => esc_html__( 'Search form', 'turnkey' ),
-			'section' => 'buttons-menu',
+			'section' => 'colors-buttons',
 			'default' => $gray_light,
 			'css'     => [
 				'.search-form .search-field' => [
@@ -579,13 +562,11 @@ function turnkey_color_schemes( $color_schemes ) {
 			'header_textcolor'               => $args['primary'],
 			'link_color'                     => $args['primary'],
 			'button_color'                   => $args['primary'],
-			'secondary_button_color'         => $args['secondary'],
-			'secondary_button_text_color'    => $args['secondary-text'],
-			'nav_text_color'                => $args['nav'],
+			'nav_text_color'                 => $args['nav'],
 			// Backgrounds.
 			'background_color'               => $args['background'],
 			'hero_background_color'          => $args['highlight'],
-			'menu_background_color'          => $args['primary-o'],
+			'menu_background_color'          => $args['primary'],
 			'footer_widget_background_color' => $args['background'],
 			// Gray.
 			'search_form_field'              => $args['gray-light'],
@@ -594,7 +575,7 @@ function turnkey_color_schemes( $color_schemes ) {
 			'footer_menu_text_color'         => $args['white'],
 			'footer_text_color'              => $args['white'],
 			'button_text_color'              => $args['white'],
-			// Black.
+			'sub_menu_text_color'            => $args['white'],
 		);
 	}
 
