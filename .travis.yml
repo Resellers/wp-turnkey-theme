@@ -46,7 +46,8 @@ before_deploy:
 
 deploy:
   provider: releases
-  github-token: $GITHUB_TOKEN
+  api_key:
+    secure: LpodoQTGH89qZ/OcATRzrYkkapG41EfMfp2J3Wub+6bL+ZJy8EGBY/ixsi/sFngeklKy6h3+ngTfrsEYsYyPit606U1QmlCCpE4icSFjHNwhw4ORdAQ8vOeh42qJ7SZ6sP8rtAa8wQitz/2q2eq5ioxH+ehkVDXknsUo/4tvQwDxpIO+zyBTJcCKsS0AZW64pQvhnVygbF9b6r8EoZgt9d1uZELaWVLnqxRyS8FM1S2sFNhbzd+dzZjJTXmzIhb0Oakeoebory4iyyWe+gWGyUGVmU1Q5tVyEPLflskdarEQKjygCc5r0Brb2Z5Dqxvb8RXv3BDqKkkOxMtJ0Igoe7JE8yhOLjVXuOa4aK9+TzQhs7YDwrs+lt9eR9w0vcIK0nvHGvzAKtdhiQQaozboENt+ExuKTxQbcy3yqrLT8J1b1+8GthGuryTnc9wecuc7Namh6He4IwTryN/z6vSmrYDnMRTM1bWH5gSrcHCMes4LoX2nSfl+P0RXrPJqcarUpr5EdpYl3156vmbVoHYh23R8VLf0cMPSVAEmLJ5D8LHJ7iXQhsEEfHjZ/tfdXpAHojTnEcHWZYmqcNO4wan49VinEl8R0ukSeoQyp8EX7Bic1tp4MpKjOtJkVLv+E+MORE6JcFTqD2HxBJh/toX8p68DLaicmLC+bJLNmYJeV6M=
   file:
     - "$TRAVIS_BUILD_DIR/$WP_THEME.zip"
     - "$TRAVIS_BUILD_DIR/$WP_THEME.zip.sha256"
@@ -54,4 +55,4 @@ deploy:
   overwrite: true
   on:
     tags: true
-    repo: resellers/wp-turnkey-theme
+    repo: Resellers/wp-turnkey-theme

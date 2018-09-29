@@ -5,6 +5,7 @@ module.exports = function( grunt ) {
 	'use strict';
 
 	var pkg = grunt.file.readJSON( 'package.json' );
+	var sass = require('node-sass');
 
 	grunt.initConfig( {
 
@@ -198,6 +199,7 @@ module.exports = function( grunt ) {
 		sass: {
 			options: {
 				precision: 5,
+				implementation: sass,
 				sourceMap: false
 			},
 			editor: {
