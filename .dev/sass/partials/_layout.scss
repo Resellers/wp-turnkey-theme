@@ -7,6 +7,7 @@
 #content {
 	@extend .row;
 
+	body.layout-one-column-wide &,
 	body.layout-one-column-full & {
 		max-width: 100%;
 		margin: 0;
@@ -45,6 +46,8 @@
 		float: none;
 	}
 
+
+
 	body.layout-two-column-reversed & {
 		@extend .large-push-4;
 	}
@@ -52,6 +55,7 @@
 	body.layout-one-column-wide &,
 	body.layout-one-column-narrow & {
 		@extend .large-12;
+		padding: 0;
 	}
 
 	body.layout-three-column-default &,
@@ -130,19 +134,5 @@
 		@extend .large-centered;
 
 		@extend .columns;
-	}
-}
-
-body.layout-one-column-narrow {
-	#content {
-		max-width: 50em;
-	}
-}
-
-@media #{$medium-up} {
-	body.layout-one-column-narrow {
-		#content {
-			max-width: 50em;
-		}
 	}
 }

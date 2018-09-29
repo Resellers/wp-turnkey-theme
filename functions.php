@@ -53,7 +53,6 @@ function turnkey_move_elements() {
 	remove_action( 'primer_after_header', 'primer_add_page_title', 12 );
 	remove_action( 'primer_before_header_wrapper', 'primer_video_header', 5 );
 
-
 	add_action( 'primer_after_header', 'primer_add_hero', 7 );
 	add_action( 'primer_header', 'turnkey_after_site_header_wrapper', 5 );
 	add_action( 'primer_header', 'primer_add_primary_navigation', 11 );

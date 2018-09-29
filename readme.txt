@@ -1,6 +1,6 @@
 === Turnkey ===
 Contributors:      bfocht
-Tags:              custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, left-sidebar, one-column, right-sidebar, rtl-language-support, sticky-post, threaded-comments, three-columns, translation-ready, two-columns
+Tags:              one-column, two-columns, three-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-image-header, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, e-commerce
 Requires at least: 4.6
 Tested up to:      4.9
 Requires PHP:      5.4
@@ -70,6 +70,11 @@ https://fontawesome.com
 == Changelog ==
 
 Props [@bfocht](https://github.com/bfocht)
+
+### 1.0.6 ###
+* Fix: Make one column layout full width
+* Fix: Remove borders on widgets
+* Fix: Update palettes
 
 ### 1.0.4 ###
 * Fix: html bug fix in topnav

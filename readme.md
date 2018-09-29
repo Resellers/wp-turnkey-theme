@@ -1,6 +1,6 @@
 # Turnkey #
 **Contributors:** [bfocht](https://profiles.wordpress.org/bfocht)  
-**Tags:**              [custom-background](https://wordpress.org/themes/tags/custom-background/), [custom-colors](https://wordpress.org/themes/tags/custom-colors/), [custom-header](https://wordpress.org/themes/tags/custom-header/), [custom-menu](https://wordpress.org/themes/tags/custom-menu/), [editor-style](https://wordpress.org/themes/tags/editor-style/), [featured-images](https://wordpress.org/themes/tags/featured-images/), [flexible-header](https://wordpress.org/themes/tags/flexible-header/), [left-sidebar](https://wordpress.org/themes/tags/left-sidebar/), [one-column](https://wordpress.org/themes/tags/one-column/), [right-sidebar](https://wordpress.org/themes/tags/right-sidebar/), [rtl-language-support](https://wordpress.org/themes/tags/rtl-language-support/), [sticky-post](https://wordpress.org/themes/tags/sticky-post/), [threaded-comments](https://wordpress.org/themes/tags/threaded-comments/), [three-columns](https://wordpress.org/themes/tags/three-columns/), [translation-ready](https://wordpress.org/themes/tags/translation-ready/), [two-columns](https://wordpress.org/themes/tags/two-columns/)  
+**Tags:**              [one-column](https://wordpress.org/themes/tags/one-column/), [two-columns](https://wordpress.org/themes/tags/two-columns/), [three-columns](https://wordpress.org/themes/tags/three-columns/), [left-sidebar](https://wordpress.org/themes/tags/left-sidebar/), [right-sidebar](https://wordpress.org/themes/tags/right-sidebar/), [flexible-header](https://wordpress.org/themes/tags/flexible-header/), [custom-background](https://wordpress.org/themes/tags/custom-background/), [custom-colors](https://wordpress.org/themes/tags/custom-colors/), [custom-header](https://wordpress.org/themes/tags/custom-header/), [custom-menu](https://wordpress.org/themes/tags/custom-menu/), [custom-logo](https://wordpress.org/themes/tags/custom-logo/), [editor-style](https://wordpress.org/themes/tags/editor-style/), [featured-image-header](https://wordpress.org/themes/tags/featured-image-header/), [featured-images](https://wordpress.org/themes/tags/featured-images/), [footer-widgets](https://wordpress.org/themes/tags/footer-widgets/), [full-width-template](https://wordpress.org/themes/tags/full-width-template/), [post-formats](https://wordpress.org/themes/tags/post-formats/), [rtl-language-support](https://wordpress.org/themes/tags/rtl-language-support/), [sticky-post](https://wordpress.org/themes/tags/sticky-post/), [theme-options](https://wordpress.org/themes/tags/theme-options/), [threaded-comments](https://wordpress.org/themes/tags/threaded-comments/), [translation-ready](https://wordpress.org/themes/tags/translation-ready/), [e-commerce](https://wordpress.org/themes/tags/e-commerce/)  
 **Requires at least:** 4.6  
 **Tested up to:**      4.9  
 **Requires PHP:**      5.4  
@@ -72,6 +72,11 @@ https://fontawesome.com
 ## Changelog ##
 
 Props [@bfocht](https://github.com/bfocht)
+
+### 1.0.6 ###
+* Fix: Make one column layout full width
+* Fix: Remove borders on widgets
+* Fix: Update palettes
 
 ### 1.0.4 ###
 * Fix: html bug fix in topnav

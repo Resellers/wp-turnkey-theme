@@ -9,7 +9,7 @@
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: turnkey
  * Template: primer
- * Tags: custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, left-sidebar, one-column, right-sidebar, rtl-language-support, sticky-post, threaded-comments, three-columns, translation-ready, two-columns
+ * Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-image-header, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, e-commerce
  *
  * This theme, like WordPress, is licensed under the GPL.
  * Use it to make something cool, have fun, and share what you've learned with others.
@@ -3202,6 +3202,7 @@ object {
 .no-max-width .footer-widget-area {
   max-width: none; }
 
+body.layout-one-column-wide #content,
 body.layout-one-column-full #content {
   max-width: 100%;
   margin: 0;
@@ -3227,19 +3228,16 @@ body.layout-one-column-full #primary {
 body.error404 #primary {
   float: none; }
 
+body.layout-one-column-wide #primary,
+body.layout-one-column-narrow #primary {
+  padding: 0; }
+
 body.page-template-page-builder #primary,
 body.page-template-page-builder-no-header #primary {
   width: 100%;
   max-width: 100%;
   padding: 0;
   float: none; }
-
-body.layout-one-column-narrow #content {
-  max-width: 50em; }
-
-@media only screen and (min-width: 40.063em) {
-  body.layout-one-column-narrow #content {
-    max-width: 50em; } }
 
 .wp-pointer-content {
   border-top: none; }
@@ -3414,8 +3412,7 @@ body.layout-one-column-narrow #content {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  max-width: 100%;
-  margin-bottom: 40px; }
+  max-width: 100%; }
   .hero #wp-custom-header img {
     display: none; }
   .home .hero .hero-inner {
@@ -3695,120 +3692,102 @@ body.layout-one-column-narrow #content {
         .rstore-top-nav .tray-dropdown.show {
           margin-top: 16px; } }
 
-.gd-boxes, .widget.rstore-Product, .widget.gem-form {
-  border: 1px solid #666;
-  -webkit-border-radius: 16px;
-  border-radius: 16px;
-  margin: .3em;
-  padding: 1em; }
-
-.rstore-product, .rstore-list-product {
-  margin: 0 0 20px;
-  padding: 40px 50px 20px 50px;
-  -webkit-box-shadow: 0 1px 6px 0 rgba(102, 102, 102, 0.25);
-  box-shadow: 0 1px 6px 0 rgba(102, 102, 102, 0.25);
-  background-color: #FFF;
-  color: #444;
-  border: 0;
-  -webkit-border-radius: 6px;
-  border-radius: 6px; }
-
-/* product post page */
-.single-reseller_product .product {
-  margin-bottom: 0;
-  position: relative; }
-
-.single-reseller_product .featured-image {
-  float: right;
-  width: 33%; }
-  @media only screen and (max-width: 40em) {
-    .single-reseller_product .featured-image img {
-      max-width: 85%; } }
-
-.single-reseller_product .product-header {
-  float: left;
-  width: 66%; }
-  .single-reseller_product .product-header .rstore-message {
-    display: inline-block;
-    height: 0px; }
-
-.single-reseller_product .product-tabs {
-  clear: both; }
-  .single-reseller_product .product-tabs ul.tabs {
-    list-style: none;
-    padding: 15px 1em 0 0;
-    margin: 0 0 1em;
-    overflow: hidden;
-    position: relative; }
-    .single-reseller_product .product-tabs ul.tabs li {
-      border: 1px solid #666;
-      display: inline-block;
-      position: relative;
-      z-index: 0;
-      -webkit-border-radius: 4px 4px 0 0;
-      border-radius: 4px 4px 0 0;
-      margin: 0 -5px;
-      padding: .5em 1em; }
-    .single-reseller_product .product-tabs ul.tabs::before {
-      position: absolute;
-      content: ' ';
-      width: 100%;
-      bottom: 0;
-      right: 0;
-      border-bottom: 1px solid #666;
-      z-index: 1; }
-    .single-reseller_product .product-tabs ul.tabs .product-description {
-      display: block; }
-
-/* product taxonomy list/search */
-article.rstore-list-product.reseller_product div.product {
-  margin-bottom: 0;
-  position: relative; }
-
-article.rstore-list-product.reseller_product .featured-image {
-  float: right;
-  width: 11%; }
-
-article.rstore-list-product.reseller_product .product-summary {
-  float: left;
-  width: 88%;
-  margin-bottom: 2em; }
-
-article.rstore-list-product.reseller_product .product-header header.entry-header h2.entry-title, article.rstore-list-product.reseller_product .product-header header.entry-header .archive-title {
-  font-size: 1.8rem;
-  font-size: 1.8em;
-  float: right;
-  padding-left: 1em;
-  padding-right: 1em; }
-
-article.rstore-list-product.reseller_product .product-header .rstore-pricing {
-  float: left;
-  margin-bottom: 0; }
-
-article.rstore-list-product.reseller_product .entry-meta {
-  clear: both; }
-
-article.rstore-list-product.reseller_product .entry-summary {
-  float: right;
-  margin: 0;
-  padding: 0; }
-  article.rstore-list-product.reseller_product .entry-summary p {
+article {
+  /* product post page */
+  /* product taxonomy list/search */ }
+  article.rstore-product, article.rstore-list-product {
+    margin: 10px 0;
+    padding: 40px 50px 20px 50px;
+    -webkit-box-shadow: 0 1px 6px 0 rgba(102, 102, 102, 0.25);
+    box-shadow: 0 1px 6px 0 rgba(102, 102, 102, 0.25);
+    background-color: #FFF;
+    color: #444;
+    border: 0;
+    -webkit-border-radius: 6px;
+    border-radius: 6px; }
+  article.rstore-product .product {
     margin-bottom: 0;
-    display: inline; }
-
-article.rstore-list-product.reseller_product .rstore-add-to-cart-form {
-  clear: both; }
-  article.rstore-list-product.reseller_product .rstore-add-to-cart-form .rstore-message {
-    display: inline-block;
-    height: 0px; }
-  article.rstore-list-product.reseller_product .rstore-add-to-cart-form .rstore-add-to-cart.button {
+    position: relative; }
+  article.rstore-product .featured-image {
+    float: right;
+    width: 33%; }
+    @media only screen and (max-width: 40em) {
+      article.rstore-product .featured-image img {
+        max-width: 85%; } }
+  article.rstore-product .product-header {
     float: left;
-    margin: 0px;
-    display: inline-block; }
-  article.rstore-list-product.reseller_product .rstore-add-to-cart-form .rstore-loading,
-  article.rstore-list-product.reseller_product .rstore-add-to-cart-form .rstore-cart {
+    width: 66%; }
+    article.rstore-product .product-header .rstore-message {
+      display: inline-block;
+      height: 0px; }
+  article.rstore-product .product-tabs {
+    clear: both; }
+    article.rstore-product .product-tabs ul.tabs {
+      list-style: none;
+      padding: 15px 1em 0 0;
+      margin: 0 0 1em;
+      overflow: hidden;
+      position: relative; }
+      article.rstore-product .product-tabs ul.tabs li {
+        border: 1px solid #666;
+        display: inline-block;
+        position: relative;
+        z-index: 0;
+        -webkit-border-radius: 4px 4px 0 0;
+        border-radius: 4px 4px 0 0;
+        margin: 0 -5px;
+        padding: .5em 1em; }
+      article.rstore-product .product-tabs ul.tabs::before {
+        position: absolute;
+        content: ' ';
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        border-bottom: 1px solid #666;
+        z-index: 1; }
+      article.rstore-product .product-tabs ul.tabs .product-description {
+        display: block; }
+  article.rstore-list-product.reseller_product div.product {
+    margin-bottom: 0;
+    position: relative; }
+  article.rstore-list-product.reseller_product .featured-image {
+    float: right;
+    width: 11%; }
+  article.rstore-list-product.reseller_product .product-summary {
     float: left;
-    margin-left: 5px; }
+    width: 88%;
+    margin-bottom: 2em; }
+  article.rstore-list-product.reseller_product .product-header header.entry-header h2.entry-title, article.rstore-list-product.reseller_product .product-header header.entry-header .archive-title {
+    font-size: 1.8rem;
+    font-size: 1.8em;
+    float: right;
+    padding-left: 1em;
+    padding-right: 1em; }
+  article.rstore-list-product.reseller_product .product-header .rstore-pricing {
+    float: left;
+    margin-bottom: 0; }
+  article.rstore-list-product.reseller_product .entry-meta {
+    clear: both; }
+  article.rstore-list-product.reseller_product .entry-summary {
+    float: right;
+    margin: 0;
+    padding: 0; }
+    article.rstore-list-product.reseller_product .entry-summary p {
+      margin-bottom: 0;
+      display: inline; }
+  article.rstore-list-product.reseller_product .rstore-add-to-cart-form {
+    clear: both; }
+    article.rstore-list-product.reseller_product .rstore-add-to-cart-form .rstore-message {
+      display: inline-block;
+      height: 0px; }
+    article.rstore-list-product.reseller_product .rstore-add-to-cart-form .rstore-add-to-cart.button {
+      float: left;
+      margin: 0px;
+      display: inline-block; }
+    article.rstore-list-product.reseller_product .rstore-add-to-cart-form .rstore-loading,
+    article.rstore-list-product.reseller_product .rstore-add-to-cart-form .rstore-cart {
+      float: left;
+      margin-left: 5px; }
 
 /* product widget */
 @media only screen and (min-width: 40.063em) {
@@ -3853,12 +3832,6 @@ article.rstore-list-product.reseller_product .rstore-add-to-cart-form {
     display: block; }
   #rstore-popResults .rstore-domain-search .input-continue-btn {
     width: unset; } }
-
-/* email marketing plugin specific css */
-.widget.gem-form a {
-  float: left;
-  font-size: 0.5rem;
-  font-size: 0.5rem; }
 
 #wpstats {
   display: none; }
