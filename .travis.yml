@@ -30,15 +30,28 @@ env:
 before_install:
   - phpenv config-rm xdebug.ini
 
+install:
+  - export PATH="$HOME/.composer/vendor/bin:$PATH"
+  - |
+    if [[ ${TRAVIS_PHP_VERSION:0:2} == "7." ]]; then
+      composer global require "phpunit/phpunit=6.5.*"
+    else
+      composer global require "phpunit/phpunit=4.8.*"
+    fi
+  - composer global require wp-coding-standards/wpcs
+  - phpcs --config-set installed_paths $HOME/.composer/vendor/wp-coding-standards/wpcs
+
 before_script:
   - curl https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli-nightly.phar > /tmp/wp-cli.phar
   - chmod +x /tmp/wp-cli.phar
 
 script:
-  - echo "Deploy only"
+  - phpcs --standard=.dev/phpcs.ruleset.xml $(find . -name '*.php')
+  - echo "Finished check."
 
 before_deploy:
   - mkdir -p /tmp/$WP_THEME
+  - npm install && npm run build
   - rsync -av --exclude-from $TRAVIS_BUILD_DIR/.distignore --delete $TRAVIS_BUILD_DIR/ /tmp/$WP_THEME/
   - cd /tmp
   - zip -rT $TRAVIS_BUILD_DIR/$WP_THEME.zip $WP_THEME/

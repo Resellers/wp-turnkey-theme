@@ -3402,7 +3402,8 @@ body.page-template-page-builder-no-header #primary {
   .hero #wp-custom-header img {
     display: none; }
   .home .hero .hero-inner {
-    padding: 0.625rem 0; }
+    padding: 1px 0;
+    min-height: 22.1875rem; }
   .hero aside {
     background: none;
     max-width: 600px;

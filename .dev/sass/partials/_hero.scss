@@ -14,7 +14,8 @@
 	.hero-inner {
 
 		.home & {
-			padding: rem-calc(10) 0;
+			padding: 1px 0;
+			min-height: em-calc(355);
 		}
 	}
 
