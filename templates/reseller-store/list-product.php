@@ -24,19 +24,25 @@
 	do_action( 'primer_before_post_content' );
 
 	?>
-	<?php get_template_part( 'templates/parts/loop/post', 'thumbnail' ); ?>
-	<div class="product-header">
-		<?php get_template_part( 'templates/parts/loop/post', 'title' ); ?>
-		<?php rstore_price( $post->ID, true ); ?>
-		<?php rstore_add_to_cart_form( $post->ID, true ); ?>
-	</div>
-	<div class="product-summary">
-		<div class="entry-summary">
-			<?php the_excerpt(); ?>
-			<a class="link" href="<?php the_permalink(); ?>" aria-label="<?php printf( /* translators: post title */ esc_attr__( 'More info %s', 'turnkey' ), get_the_title() ); ?>"><?php printf( /* translators: right arrow (LTR) / left arrow (RTL) */ esc_html__( 'More Info %s', 'turnkey' ), is_rtl() ? '&larr;' : '&rarr;' ); ?></a>
-		</div>
-	</div>
-	<div class="clearfix"></div>
+    <div class="row">
+        <div class="column medium-2">
+        <?php get_template_part( 'templates/parts/loop/post', 'thumbnail' ); ?>
+        </div>
+        <div class="column medium-10">
+            <div class="product-header">
+                <?php get_template_part( 'templates/parts/loop/post', 'title' ); ?>
+                <?php rstore_price( $post->ID, true ); ?>
+                <?php rstore_add_to_cart_form( $post->ID, true ); ?>
+            </div>
+            <div class="product-summary">
+                <div class="entry-summary">
+                    <?php get_template_part( 'templates/parts/loop/post', 'content' ); ?>
+                </div>
+                <a class="link" href="<?php the_permalink(); ?>" aria-label="<?php printf( /* translators: post title */ esc_attr__( 'More info %s', 'turnkey' ), get_the_title() ); ?>"><?php printf( /* translators: right arrow (LTR) / left arrow (RTL) */ esc_html__( 'More Info %s', 'turnkey' ), is_rtl() ? '&larr;' : '&rarr;' ); ?></a>
+            </div>
+        </div>
+    </div>
+
 	<?php
 
 	get_template_part( 'templates/parts/loop/post', 'footer' );

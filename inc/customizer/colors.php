@@ -51,7 +51,7 @@ function turnkey_colors( $colors ) {
 		'hero_text_color'                  => [
 			'default' => $default['black'],
 			'css'     => [
-				'.hero aside' => [
+				'.hero aside, .page-header h2' => [
 					'color' => '%1$s',
 				],
 			],

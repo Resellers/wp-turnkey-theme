@@ -71,7 +71,7 @@ $entry-title-bg: rgba(0, 0, 0, 0.6) !default;
 }
 
 .site-header-wrapper {
-	@extend .columns;
+	@extend .row;
 
 	float: none;
 	margin-left: auto;

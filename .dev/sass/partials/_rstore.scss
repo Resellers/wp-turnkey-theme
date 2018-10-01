@@ -181,15 +181,22 @@ article {
 				position: relative;
 			}
 
-			.featured-image {
-				float: left;
-				width: 11%;
+			.entry-summary {
+				height: 250px;
+				overflow: hidden;
+				position: relative;
+				margin: 0;
 			}
 
-			.product-summary {
-				float: right;
-				width: 88%;
-				margin-bottom: 2em;
+			.entry-summary:after {
+				position: absolute;
+				content: '';
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 2em;
+				pointer-events: none;
+				background: linear-gradient(rgba(255, 255, 255, 0), #fff);
 			}
 
 			.product-header {
@@ -197,29 +204,15 @@ article {
 					h2.entry-title, .archive-title {
 						font-size: 1.8rem;
 						font-size: 1.8em;
-						float: left;
-						padding-right: 1em;
-						padding-left: 1em;
 					}
 				}
 				.rstore-pricing {
-					float: right;
 					margin-bottom: 0;
 				}
 			}
 
 			.entry-meta {
 				clear: both;
-			}
-
-			.entry-summary {
-				float: left;
-				margin: 0;
-				padding: 0;
-				p {
-					margin-bottom: 0;
-					display: inline;
-				}
 			}
 
 			.rstore-add-to-cart-form {
@@ -231,14 +224,12 @@ article {
 				}
 
 				.rstore-add-to-cart.button {
-					float: right;
 					margin: 0px;
 					display: inline-block;
 				}
 
 				.rstore-loading,
 				.rstore-cart {
-					float: right;
 					margin-right: 5px;
 				}
 

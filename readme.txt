@@ -71,6 +71,10 @@ https://fontawesome.com
 
 Props [@bfocht](https://github.com/bfocht)
 
+### 1.0.7 ###
+* Updated: Set product to fixed size when displayed in a list
+* Fixed: Style in header
+
 ### 1.0.6 ###
 * Fix: Make one column layout full width
 * Fix: Remove borders on widgets

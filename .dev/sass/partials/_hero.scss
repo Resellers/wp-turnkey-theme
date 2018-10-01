@@ -14,7 +14,7 @@
 	.hero-inner {
 
 		.home & {
-			padding: 100px 0;
+			padding: rem-calc(10) 0;
 		}
 	}
 
@@ -39,7 +39,7 @@
 		}
 	}
 
-	.page-header h1 {
+	.page-header h1, .page-header h2 {
 		padding: 1.2em;
 		margin: 0;
 		font-weight: 400;
