@@ -71,6 +71,9 @@ https://fontawesome.com
 
 Props [@bfocht](https://github.com/bfocht)
 
+### 1.0.8 ###
+* New: Introduce styles for Gutenberg.
+
 ### 1.0.7 ###
 * Updated: Set product to fixed size when displayed in a list
 * Fixed: Style in header

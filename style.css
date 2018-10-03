@@ -2493,19 +2493,44 @@ body.no-max-width .main-navigation {
 .widget select {
   max-width: 100%; }
 
-/* Search widget */
-.widget_search {
-  margin: 0 0 3em; }
-  .widget_search ul {
+.widget {
+  margin-bottom: 1.25rem; }
+
+/* widgets */
+.widget_search,
+.widget_archive,
+.widget_links,
+.widget_pages,
+.widget_meta,
+.widget_recent_entries,
+.widget_recent_comments {
+  margin-left: 0; }
+  .widget_search ul,
+  .widget_archive ul,
+  .widget_links ul,
+  .widget_pages ul,
+  .widget_meta ul,
+  .widget_recent_entries ul,
+  .widget_recent_comments ul {
     list-style: none;
-    margin: 0;
     padding: 0; }
-  .widget_search li {
+  .widget_search li,
+  .widget_archive li,
+  .widget_links li,
+  .widget_pages li,
+  .widget_meta li,
+  .widget_recent_entries li,
+  .widget_recent_comments li {
     border-bottom: 1px solid rgba(117, 117, 117, 0.28); }
-    .widget_search li a {
+    .widget_search li a,
+    .widget_archive li a,
+    .widget_links li a,
+    .widget_pages li a,
+    .widget_meta li a,
+    .widget_recent_entries li a,
+    .widget_recent_comments li a {
       display: block;
-      padding: .813em 0;
-      padding: .813rem 0;
+      padding: .1em 0;
       text-transform: uppercase;
       font-size: 0.9375rem; }
 
@@ -2549,8 +2574,6 @@ body.no-max-width .main-navigation {
 
 /* Recent Comments Widget */
 .widget_recent_comments li {
-  padding: .813em 0;
-  padding: .813rem 0;
   font-size: 0.9375rem;
   text-transform: uppercase; }
   .widget_recent_comments li a {
@@ -2624,14 +2647,6 @@ body.no-max-width .main-navigation {
           text-align: left; }
         .widget_calendar #calendar_wrap #wp-calendar tfoot td#next {
           text-align: right; }
-
-.widget_recent_entries li {
-  padding: .75em 0;
-  padding: .75rem 0; }
-  .widget_recent_entries li a {
-    padding: 0;
-    font-size: 0.9375rem;
-    text-transform: none; }
 
 .widget_recent_entries .post-date {
   color: #757575;
@@ -4018,6 +4033,86 @@ body.woocommerce-cart .primer-wc-cart-sub-menu {
 @media only screen and (max-width: 40em) {
   .primer-wc-cart-menu .primer-wc-cart-sub-menu .widget_shopping_cart {
     width: 100%; } }
+
+[class^="wp-block-"].alignfull {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw; }
+  [class^="wp-block-"].alignfull img {
+    width: 100%; }
+
+[class^="wp-block-"].alignwide {
+  margin-left: -1.6875em;
+  margin-right: -1.6875em;
+  width: -webkit-calc( 100% + 3.375em);
+  width: calc( 100% + 3.375em); }
+
+.wp-block-image.alignleft,
+.wp-block-gallery.alignleft,
+.wp-block-video.alignleft,
+.wp-block-quote.alignleft,
+.wp-block-text-columns.alignleft,
+.entry-content ul.alignleft,
+.entry-content ol.alignleft,
+.wp-block-cover-text.alignleft {
+  margin: 0 1em 0.5em 0; }
+
+.wp-block-image.alignright,
+.wp-block-gallery.alignright,
+.wp-block-video.alignright,
+.wp-block-quote.alignright,
+.wp-block-text-columns.alignright,
+.entry-content ul.alignright,
+.entry-content ol.alignright,
+.wp-block-cover-text.alignright {
+  margin: 0 0 0.5em 1em; }
+
+.wp-block-image.alignleft, .wp-block-image.alignright,
+.wp-block-gallery.alignleft,
+.wp-block-gallery.alignright,
+.wp-block-video.alignleft,
+.wp-block-video.alignright,
+.wp-block-quote.alignleft,
+.wp-block-quote.alignright,
+.wp-block-text-columns.alignleft,
+.wp-block-text-columns.alignright,
+.entry-content ul.alignleft,
+.entry-content ul.alignright,
+.entry-content ol.alignleft,
+.entry-content ol.alignright,
+.wp-block-cover-text.alignleft,
+.wp-block-cover-text.alignright {
+  max-width: 40%;
+  width: 100%; }
+  .wp-block-image.alignleft img, .wp-block-image.alignright img,
+  .wp-block-gallery.alignleft img,
+  .wp-block-gallery.alignright img,
+  .wp-block-video.alignleft img,
+  .wp-block-video.alignright img,
+  .wp-block-quote.alignleft img,
+  .wp-block-quote.alignright img,
+  .wp-block-text-columns.alignleft img,
+  .wp-block-text-columns.alignright img,
+  .entry-content ul.alignleft img,
+  .entry-content ul.alignright img,
+  .entry-content ol.alignleft img,
+  .entry-content ol.alignright img,
+  .wp-block-cover-text.alignleft img,
+  .wp-block-cover-text.alignright img {
+    max-width: 100%;
+    width: 100%; }
+
+.wp-block-button.aligncenter {
+  margin-bottom: 1.5em; }
+
+.wp-block-audio audio {
+  width: 100%; }
+
+.wp-block-verse {
+  padding: .5rem; }
 
 /*!
  * Font Awesome Free 5.0.2 by @fontawesome - http://fontawesome.com
