@@ -23,7 +23,7 @@
  *
  * @var string
  */
-define( 'PRIMER_CHILD_VERSION', '1.0.9' );
+define( 'PRIMER_CHILD_VERSION', '1.0.10' );
 
 /**
  * Load Reseller Store compatibility file.
@@ -214,7 +214,7 @@ add_action( 'wp_enqueue_scripts', 'turnkey_storefront_scripts' );
  * @action customize_register
  * @see    WP_Customize_Manager
  *
- * @since  NEXT
+ * @since  1.0.10
  *
  * @param  WP_Customize_Manager $wp_customize Instance of the WP_Customize_Manager class.
  */

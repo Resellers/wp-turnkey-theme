@@ -139,7 +139,7 @@ add_filter( 'turnkey_storefront_support_phone_classes', 'turnkey_storefront_supp
 /**
  * Print the url from the Reseller Store plugin.
  *
- * @since  NEXT
+ * @since  1.0.10
  *
  * @param string $url_key   Url Key to use for bulding url.
  * @param string $endpoint (optional) API endpoint to override the request with.
