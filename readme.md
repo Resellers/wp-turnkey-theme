@@ -64,14 +64,27 @@ Stock photography, Pixabay
 License: Creative Commons Zero
 Source: https://pixabay.com/photo-2386034/
 
-Font Awesome Icons
-License: Creative Commons 4.0
-https://fontawesome.com
+# Icons: CC BY 4.0 License (https://creativecommons.org/licenses/by/4.0/)
+In the Font Awesome Free download, the CC BY 4.0 license applies to all icons
+packaged as SVG and JS file types.
 
+# Fonts: SIL OFL 1.1 License (https://scripts.sil.org/OFL)
+In the Font Awesome Free download, the SIL OLF license applies to all icons
+packaged as web and desktop font files.
 
 ## Changelog ##
 
 Props [@bfocht](https://github.com/bfocht)
+
+### 1.0.9
+* Fix: Missing icon and font references on sticky post
+* Fix: Incorrect license information for Font Awesome 5
+* Fix: Use theme slug for text domain
+* Fix: Prefix functions with theme slug
+* Fix: Move support phone number customizer option to functions.php so that it loads correctly
+* Fix: Missing translations in top-nav
+* Fix: Escape output on turnkey_storefront_support_phone_classes filter
+* Props to @poena for theme review
 
 ### 1.0.8 ###
 * New: Introduce styles for Gutenberg.

@@ -1,7 +1,7 @@
 {
-  "name": "Turnkey",
-  "title": "Turnkey",
-  "description": "Turnkey is a Primer child theme with a business-oriented designed with the Reseller Store plugin.",
+  "name": "turnkey-storefront",
+  "title": "Turnkey Storefront",
+  "description": "Turnkey Storefront is a Primer child theme with a business-oriented designed with the Reseller Store plugin.",
   "version": "1.0.9",
   "author": "Resellers",
   "license": "GPL-2.0",

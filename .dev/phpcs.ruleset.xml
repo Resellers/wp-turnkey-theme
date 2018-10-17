@@ -8,7 +8,6 @@
         <exclude name="WordPress.VIP.DirectDatabaseQuery.DirectQuery"></exclude>
         <exclude name="WordPress.VIP.DirectDatabaseQuery.NoCaching"></exclude>
         <exclude name="WordPress.Files.FileName.InvalidClassFileName"></exclude>
-        <exclude name="Squiz.Commenting.FileComment.MissingPackageTag"></exclude>
     </rule>
 
     <rule ref="WordPress-Docs" />

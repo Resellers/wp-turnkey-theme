@@ -23,7 +23,7 @@ remove_filter( 'the_excerpt', 'rstore_append_add_to_cart_form' );
  *
  * @return bool
  */
-function t_rstore_single_product() {
+function turnkey_storefront_single_product() {
 	return is_singular( array( 'reseller_product' ) );
 }
 
@@ -38,12 +38,12 @@ function t_rstore_single_product() {
  *
  * @return string
  */
-function t_rstore_template_single_product( $template ) {
+function turnkey_storefront_template_single_product( $template ) {
 
-	return ( t_rstore_single_product() && locate_template( 'templates/reseller-store/single-product.php' ) ) ? get_template_part( 'templates/reseller-store/single-product' ) : $template;
+	return ( turnkey_storefront_single_product() && locate_template( 'templates/reseller-store/single-product.php' ) ) ? get_template_part( 'templates/reseller-store/single-product' ) : $template;
 
 }
-add_filter( 'template_include', 't_rstore_template_single_product' );
+add_filter( 'template_include', 'turnkey_storefront_template_single_product' );
 
 
 /**
@@ -56,13 +56,13 @@ add_filter( 'template_include', 't_rstore_template_single_product' );
  *
  * @return string thumbnail if a Reseller_Store product, else $size
  */
-function t_rstore_featured_image_size( $size ) {
+function turnkey_storefront_featured_image_size( $size ) {
 
 	global $post;
 
-	return apply_filters( 't_rstore_is_product', $post ) ? 'thumbnail' : $size;
+	return apply_filters( 'turnkey_storefront_is_product', $post ) ? 'thumbnail' : $size;
 }
-add_filter( 'primer_featured_image_size', 't_rstore_featured_image_size' );
+add_filter( 'primer_featured_image_size', 'turnkey_storefront_featured_image_size' );
 
 /**
  * Prevent Reseller_Store product image from loading as the header image
@@ -74,12 +74,12 @@ add_filter( 'primer_featured_image_size', 't_rstore_featured_image_size' );
  *
  * @param bool $enabled default value for primer_use_featured_hero_image.
  */
-function t_rstore_use_featured_hero_image( $enabled ) {
+function turnkey_storefront_use_featured_hero_image( $enabled ) {
 
-	return t_rstore_single_product() ? false : $enabled;
+	return turnkey_storefront_single_product() ? false : $enabled;
 
 }
-add_filter( 'primer_use_featured_hero_image', 't_rstore_use_featured_hero_image', 100 );
+add_filter( 'primer_use_featured_hero_image', 'turnkey_storefront_use_featured_hero_image', 100 );
 
 /**
  * Filter the Reseller_store product page title.
@@ -93,9 +93,63 @@ add_filter( 'primer_use_featured_hero_image', 't_rstore_use_featured_hero_image'
  *
  * @return string Returns the page title.
  */
-function t_rstore_product_page_title( $title ) {
+function turnkey_storefront_product_page_title( $title ) {
 
-	return t_rstore_single_product() ? '' : $title;
+	return turnkey_storefront_single_product() ? '' : $title;
 
 }
-add_filter( 'primer_the_page_title', 't_rstore_product_page_title' );
+add_filter( 'primer_the_page_title', 'turnkey_storefront_product_page_title' );
+
+/**
+ * Add top nav menu if reseller store plugin is active.
+ *
+ * @action primer_before_header_wrapper
+ * @since  1.0.0
+ */
+function turnkey_storefront_top_nav() {
+
+	get_template_part( 'templates/top-nav' );
+
+}
+add_action( 'primer_header', 'turnkey_storefront_top_nav', 5 );
+
+/**
+ * Toggle the visibility of the support phone in the header.
+ *
+ * @filter turnkey_storefront_support_phone
+ * @since  1.0.0
+ *
+ * @param string $classes  HTML snippet for the the support phone number.
+ *
+ * @return string  Adds  rstore-support-block class when `show_support_phone` theme mod is true.
+ */
+function turnkey_storefront_support_phone_classes( $classes ) {
+
+	if ( get_theme_mod( 'show_support_phone', true ) ) {
+
+		$classes .= ' rstore-support-block';
+
+	}
+
+	return esc_html( $classes );
+
+}
+add_filter( 'turnkey_storefront_support_phone_classes', 'turnkey_storefront_support_phone_classes' );
+
+/**
+ * Print the url from the Reseller Store plugin.
+ *
+ * @since  NEXT
+ *
+ * @param string $url_key   Url Key to use for bulding url.
+ * @param string $endpoint (optional) API endpoint to override the request with.
+ */
+function turnkey_storefront_rstore_url( $url_key, $endpoint = '' ) {
+
+	if ( function_exists( 'rstore' ) ) {
+
+		echo rstore()->api->url( $url_key, $endpoint );
+
+	}
+
+}

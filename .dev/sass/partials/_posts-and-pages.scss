@@ -50,22 +50,12 @@
 }
 
 .sticky .entry-title a:before {
-	font-family: 'Genericons';
-	content: '\f308';
+	font-family: 'Font Awesome 5 Free';
+	content: '\f08d';
 	color: $body-secondary-color;
 	font-size: rem-calc(20);
 	line-height: 1.4;
 	position: relative;
-	top: 2px;
-
-	@media #{$medium-up} {
-		font-size: rem-calc(30);
-		top: 5px;
-	}
-
-	@media #{$large-up} {
-		font-size: rem-calc(35);
-	}
 }
 
 .entry-title, .archive-title {

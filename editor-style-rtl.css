@@ -866,20 +866,12 @@ legend {
   margin: 0 0 1.5em; }
 
 .sticky .entry-title a:before {
-  font-family: 'Genericons';
-  content: '\f308';
+  font-family: 'Font Awesome 5 Free';
+  content: '\f08d';
   color: #757575;
   font-size: 1.25rem;
   line-height: 1.4;
-  position: relative;
-  top: 2px; }
-  @media only screen and (min-width: 40.063em) {
-    .sticky .entry-title a:before {
-      font-size: 1.875rem;
-      top: 5px; } }
-  @media only screen and (min-width: 61.063em) {
-    .sticky .entry-title a:before {
-      font-size: 2.1875rem; } }
+  position: relative; }
 
 .entry-title, .archive-title {
   margin-bottom: .25em;

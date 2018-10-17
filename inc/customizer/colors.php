@@ -2,6 +2,7 @@
 /**
  * Color palette defaults.
  *
+ * @package  Customizer
  * @author   Bryan Focht
  * @since    1.0.0
  */
@@ -16,7 +17,7 @@
  *
  * @return array
  */
-function turnkey_colors( $colors ) {
+function turnkey_storefront_colors( $colors ) {
 
 	unset(
 		$colors['content_background_color'],
@@ -65,7 +66,7 @@ function turnkey_colors( $colors ) {
 			],
 		],
 		'sub_menu_text_color'              => [
-			'label'   => esc_html__( 'Submenu Text', 'turnkey' ),
+			'label'   => esc_html__( 'Submenu Text', 'turnkey-storefront' ),
 			'default' => $default['white'],
 			'section' => 'colors-menu',
 			'css'     => [
@@ -75,7 +76,7 @@ function turnkey_colors( $colors ) {
 			],
 		],
 		'nav_text_color'                   => [
-			'label'   => esc_html__( 'Navigation Text', 'turnkey' ),
+			'label'   => esc_html__( 'Navigation Text', 'turnkey-storefront' ),
 			'default' => $default['nav'],
 			'section' => 'colors-menu',
 			'css'     => [
@@ -128,7 +129,7 @@ function turnkey_colors( $colors ) {
 			],
 		],
 		'menu_background_color'            => [
-			'label'   => esc_html__( 'Background', 'turnkey' ),
+			'label'   => esc_html__( 'Background', 'turnkey-storefront' ),
 			'section' => 'colors-menu',
 			'default' => $default['primary'],
 			'css'     => [
@@ -145,7 +146,7 @@ function turnkey_colors( $colors ) {
 		],
 		// Border colors.
 		'search_form_field'                => [
-			'label'   => esc_html__( 'Search form', 'turnkey' ),
+			'label'   => esc_html__( 'Search form', 'turnkey-storefront' ),
 			'section' => 'colors-buttons',
 			'default' => $default['gray.light'],
 			'css'     => [
@@ -155,7 +156,7 @@ function turnkey_colors( $colors ) {
 			],
 		],
 		'account_info'                     => [
-			'label'   => esc_html__( 'Account info Text', 'turnkey' ),
+			'label'   => esc_html__( 'Account info Text', 'turnkey-storefront' ),
 			'section' => 'colors-menu',
 			'default' => $default['gray'],
 			'css'     => [
@@ -168,7 +169,7 @@ function turnkey_colors( $colors ) {
 			],
 		],
 		'account_info_background'          => [
-			'label'   => esc_html__( 'Account info Background', 'turnkey' ),
+			'label'   => esc_html__( 'Account info Background', 'turnkey-storefront' ),
 			'section' => 'colors-menu',
 			'default' => $default['product.faint'],
 			'css'     => [
@@ -181,7 +182,7 @@ function turnkey_colors( $colors ) {
 
 	return primer_array_replace_recursive( $colors, $overrides );
 }
-add_filter( 'primer_colors', 'turnkey_colors' );
+add_filter( 'primer_colors', 'turnkey_storefront_colors' );
 
 
 /**
@@ -194,12 +195,12 @@ add_filter( 'primer_colors', 'turnkey_colors' );
  *
  * @return array
  */
-function turnkey_color_schemes( $color_schemes ) {
+function turnkey_storefront_color_schemes( $color_schemes ) {
 
 	$turnkey_color_schemes = array(
 		'autumn'            => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'Autumn', 'turnkey' ),
+				esc_html__( 'Autumn', 'turnkey-storefront' ),
 			'primary'             => '#D83C19',
 			'primary-o'           => '#D83C19',
 			'primary-o.highlight' => '#E96345',
@@ -217,7 +218,7 @@ function turnkey_color_schemes( $color_schemes ) {
 		),
 		'berry'             => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'Berry', 'turnkey' ),
+				esc_html__( 'Berry', 'turnkey-storefront' ),
 			'primary'             => '#5F9CB3',
 			'primary-o'           => '#5F9CB3',
 			'primary-o.highlight' => '#88B6C7',
@@ -235,7 +236,7 @@ function turnkey_color_schemes( $color_schemes ) {
 		),
 		'california-sunset' => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'California Sunset', 'turnkey' ),
+				esc_html__( 'California Sunset', 'turnkey-storefront' ),
 			'primary'             => '#0076B2',
 			'primary-o'           => '#0076B2',
 			'primary-o.highlight' => '#009FEF',
@@ -253,7 +254,7 @@ function turnkey_color_schemes( $color_schemes ) {
 		),
 		'earth'             => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'Earth', 'turnkey' ),
+				esc_html__( 'Earth', 'turnkey-storefront' ),
 			'primary'             => '#827B74',
 			'primary-o'           => '#827B74',
 			'primary-o.highlight' => '#9F9A94',
@@ -271,7 +272,7 @@ function turnkey_color_schemes( $color_schemes ) {
 		),
 		'eggplant'          => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'Eggplant', 'turnkey' ),
+				esc_html__( 'Eggplant', 'turnkey-storefront' ),
 			'primary'             => '#A39186',
 			'primary-o'           => '#A39186',
 			'primary-o.highlight' => '#BDB1A9',
@@ -289,7 +290,7 @@ function turnkey_color_schemes( $color_schemes ) {
 		),
 		'jetlag'            => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'Jetlag', 'turnkey' ),
+				esc_html__( 'Jetlag', 'turnkey-storefront' ),
 			'primary'             => '#7E8983',
 			'primary-o'           => '#7E8983',
 			'primary-o.highlight' => '#9EA6A2',
@@ -307,7 +308,7 @@ function turnkey_color_schemes( $color_schemes ) {
 		),
 		'jewels'            => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'Jewels', 'turnkey' ),
+				esc_html__( 'Jewels', 'turnkey-storefront' ),
 			'primary'             => '#E66B4C',
 			'primary-o'           => '#E66B4C',
 			'primary-o.highlight' => '#EE9782',
@@ -325,7 +326,7 @@ function turnkey_color_schemes( $color_schemes ) {
 		),
 		'modern'            => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'Modern', 'turnkey' ),
+				esc_html__( 'Modern', 'turnkey-storefront' ),
 			'primary'             => '#009EE2',
 			'primary-o'           => '#009EE2',
 			'primary-o.highlight' => '#20BCFF',
@@ -343,7 +344,7 @@ function turnkey_color_schemes( $color_schemes ) {
 		),
 		'museum'            => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'Museum', 'turnkey' ),
+				esc_html__( 'Museum', 'turnkey-storefront' ),
 			'primary'             => '#8A95A3',
 			'primary-o'           => '#8A95A3',
 			'primary-o.highlight' => '#ACB4BE',
@@ -361,7 +362,7 @@ function turnkey_color_schemes( $color_schemes ) {
 		),
 		'muted'             => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'Muted', 'turnkey' ),
+				esc_html__( 'Muted', 'turnkey-storefront' ),
 			'primary'             => '#A39097',
 			'primary-o'           => '#A39097',
 			'primary-o.highlight' => '#BFB1B6',
@@ -379,7 +380,7 @@ function turnkey_color_schemes( $color_schemes ) {
 		),
 		'nature'            => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'Nature', 'turnkey' ),
+				esc_html__( 'Nature', 'turnkey-storefront' ),
 			'primary'             => '#6D6517',
 			'primary-o'           => '#6D6517',
 			'primary-o.highlight' => '#A09422',
@@ -397,7 +398,7 @@ function turnkey_color_schemes( $color_schemes ) {
 		),
 		'ocean'             => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'Ocean', 'turnkey' ),
+				esc_html__( 'Ocean', 'turnkey-storefront' ),
 			'primary'             => '#36699F',
 			'primary-o'           => '#36699F',
 			'primary-o.highlight' => '#4F87C3',
@@ -415,7 +416,7 @@ function turnkey_color_schemes( $color_schemes ) {
 		),
 		'ohlala'            => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'Oh Lala', 'turnkey' ),
+				esc_html__( 'Oh Lala', 'turnkey-storefront' ),
 			'primary'             => '#8B65FF',
 			'primary-o'           => '#8B65FF',
 			'primary-o.highlight' => '#B9A2FF',
@@ -433,7 +434,7 @@ function turnkey_color_schemes( $color_schemes ) {
 		),
 		'papaya'            => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'Papaya', 'turnkey' ),
+				esc_html__( 'Papaya', 'turnkey-storefront' ),
 			'primary'             => '#E24538',
 			'primary-o'           => '#E24538',
 			'primary-o.highlight' => '#EA776D',
@@ -451,7 +452,7 @@ function turnkey_color_schemes( $color_schemes ) {
 		),
 		'pink'              => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'Pink', 'turnkey' ),
+				esc_html__( 'Pink', 'turnkey-storefront' ),
 			'primary'             => '#D3328B',
 			'primary-o'           => '#D3328B',
 			'primary-o.highlight' => '#DE64A8',
@@ -469,7 +470,7 @@ function turnkey_color_schemes( $color_schemes ) {
 		),
 		'professional'      => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'Professional', 'turnkey' ),
+				esc_html__( 'Professional', 'turnkey-storefront' ),
 			'primary'             => '#FF5F34',
 			'primary-o'           => '#FF5F34',
 			'primary-o.highlight' => '#FF8F71',
@@ -487,7 +488,7 @@ function turnkey_color_schemes( $color_schemes ) {
 		),
 		'sand'              => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'Sand', 'turnkey' ),
+				esc_html__( 'Sand', 'turnkey-storefront' ),
 			'primary'             => '#999482',
 			'primary-o'           => '#999482',
 			'primary-o.highlight' => '#B4B1A4',
@@ -505,7 +506,7 @@ function turnkey_color_schemes( $color_schemes ) {
 		),
 		'soft'              => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'Soft', 'turnkey' ),
+				esc_html__( 'Soft', 'turnkey-storefront' ),
 			'primary'             => '#59517A',
 			'primary-o'           => '#59517A',
 			'primary-o.highlight' => '#756B9D',
@@ -523,7 +524,7 @@ function turnkey_color_schemes( $color_schemes ) {
 		),
 		'spa'               => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'Spa', 'turnkey' ),
+				esc_html__( 'Spa', 'turnkey-storefront' ),
 			'primary'             => '#759190',
 			'primary-o'           => '#759190',
 			'primary-o.highlight' => '#97ACAB',
@@ -541,7 +542,7 @@ function turnkey_color_schemes( $color_schemes ) {
 		),
 		'spring'            => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'Spring', 'turnkey' ),
+				esc_html__( 'Spring', 'turnkey-storefront' ),
 			'primary'             => '#22A39B',
 			'primary-o'           => '#22A39B',
 			'primary-o.highlight' => '#2FD4C9',
@@ -559,7 +560,7 @@ function turnkey_color_schemes( $color_schemes ) {
 		),
 		'sunrise'           => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'Sunrise', 'turnkey' ),
+				esc_html__( 'Sunrise', 'turnkey-storefront' ),
 			'primary'             => '#A80000',
 			'primary-o'           => '#A80000',
 			'primary-o.highlight' => '#E1472C',
@@ -577,7 +578,7 @@ function turnkey_color_schemes( $color_schemes ) {
 		),
 		'sunset'            => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'Sunset', 'turnkey' ),
+				esc_html__( 'Sunset', 'turnkey-storefront' ),
 			'primary'             => '#AE271C',
 			'primary-o'           => '#AE271C',
 			'primary-o.highlight' => '#DD382A',
@@ -595,7 +596,7 @@ function turnkey_color_schemes( $color_schemes ) {
 		),
 		'terranova'         => array(
 			'label'               => /* translators: color scheme name */
-				esc_html__( 'Terra Nova', 'turnkey' ),
+				esc_html__( 'Terra Nova', 'turnkey-storefront' ),
 			'primary'             => '#A19566',
 			'primary-o'           => '#A19566',
 			'primary-o.highlight' => '#B8AF8C',
@@ -643,5 +644,5 @@ function turnkey_color_schemes( $color_schemes ) {
 	return $new_color_schemes;
 }
 
-add_filter( 'primer_color_schemes', 'turnkey_color_schemes' );
+add_filter( 'primer_color_schemes', 'turnkey_storefront_color_schemes' );
 
