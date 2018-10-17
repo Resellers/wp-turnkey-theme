@@ -25,7 +25,7 @@ branches:
 
 env:
   global:
-    - WP_THEME=turnkey
+    - WP_THEME=turnkey-storefront
 
 before_install:
   - phpenv config-rm xdebug.ini

@@ -29,12 +29,12 @@
 							printf( esc_html__( 'New to %s? Create an account to get started today.', 'turnkey-storefront' ), get_bloginfo( 'name' ) );
 							?>
 						</p>
-						<a href="<?php echo turnkey_storefront_rstore_url( 'sso', 'account/create' ); ?>" class="link" rel="nofollow"><i class="fas fa-caret-right"></i><?php esc_html_e( 'Create my account', 'turnkey-storefront' ); ?></a>
+						<a href="<?php turnkey_storefront_rstore_url( 'sso', 'account/create' ); ?>" class="link" rel="nofollow"><i class="fas fa-caret-right"></i><?php esc_html_e( 'Create my account', 'turnkey-storefront' ); ?></a>
 					</div>
 					<div class="medium-4 large-3 columns">
 						<h3><?php esc_html_e( 'Registered Users', 'turnkey-storefront' ); ?></h3>
 						<p><?php esc_html_e( 'Have an account? Sign in now.', 'turnkey-storefront' ); ?></p>
-						<a href="<?php echo turnkey_storefront_rstore_url( 'account' ); ?>" class="button" rel="nofollow"><?php esc_html_e( 'Sign in', 'turnkey-storefront' ); ?></a>
+						<a href="<?php turnkey_storefront_rstore_url( 'account' ); ?>" class="button" rel="nofollow"><?php esc_html_e( 'Sign in', 'turnkey-storefront' ); ?></a>
 					</div>
 				</div>
 			</div>
@@ -49,12 +49,12 @@
 				<div class="account-info">
 					<div class="row">
 						<div class="medium-4 large-3 large-offset-5 columns">
-							<a href="<?php echo turnkey_storefront_rstore_url( 'account', 'products' ); ?>" class="link" rel="nofollow"><h3 class="logged-in"><span class="firstname"></span>&nbsp;<span class="lastname"></span></h3></a>
+							<a href="<?php turnkey_storefront_rstore_url( 'account', 'products' ); ?>" class="link" rel="nofollow"><h3 class="logged-in"><span class="firstname"></span>&nbsp;<span class="lastname"></span></h3></a>
 							<p><?php esc_html_e( 'Customer #', 'turnkey-storefront' ); ?>: <span class="shopper-id"></span></p>
-							<a href="<?php echo turnkey_storefront_rstore_url( 'account', 'products' ); ?>" class="link" rel="nofollow"><i class="fas fa-caret-right"></i> <?php esc_html_e( 'My Products', 'turnkey-storefront' ); ?></a>
-							<a href="<?php echo turnkey_storefront_rstore_url( 'account' ); ?>" class="link" rel="nofollow"><i class="fas fa-caret-right"></i> <?php esc_html_e( 'Account Settings', 'turnkey-storefront' ); ?></a>
-							<a href="<?php echo turnkey_storefront_rstore_url( 'account', 'billing' ); ?>" class="link" rel="nofollow"><i class="fas fa-caret-right"></i> <?php esc_html_e( 'My Renewals', 'turnkey-storefront' ); ?></a>
-							<a class="link logout-link" href="<?php echo turnkey_storefront_rstore_url( 'sso', 'logout' ); ?>" rel="nofollow"><i class="fas fa-caret-right"></i> <?php esc_html_e( 'Log Out', 'turnkey-storefront' ); ?></a>
+							<a href="<?php turnkey_storefront_rstore_url( 'account', 'products' ); ?>" class="link" rel="nofollow"><i class="fas fa-caret-right"></i> <?php esc_html_e( 'My Products', 'turnkey-storefront' ); ?></a>
+							<a href="<?php turnkey_storefront_rstore_url( 'account' ); ?>" class="link" rel="nofollow"><i class="fas fa-caret-right"></i> <?php esc_html_e( 'Account Settings', 'turnkey-storefront' ); ?></a>
+							<a href="<?php turnkey_storefront_rstore_url( 'account', 'billing' ); ?>" class="link" rel="nofollow"><i class="fas fa-caret-right"></i> <?php esc_html_e( 'My Renewals', 'turnkey-storefront' ); ?></a>
+							<a class="link logout-link" href="<?php turnkey_storefront_rstore_url( 'sso', 'logout' ); ?>" rel="nofollow"><i class="fas fa-caret-right"></i> <?php esc_html_e( 'Log Out', 'turnkey-storefront' ); ?></a>
 						</div>
 					</div>
 				</div>
@@ -63,7 +63,7 @@
 	</div>
 	<div class="basic-container rstore-cart">
 		<div class="rstore-view-cart">
-			<a href="<?php echo turnkey_storefront_rstore_url( 'cart' ); ?>" class="checkout-link" rel="nofollow">
+			<a href="<?php turnkey_storefront_rstore_url( 'cart' ); ?>" class="checkout-link" rel="nofollow">
 				<i class="fas fa-shopping-cart"></i> <span class="show-for-large-up"><?php esc_html_e( 'Checkout Now', 'turnkey-storefront' ); ?></span>(<span class="rstore-cart-count">0</span>)
 			</a>
 		</div>
