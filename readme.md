@@ -76,7 +76,7 @@ packaged as web and desktop font files.
 
 Props [@bfocht](https://github.com/bfocht)
 
-### 1.0.9
+### 1.0.10
 * Fix: Missing icon and font references on sticky post
 * Fix: Incorrect license information for Font Awesome 5
 * Fix: Use theme slug for text domain
