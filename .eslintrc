@@ -54,6 +54,7 @@
 		"semi-spacing": 2,
 		"space-before-blocks": 2,
 		"space-before-function-paren": [0, {"anonymous": "always", "named": "never"}],
+		"space-in-parens": ["error", "always"],
 		"spaced-comment": 2,
 		"vars-on-top": 2,
 		"wrap-iife": 2,

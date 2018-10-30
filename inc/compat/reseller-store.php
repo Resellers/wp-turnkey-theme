@@ -148,7 +148,9 @@ function turnkey_storefront_rstore_url( $url_key, $endpoint = '' ) {
 
 	if ( function_exists( 'rstore' ) ) {
 
-		echo rstore()->api->url( $url_key, $endpoint );
+		$url = rstore()->api->url( $url_key, $endpoint );
+
+		echo esc_url( $url );
 
 	}
 

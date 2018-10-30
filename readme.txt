@@ -74,6 +74,10 @@ packaged as web and desktop font files.
 
 Props [@bfocht](https://github.com/bfocht)
 
+### 1.0.11
+* Fix: Issues found with Theme Sniffer plugin
+* Props to @zishlife for theme review
+
 ### 1.0.10
 * Fix: Missing icon and font references on sticky post
 * Fix: Incorrect license information for Font Awesome 5

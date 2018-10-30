@@ -31,8 +31,8 @@
 		<div class="column medium-10">
 			<div class="product-header">
 				<?php get_template_part( 'templates/parts/loop/post', 'title' ); ?>
-				<?php echo rstore_price( $post->ID ); ?>
-				<?php echo rstore_add_to_cart_form( $post->ID ); ?>
+				<?php rstore_price( $post->ID, true ); ?>
+				<?php rstore_add_to_cart_form( $post->ID, true ); ?>
 			</div>
 			<div class="product-summary">
 				<div class="entry-summary">

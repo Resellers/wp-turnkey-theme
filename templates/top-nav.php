@@ -9,7 +9,7 @@
 
 ?>
 <div class="rstore-top-nav">
-	<div class="<?php echo apply_filters( 'turnkey_storefront_support_phone', 'basic-container' ); ?>" ></div>
+	<div class="<?php echo esc_html( apply_filters( 'turnkey_storefront_support_phone', 'basic-container' ) ); ?>" ></div>
 	<div class="basic-container rstore-help">
 		<a href="<?php turnkey_storefront_rstore_url( 'www', 'help?pl_id={pl_id}&path=' ); ?>" target="_blank" class="help-link" rel="nofollow"><i class="fas fa-question-circle"></i> <span class="show-for-large-up"><?php esc_html_e( 'Help', 'turnkey-storefront' ); ?></span></a>
 	</div>
@@ -26,7 +26,7 @@
 						<p>
 							<?php
 							/* translators: site title */
-							printf( esc_html__( 'New to %s? Create an account to get started today.', 'turnkey-storefront' ), get_bloginfo( 'name' ) );
+							printf( esc_html__( 'New to %s? Create an account to get started today.', 'turnkey-storefront' ), esc_html( get_bloginfo( 'name' ) ) );
 							?>
 						</p>
 						<a href="<?php turnkey_storefront_rstore_url( 'sso', 'account/create' ); ?>" class="link" rel="nofollow"><i class="fas fa-caret-right"></i><?php esc_html_e( 'Create my account', 'turnkey-storefront' ); ?></a>
