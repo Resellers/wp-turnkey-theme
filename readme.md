@@ -58,29 +58,16 @@ Primer, Copyright 2018 GoDaddy Operating Company, LLC.
 License: GPL-2.0
 Source: https://github.com/godaddy/wp-primer-theme
 
-Turnkey bundles the following third-party resources:
-
-Stock photography, Pixabay
-License: Creative Commons Zero
-Source: https://pixabay.com/photo-2386034/
-
-# Icons: CC BY 4.0 License (https://creativecommons.org/licenses/by/4.0/)
-In the Font Awesome Free download, the CC BY 4.0 license applies to all icons
-packaged as SVG and JS file types.
-
-# Fonts: SIL OFL 1.1 License (https://scripts.sil.org/OFL)
-In the Font Awesome Free download, the SIL OLF license applies to all icons
-packaged as web and desktop font files.
-
 ## Changelog ##
 
-Props [@bfocht](https://github.com/bfocht)
+### 1.0.12 ###
+* Fix: Remove navigation.min.js that Theme Sniffer plugin kept complaining about
 
-### 1.0.11
+### 1.0.11 ###
 * Fix: Issues found with Theme Sniffer plugin
 * Props to @zishlife for theme review
 
-### 1.0.10
+### 1.0.10 ###
 * Fix: Missing icon and font references on sticky post
 * Fix: Incorrect license information for Font Awesome 5
 * Fix: Use theme slug for text domain
@@ -109,15 +96,19 @@ Props [@bfocht](https://github.com/bfocht)
 * Updated: brand and color palette updates
 
 ### 1.0.2 ###
-
 * Updated: thumbnail, hero image, and video
 * Change: tweaks some css based on images updates
 * Change: login to redirect to account
 
 ### 1.0.1 ###
-
 * Fix: add single product to post loop
 
 ### 1.0.0 ###
-
 * Initial release.
+
+## Resources ##
+* Stock photography: Pixabay, License: Creative Commons Zero, Source: https://pixabay.com/photo-2386034/
+* Icons: CC BY 4.0 License (https://creativecommons.org/licenses/by/4.0/) In the Font Awesome Free download, the CC BY 4.0 license applies to all icons
+packaged as SVG and JS file types.
+* Fonts: SIL OFL 1.1 License (https://scripts.sil.org/OFL) In the Font Awesome Free download, the SIL OLF license applies to all icons
+packaged as web and desktop font files.

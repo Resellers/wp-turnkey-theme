@@ -216,7 +216,8 @@ module.exports = function( grunt ) {
 
 		uglify: {
 			options: {
-				ASCIIOnly: true
+				ASCIIOnly: true,
+				sourceMap: true
 			},
 			all: {
 				expand: true,
@@ -272,7 +273,7 @@ module.exports = function( grunt ) {
 
 	require( 'matchdep' ).filterDev( 'grunt-*' ).forEach( grunt.loadNpmTasks );
 
-	grunt.registerTask( 'default',    [ 'sass', 'replace:charset', 'autoprefixer', 'cssjanus', 'jshint', 'uglify','imagemin', 'readme' ] );
+	grunt.registerTask( 'default',    [ 'sass', 'replace:charset', 'autoprefixer', 'cssjanus', 'jshint','imagemin', 'readme' ] );
 	grunt.registerTask( 'build',      [ 'default', 'clean', 'copy' ] );
 	grunt.registerTask( 'check',      [ 'devUpdate' ] );
 	grunt.registerTask( 'readme',     [ 'wp_readme_to_markdown' ] );

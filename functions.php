@@ -201,9 +201,7 @@ add_filter( 'primer_font_types', 'turnkey_storefront_font_types' );
  */
 function turnkey_storefront_scripts() {
 
-	$suffix = SCRIPT_DEBUG ? '' : '.min';
-
-	wp_enqueue_script( 'turnkey-navigation', get_stylesheet_directory_uri() . "/assets/js/navigation{$suffix}.js", array( 'jquery' ), PRIMER_CHILD_VERSION, true );
+	wp_enqueue_script( 'turnkey-navigation', get_stylesheet_directory_uri() . '/assets/js/navigation.js', array( 'jquery' ), PRIMER_CHILD_VERSION, true );
 
 }
 add_action( 'wp_enqueue_scripts', 'turnkey_storefront_scripts' );
