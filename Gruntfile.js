@@ -1,11 +1,10 @@
 /* global module, require */
 
 module.exports = function( grunt ) {
-
 	'use strict';
 
 	var pkg = grunt.file.readJSON( 'package.json' );
-	var sass = require('node-sass');
+	var sass = require( 'node-sass' );
 
 	grunt.initConfig( {
 
@@ -25,10 +24,10 @@ module.exports = function( grunt ) {
 				cascade: false
 			},
 			editor: {
-				src: [ 'editor-style.css' ]
+				src: ['editor-style.css']
 			},
 			main: {
-				src: [ 'style.css' ]
+				src: ['style.css']
 			}
 		},
 
@@ -36,7 +35,7 @@ module.exports = function( grunt ) {
 			options: {
 				force: true
 			},
-			build: [ 'build/' ]
+			build: ['build/']
 		},
 
 		copy: {
@@ -90,7 +89,7 @@ module.exports = function( grunt ) {
 			assets: {
 				expand: true,
 				cwd: 'assets/images/',
-				src: [ '**/*.{gif,jpeg,jpg,png,svg}' ],
+				src: ['**/*.{gif,jpeg,jpg,png,svg}'],
 				dest: 'assets/images/'
 			},
 			screenshot: {
@@ -101,15 +100,15 @@ module.exports = function( grunt ) {
 		},
 
 		jshint: {
-			assets: [ 'assets/js/**/*.js', '!assets/js/**/*.min.js' ],
-			gruntfile: [ 'Gruntfile.js' ]
+			assets: ['assets/js/**/*.js', '!assets/js/**/*.min.js'],
+			gruntfile: ['Gruntfile.js']
 		},
 
 		makepot: {
 			target: {
 				options: {
 					domainPath: 'languages/',
-					include: [ 'functions.php', 'inc/.+.php', 'templates/.+.php'],
+					include: ['functions.php', 'inc/.+.php', 'templates/.+.php'],
 					mainFile: 'functions.php',
 					potComments: 'Copyright (c) {year} All Rights Reserved.',
 					potFilename: pkg.name + '.pot',
@@ -130,7 +129,7 @@ module.exports = function( grunt ) {
 			files: {
 				expand: true,
 				cwd: 'languages/',
-				src: [ '*.po' ],
+				src: ['*.po'],
 				dest: 'languages/',
 				ext: '.mo'
 			}
@@ -145,7 +144,7 @@ module.exports = function( grunt ) {
 						to: ''
 					}
 				],
-				src: [ 'style*.css' ]
+				src: ['style*.css']
 			},
 			php: {
 				overwrite: true,
@@ -171,7 +170,7 @@ module.exports = function( grunt ) {
 						to: '\'PRIMER_CHILD_VERSION\', \'' + pkg.version + '\''
 					}
 				],
-				src: [ '*.php', 'inc/**/*.php', 'templates/**/*.php' ]
+				src: ['*.php', 'inc/**/*.php', 'templates/**/*.php']
 			},
 			readme: {
 				overwrite: true,
@@ -181,7 +180,7 @@ module.exports = function( grunt ) {
 						to: 'Stable tag:$1<%= pkg.version %>'
 					}
 				],
-				src: [ 'readme.txt' ]
+				src: ['readme.txt']
 			},
 
 			sass: {
@@ -192,7 +191,7 @@ module.exports = function( grunt ) {
 						to: 'Version:$1<%= pkg.version %>'
 					}
 				],
-				src: [ '.dev/sass/**/*.scss' ]
+				src: ['.dev/sass/**/*.scss']
 			}
 		},
 
@@ -222,7 +221,7 @@ module.exports = function( grunt ) {
 			all: {
 				expand: true,
 				cwd: 'assets/js',
-				src: [ '**/*.js', '!**/*.min.js' ],
+				src: ['**/*.js', '!**/*.min.js'],
 				dest: 'assets/js/',
 				ext: '.min.js'
 			}
@@ -231,11 +230,23 @@ module.exports = function( grunt ) {
 		watch: {
 			images: {
 				files: 'assets/images/**/*.{gif,jpeg,jpg,png,svg}',
-				tasks: [ 'imagemin' ]
+				tasks: ['imagemin']
 			},
 			sass: {
 				files: '.dev/sass/**/*.scss',
-				tasks: [ 'sass', 'autoprefixer', 'cssjanus' ]
+				tasks: ['sass', 'autoprefixer', 'cssjanus']
+			}
+		},
+
+		wp_deploy: {
+			plugin: {
+				options: {
+					assets_dir: '.dev/wp-org-assets/',
+					build_dir: 'build/',
+					plugin_main_file: pkg.name + '.php',
+					plugin_slug: pkg.name,
+					svn_user: grunt.file.exists( 'svn-username' ) ? grunt.file.read( 'svn-username' ).trim() : false
+				}
 			}
 		},
 
@@ -243,7 +254,7 @@ module.exports = function( grunt ) {
 			options: {
 				post_convert: function( readme ) {
 					var matches = readme.match( /\*\*Tags:\*\*(.*)\r?\n/ ),
-					    tags    = matches[1].trim().split( ', ' ),
+					    tags = matches[1].trim().split( ', ' ),
 					    section = matches[0];
 
 					for ( var i = 0; i < tags.length; i++ ) {
@@ -254,7 +265,7 @@ module.exports = function( grunt ) {
 					readme = readme.replace( matches[0], section );
 
 					// Badges
-					readme = readme.replace( '## Description ##', grunt.template.process( pkg.badges.join( ' ' ) ) + "  \r\n\r\n## Description ##" );
+					readme = readme.replace( '## Description ##', grunt.template.process( pkg.badges.join( ' ' ) ) + '  \r\n\r\n## Description ##' );
 
 					// YouTube
 					readme = readme.replace( /\[youtube\s+(?:https?:\/\/www\.youtube\.com\/watch\?v=|https?:\/\/youtu\.be\/)(.+?)\]/g, '[![Play video on YouTube](https://img.youtube.com/vi/$1/maxresdefault.jpg)](https://www.youtube.com/watch?v=$1)' );
@@ -273,12 +284,12 @@ module.exports = function( grunt ) {
 
 	require( 'matchdep' ).filterDev( 'grunt-*' ).forEach( grunt.loadNpmTasks );
 
-	grunt.registerTask( 'default',    [ 'sass', 'replace:charset', 'autoprefixer', 'cssjanus', 'jshint','imagemin', 'readme' ] );
-	grunt.registerTask( 'build',      [ 'default', 'clean', 'copy' ] );
-	grunt.registerTask( 'check',      [ 'devUpdate' ] );
-	grunt.registerTask( 'readme',     [ 'wp_readme_to_markdown' ] );
-	grunt.registerTask( 'update-mo',  [ 'potomo' ] );
-	grunt.registerTask( 'update-pot', [ 'makepot' ] );
-	grunt.registerTask( 'version',    [ 'replace', 'readme', 'build' ] );
-
+	grunt.registerTask( 'default', ['sass', 'replace:charset', 'autoprefixer', 'cssjanus', 'jshint', 'imagemin', 'readme'] );
+	grunt.registerTask( 'build', ['default', 'clean', 'copy'] );
+	grunt.registerTask( 'check', ['devUpdate'] );
+	grunt.registerTask( 'deploy',     [ 'build', 'wp_deploy', 'clean:build' ] );
+	grunt.registerTask( 'readme', ['wp_readme_to_markdown'] );
+	grunt.registerTask( 'update-mo', ['potomo'] );
+	grunt.registerTask( 'update-pot', ['makepot'] );
+	grunt.registerTask( 'version', ['replace', 'readme', 'build'] );
 };

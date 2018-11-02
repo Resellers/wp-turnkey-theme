@@ -34,7 +34,11 @@ if ( class_exists( 'Reseller_Store\Plugin' ) && rstore_is_setup() ) {
 
 	require_once __DIR__ . '/inc/compat/reseller-store.php';
 
+} else {
+
+	require_once __DIR__ . '/inc/nux/class-turnkey-storefront-nux.php';
 }
+
 require_once __DIR__ . '/inc/customizer/colors.php';
 
 /**
@@ -201,7 +205,7 @@ add_filter( 'primer_font_types', 'turnkey_storefront_font_types' );
  */
 function turnkey_storefront_scripts() {
 
-	wp_enqueue_script( 'turnkey-navigation', get_stylesheet_directory_uri() . '/assets/js/navigation.js', array( 'jquery' ), PRIMER_CHILD_VERSION, true );
+	wp_enqueue_script( 'turnkey-storefront-navigation', get_stylesheet_directory_uri() . '/assets/js/navigation.js', array( 'jquery' ), PRIMER_CHILD_VERSION, true );
 
 }
 add_action( 'wp_enqueue_scripts', 'turnkey_storefront_scripts' );
@@ -238,3 +242,15 @@ function turnkey_storefront_customize_register( WP_Customize_Manager $wp_customi
 	);
 }
 add_action( 'customize_register', 'turnkey_storefront_customize_register' );
+
+/**
+ * Theme deactivatge hook.
+ *
+ * @action switch_theme
+ *
+ * @since  NEXT
+ */
+function turnkey_storefront_deactivate() {
+	delete_option( 'turnkey_storefront_nux_dismissed' );
+}
+add_action( 'switch_theme', 'turnkey_storefront_deactivate' );

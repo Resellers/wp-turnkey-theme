@@ -9,7 +9,7 @@
 
 ?>
 <div class="rstore-top-nav">
-	<div class="<?php echo esc_html( apply_filters( 'turnkey_storefront_support_phone', 'basic-container' ) ); ?>" ></div>
+	<div class="<?php echo esc_attr( apply_filters( 'turnkey_storefront_support_phone', 'basic-container' ) ); ?>" ></div>
 	<div class="basic-container rstore-help">
 		<a href="<?php turnkey_storefront_rstore_url( 'www', 'help?pl_id={pl_id}&path=' ); ?>" target="_blank" class="help-link" rel="nofollow"><i class="fas fa-question-circle"></i> <span class="show-for-large-up"><?php esc_html_e( 'Help', 'turnkey-storefront' ); ?></span></a>
 	</div>
