@@ -61,6 +61,7 @@ Source: https://github.com/godaddy/wp-primer-theme
 = 1.0.13 =
 * Fix: use exc_attr for css class variable
 * New: Add NUX banner for Reseller Store plugin
+* New: Add theme check to build
 
 = 1.0.12 =
 * Fix: Remove navigation.min.js that Theme Sniffer plugin kept complaining about
