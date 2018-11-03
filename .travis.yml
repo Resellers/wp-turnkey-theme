@@ -49,7 +49,7 @@ install:
   - phpcs --config-set installed_paths $HOME/.composer/vendor/wp-coding-standards/wpcs
 
 before_script:
-  - curl -o /tmp/wp.phar -SL https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli-nightly.phar
+  - curl -o /tmp/wp-cli.phar -SL https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli-nightly.phar
   - chmod +x /tmp/wp-cli.phar
   - npm install && npm run build
 
@@ -73,7 +73,7 @@ jobs:
         - export THEME_CHECK=1
       script:
         - source .dev/travis.install-themecheck.sh
-        - php /tmp/wp.phar themecheck --theme=$WP_THEME --no-interactive
+        - php /tmp/wp-cli.phar themecheck --theme=$WP_THEME --no-interactive
       after_script: true # skip by returning true
 
 before_deploy:
