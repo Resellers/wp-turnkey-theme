@@ -49,7 +49,7 @@ install:
   - phpcs --config-set installed_paths $HOME/.composer/vendor/wp-coding-standards/wpcs
 
 before_script:
-  - curl https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli-nightly.phar > /tmp/wp-cli.phar
+  - curl -o /tmp/wp.phar -SL https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli-nightly.phar
   - chmod +x /tmp/wp-cli.phar
   - npm install && npm run build
 
@@ -63,16 +63,16 @@ jobs:
   exclude:
     - php: 5.6
       env: WP_VERSION=trunk
+    - php: 7.1
+      env: WP_VERSION=latest
   include:
     - stage: theme check
       php: 7.1
       env: WP_VERSION=latest
       install:
         - export THEME_CHECK=1
-        - curl -o /tmp/wp.phar -SL https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli-nightly.phar
-        - chmod +x /tmp/wp.phar
-        - source .dev/travis.install-themecheck.sh
       script:
+        - source .dev/travis.install-themecheck.sh
         - php /tmp/wp.phar themecheck --theme=$WP_THEME --no-interactive
       after_script: true # skip by returning true
 
@@ -95,3 +95,4 @@ deploy:
   on:
     tags: true
     repo: Resellers/wp-turnkey-theme
+    condition: "$THEME_CHECK == 1"
