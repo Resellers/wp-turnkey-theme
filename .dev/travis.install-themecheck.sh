@@ -24,6 +24,7 @@ php /tmp/wp-cli.phar core install \
 
 php /tmp/wp-cli.phar package install anhskohbo/wp-cli-themecheck
 php /tmp/wp-cli.phar plugin install theme-check --activate
+php /tmp/wp-cli.phar theme install primer
 
 export INSTALL_PATH=$WP_CORE_DIR/wp-content/themes/$WP_THEME
 mkdir -p $INSTALL_PATH
