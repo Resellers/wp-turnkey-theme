@@ -8,7 +8,7 @@
  * @package  Turnkey_Storefront/Inc
  * @category Class
  * @author   Bryan Focht
- * @since    NEXT
+ * @since    1.1.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -24,14 +24,14 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @package  Turnkey_Storefront/Inc
  * @category Class
  * @author   Bryan Focht
- * @since    NEXT
+ * @since    1.1.0
  */
 class Turnkey_Storefront_NUX {
 
 	/**
 	 * Setup Page Slug
 	 *
-	 * @since NEXT
+	 * @since 1.1.0
 	 *
 	 * @var string
 	 */
@@ -40,7 +40,7 @@ class Turnkey_Storefront_NUX {
 	/**
 	 * Update Page Slug
 	 *
-	 * @since NEXT
+	 * @since 1.1.0
 	 *
 	 * @var string
 	 */
@@ -49,7 +49,7 @@ class Turnkey_Storefront_NUX {
 	/**
 	 * Setup class.
 	 *
-	 * @since NEXT
+	 * @since 1.1.0
 	 */
 	public function __construct() {
 
@@ -77,7 +77,7 @@ class Turnkey_Storefront_NUX {
 	 * Load admin scripts
 	 *
 	 * @return void
-	 * @since  NEXT
+	 * @since  1.1.0
 	 */
 	public function admin_scripts() {
 
@@ -94,7 +94,7 @@ class Turnkey_Storefront_NUX {
 	/**
 	 * Output admin notices.
 	 *
-	 * @since NEXT
+	 * @since 1.1.0
 	 */
 	public function admin_notices() {
 		?>
@@ -110,7 +110,7 @@ class Turnkey_Storefront_NUX {
 	/**
 	 * AJAX dismiss notice.
 	 *
-	 * @since NEXT
+	 * @since 1.1.0
 	 */
 	public function dismiss_nux() {
 
@@ -225,7 +225,7 @@ class Turnkey_Storefront_NUX {
 	/**
 	 * Check if we are on a specific admin screen.
 	 *
-	 * @since NEXT
+	 * @since 1.1.0
 	 *
 	 * @param  string $request_uri Request URL to check.
 	 * @return bool  Returns `true` if the current admin URL contains the specified URI, otherwise `false`.

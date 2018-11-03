@@ -23,7 +23,7 @@
  *
  * @var string
  */
-define( 'PRIMER_CHILD_VERSION', '1.0.12' );
+define( 'PRIMER_CHILD_VERSION', '1.1.0' );
 
 /**
  * Load Reseller Store compatibility file.
@@ -248,7 +248,7 @@ add_action( 'customize_register', 'turnkey_storefront_customize_register' );
  *
  * @action switch_theme
  *
- * @since  NEXT
+ * @since  1.1.0
  */
 function turnkey_storefront_deactivate() {
 	delete_option( 'turnkey_storefront_nux_dismissed' );
