@@ -24,7 +24,7 @@ The plugin includes the following features:
 
 **Contributing:**
 
-You can fork and contribute to Turnkey by visiting [our public repo on GitHub](https://github.com/Resellers/wp-turnkey-theme).
+You can fork and contribute to Turnkey Storefront by visiting [our public repo on GitHub](https://github.com/Resellers/wp-turnkey-theme).
 
 == Installation ==
 
@@ -58,8 +58,13 @@ Source: https://github.com/godaddy/wp-primer-theme
 
 == Changelog ==
 
-= 1.0.13 =
-* Fix: use exc_attr for css class variable
+= 1.1.1 =
+* Update: Usage of esc_attr and esc_html
+* Check: Test admin notice dismiss in major browsers
+* Props to @poena for theme review
+
+= 1.1.0 =
+* Fix: use esc_attr for css class variable
 * New: Add NUX banner for Reseller Store plugin
 * New: Add theme check to build
 

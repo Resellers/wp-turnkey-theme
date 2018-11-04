@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://github.com/Resellers/wp-turnkey-theme/issues\n"
-"POT-Creation-Date: 2018-11-02 23:40:05+00:00\n"
+"POT-Creation-Date: 2018-11-04 23:34:26+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -174,35 +174,23 @@ msgstr ""
 msgid "Sorry, you are not allowed to do that."
 msgstr ""
 
-#: inc/nux/class-turnkey-storefront-nux.php:146
-msgid "Setup"
-msgstr ""
-
-#: inc/nux/class-turnkey-storefront-nux.php:151
+#: inc/nux/class-turnkey-storefront-nux.php:145
 msgid "Setup Reseller Store"
 msgstr ""
 
-#: inc/nux/class-turnkey-storefront-nux.php:155
-msgid "Activate"
-msgstr ""
-
-#: inc/nux/class-turnkey-storefront-nux.php:160
+#: inc/nux/class-turnkey-storefront-nux.php:151
 msgid "Activate Reseller Store"
 msgstr ""
 
-#: inc/nux/class-turnkey-storefront-nux.php:174
-msgid "Install now"
-msgstr ""
-
-#: inc/nux/class-turnkey-storefront-nux.php:179
+#: inc/nux/class-turnkey-storefront-nux.php:169
 msgid "Install Reseller Store"
 msgstr ""
 
-#: inc/nux/class-turnkey-storefront-nux.php:186
-msgid "To enable eCommerce features you need to install and activate the"
+#: inc/nux/class-turnkey-storefront-nux.php:178
+msgid "To enable eCommerce features you need to install, activate, and setup the"
 msgstr ""
 
-#: inc/nux/class-turnkey-storefront-nux.php:186
+#: inc/nux/class-turnkey-storefront-nux.php:178
 msgid "Reseller Store plugin."
 msgstr ""
 

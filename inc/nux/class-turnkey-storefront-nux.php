@@ -70,7 +70,7 @@ class Turnkey_Storefront_NUX {
 
 		add_action( 'admin_notices', array( $this, 'admin_notices' ), 99 );
 
-		add_action( 'wp_ajax_turnkey_storefront_dismiss_notice', array( $this, 'dismiss_nux' ) );
+		add_action( 'wp_ajax_turnkey_storefront_dismiss_notice', array( $this, 'dismiss_admin_notice' ) );
 	}
 
 	/**
@@ -92,7 +92,7 @@ class Turnkey_Storefront_NUX {
 	}
 
 	/**
-	 * Output admin notices.
+	 * Render admin notices.
 	 *
 	 * @since 1.1.0
 	 */
@@ -100,7 +100,7 @@ class Turnkey_Storefront_NUX {
 		?>
 		<div class="notice notice-info turnkey-storefront-notice-nux is-dismissible">
 			<div class="notice-content">
-				<h2><?php esc_attr_e( 'Thanks for installing Turnkey Storefront Theme', 'turnkey-storefront' ); ?></h2>
+				<h2><?php esc_html_e( 'Thanks for installing Turnkey Storefront Theme', 'turnkey-storefront' ); ?></h2>
 				<?php $this->install_plugin_button( 'reseller-store', 'reseller-store.php', 'Reseller Store' ); ?></p>
 			</div>
 		</div>
@@ -108,11 +108,11 @@ class Turnkey_Storefront_NUX {
 	}
 
 	/**
-	 * AJAX dismiss notice.
+	 * Dismiss admin notice.
 	 *
 	 * @since 1.1.0
 	 */
-	public function dismiss_nux() {
+	public function dismiss_admin_notice() {
 
 		if ( false === wp_verify_nonce( filter_input( INPUT_POST, 'nonce', FILTER_SANITIZE_STRING ), 'turnkey_storefront_notice_dismiss' ) ) {
 
@@ -139,28 +139,23 @@ class Turnkey_Storefront_NUX {
 
 		if ( current_user_can( 'install_plugins' ) && current_user_can( 'activate_plugins' ) ) {
 			if ( is_plugin_active( $plugin_slug . '/' . $plugin_file ) ) {
+
 				// The plugin is already active but isn't setup.
-				$url = get_admin_url( null, self::PAGE_SLUG );
+				$url     = esc_url( get_admin_url( null, self::PAGE_SLUG ) );
+				$message = esc_html__( 'Setup Reseller Store', 'turnkey-storefront' );
+				$classes = array( 'turnkey-storefront-button' );
 
-				$button = array(
-					'message' => esc_attr__( 'Setup', 'turnkey-storefront' ),
-					'url'     => esc_url( $url ),
-					'classes' => array( 'turnkey-storefront-button' ),
-				);
-
-				$button['message'] = __( 'Setup Reseller Store', 'turnkey-storefront' );
 			} elseif ( $this->is_plugin_installed( $plugin_slug ) ) {
-				// The plugin exists but isn't activated yet.
-				$button = array(
-					'message' => esc_attr__( 'Activate', 'turnkey-storefront' ),
-					'url'     => esc_url( $this->is_plugin_installed( $plugin_slug ) ),
-					'classes' => array( 'turnkey-storefront-button', 'activate-now' ),
-				);
 
-				$button['message'] = __( 'Activate Reseller Store', 'turnkey-storefront' );
+				// The plugin exists but isn't activated yet.
+				$message = esc_html__( 'Activate Reseller Store', 'turnkey-storefront' );
+				$url     = esc_url( $this->is_plugin_installed( $plugin_slug ) );
+				$classes = array( 'turnkey-storefront-button', 'activate-now' );
+
 			} else {
+
 				// The plugin doesn't exist.
-				$url    = wp_nonce_url(
+				$url = wp_nonce_url(
 					add_query_arg(
 						array(
 							'action' => 'install-plugin',
@@ -170,24 +165,21 @@ class Turnkey_Storefront_NUX {
 					),
 					'install-plugin_' . $plugin_slug
 				);
-				$button = array(
-					'message' => esc_attr__( 'Install now', 'turnkey-storefront' ),
-					'url'     => esc_url( $url ),
-					'classes' => array( 'turnkey-storefront-button', 'turnkey-storefront-install-now', 'install-now', 'install-' . $plugin_slug ),
-				);
 
-				$button['message'] = __( 'Install Reseller Store', 'turnkey-storefront' );
+				$message = esc_html__( 'Install Reseller Store', 'turnkey-storefront' );
+				$classes = array( 'turnkey-storefront-button', 'turnkey-storefront-install-now', 'install-now', 'install-' . $plugin_slug );
+
 			} // End if().
 
-			$button['classes'] = implode( ' ', $button['classes'] );
+			$classes = implode( ' ', $classes );
 
 			?>
 			<p>
-				<?php esc_attr_e( 'To enable eCommerce features you need to install and activate the', 'turnkey-storefront' ); ?>&nbsp;<a href="https://wordpress.org/plugins/<?php echo esc_attr( $plugin_slug ); ?>" target="_blank"><?php esc_attr_e( 'Reseller Store plugin.', 'turnkey-storefront' ); ?></a>
+				<?php esc_html_e( 'To enable eCommerce features you need to install, activate, and setup the', 'turnkey-storefront' ); ?>&nbsp;<a href="https://wordpress.org/plugins/<?php echo esc_attr( $plugin_slug ); ?>" target="_blank"><?php esc_html_e( 'Reseller Store plugin.', 'turnkey-storefront' ); ?></a>
 			</p>
 			<p>
 				<span class="turnkey-storefront-plugin-card plugin-card-<?php echo esc_attr( $plugin_slug ); ?>">
-					<a href="<?php echo esc_url( $button['url'] ); ?>" class="<?php echo esc_attr( $button['classes'] ); ?>" data-originaltext="<?php echo esc_attr( $button['message'] ); ?>" data-name="<?php echo esc_attr( $plugin_name ); ?>" data-slug="<?php echo esc_attr( $plugin_slug ); ?>" aria-label="<?php echo esc_attr( $button['message'] ); ?>"><?php echo esc_attr( $button['message'] ); ?></a>
+					<a href="<?php echo esc_url( $url ); ?>" class="<?php echo esc_attr( $classes ); ?>" data-originaltext="<?php echo esc_attr( $message ); ?>" data-name="<?php echo esc_attr( $plugin_name ); ?>" data-slug="<?php echo esc_attr( $plugin_slug ); ?>" aria-label="<?php echo esc_attr( $message ); ?>"><?php echo esc_html( $message ); ?></a>
 				</span>
 			</p>
 			<?php

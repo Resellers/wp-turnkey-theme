@@ -244,13 +244,16 @@ function turnkey_storefront_customize_register( WP_Customize_Manager $wp_customi
 add_action( 'customize_register', 'turnkey_storefront_customize_register' );
 
 /**
- * Theme deactivatge hook.
+ * Theme deactivate hook.
  *
  * @action switch_theme
  *
  * @since  1.1.0
  */
 function turnkey_storefront_deactivate() {
+
+	// Display the admin notice again if the theme is re-activated.
 	delete_option( 'turnkey_storefront_nux_dismissed' );
+
 }
 add_action( 'switch_theme', 'turnkey_storefront_deactivate' );
