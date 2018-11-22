@@ -178,6 +178,16 @@ function turnkey_storefront_colors( $colors ) {
 				],
 			],
 		],
+		'product_icon_colors'              => [
+			'label'   => esc_html__( 'Product icons', 'turnkey-storefront' ),
+			'section' => 'colors-content',
+			'default' => $default['primary-o'],
+			'css'     => [
+				'.svg-fill-primary-o' => [
+					'fill' => '%1$s!important',
+				],
+			],
+		],
 	];
 
 	return primer_array_replace_recursive( $colors, $overrides );
@@ -622,6 +632,7 @@ function turnkey_storefront_color_schemes( $color_schemes ) {
 			'link_color'                     => $args['primary'],
 			'button_color'                   => $args['primary'],
 			'nav_text_color'                 => $args['nav'],
+			'product_icon_colors'            => $args['primary-o'],
 			// Backgrounds.
 			'background_color'               => $args['product'],
 			'hero_background_color'          => $args['primary-o.highlight'],

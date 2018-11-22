@@ -265,41 +265,6 @@ article {
 $rstore-large: "(min-width: 1200px)";
 $rstore-medium: "(max-width: 1200px)";
 
-.rstore-domain-search {
-	label {
-		width: 100%;
-	}
-
-	@media #{$rstore-large} {
-		.input-group2,
-		.input-group {
-			display: flex;
-			width: 100%;
-		}
-
-		.search-field {
-			width: 100%;
-		}
-	}
-
-	@media #{$rstore-medium} {
-
-		input.rstore-domain-search-button {
-			width: 100%;
-		}
-
-		.search-form {
-			display:block;
-		}
-
-		.search-field {
-			width: 100%;
-			padding-right: 0;
-			padding-left: 0;
-		}
-	}
-}
-
 @media #{$rstore-large} {
 	#rstore-popResults {
 		.search-form {

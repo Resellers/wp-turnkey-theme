@@ -17,6 +17,12 @@
 			padding: 1px 0;
 			min-height: em-calc(355);
 		}
+
+		@media #{$medium-up} {
+			.search-form {
+				width: 50em;
+			}
+		}
 	}
 
 	aside {
@@ -48,7 +54,7 @@
 	}
 
 	.widget-title {
-		font-size: rem-calc(15);
+		font-size: rem-calc(40);
 		text-align: center;
 		font-weight: normal;
 	}
