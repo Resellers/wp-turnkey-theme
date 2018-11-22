@@ -60,6 +60,10 @@ Source: https://github.com/godaddy/wp-primer-theme
 
 ## Changelog ##
 
+### 1.1.2 ###
+* Update: Fix styles for search form
+* Update: Add css class for svg icons
+
 ### 1.1.1 ###
 * Update: Usage of esc_attr and esc_html
 * Check: Test admin notice dismiss in major browsers
