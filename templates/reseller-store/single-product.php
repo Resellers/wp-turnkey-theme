@@ -34,15 +34,21 @@ get_header();
 				do_action( 'primer_before_post_content' );
 
 				?>
-				<?php get_template_part( 'templates/parts/loop/post', 'thumbnail' ); ?>
-				<div class="product-header">
-					<?php get_template_part( 'templates/parts/loop/post', 'title' ); ?>
-					<?php rstore_price( $post->ID, true ); ?>
-					<?php rstore_add_to_cart_form( $post->ID, true ); ?>
-				</div>
-				<div class="product-tabs">
-					<div class="product-description">
-						<?php get_template_part( 'templates/parts/loop/post', 'content' ); ?>
+				<div class="row">
+					<div class="column medium-3">
+						<?php get_template_part( 'templates/parts/loop/post', 'thumbnail' ); ?>
+					</div>
+					<div class="column medium-9">
+						<div class="product-header">
+							<?php get_template_part( 'templates/parts/loop/post', 'title' ); ?>
+							<?php rstore_price( $post->ID, true ); ?>
+							<?php rstore_add_to_cart_form( $post->ID, true ); ?>
+						</div>
+						<div class="product-summary">
+							<div class="entry-summary">
+								<?php get_template_part( 'templates/parts/loop/post', 'content' ); ?>
+							</div>
+						</div>
 					</div>
 				</div>
 				<?php get_template_part( 'templates/parts/loop/post', 'footer' ); ?>

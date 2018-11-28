@@ -59,6 +59,8 @@ License: GPL-2.0
 Source: https://github.com/godaddy/wp-primer-theme
 
 ## Changelog ##
+### 1.1.3 ###
+* Update: Fix formatting for single product post
 
 ### 1.1.2 ###
 * Update: Fix styles for search form

@@ -25,10 +25,10 @@
 
 	?>
 	<div class="row">
-		<div class="column medium-2">
+		<div class="column medium-3">
 		<?php get_template_part( 'templates/parts/loop/post', 'thumbnail' ); ?>
 		</div>
-		<div class="column medium-10">
+		<div class="column medium-9">
 			<div class="product-header">
 				<?php get_template_part( 'templates/parts/loop/post', 'title' ); ?>
 				<?php rstore_price( $post->ID, true ); ?>

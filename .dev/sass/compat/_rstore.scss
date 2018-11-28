@@ -102,85 +102,49 @@ article {
 		background-color: #FFF;
 		color: #444;
 		border: 0;
-		border-radius: 6px
-	}
+		border-radius: 6px;
 
-	/* product post page */
-	&.rstore-product {
-
-		.product {
+		div.product {
 			margin-bottom: 0;
 			position: relative;
 		}
 
-		.featured-image {
-			@media #{$small-only} {
-				img {
-					max-width: 85%;
+		.product-header {
+			header.entry-header {
+				h2.entry-title, .archive-title {
+					font-size: 1.8rem;
+					font-size: 1.8em;
 				}
 			}
-
-			float: left;
-			width: 33%;
+			.rstore-pricing {
+				margin-bottom: 0;
+			}
 		}
 
-		.product-header {
-			float: right;
-			width: 66%;
+		.entry-meta {
+			clear: both;
+		}
+
+		.rstore-add-to-cart-form {
+			clear: both;
 
 			.rstore-message {
 				display: inline-block;
 				height: 0px;
 			}
-		}
 
-		.product-tabs {
-			clear: both;
-
-			ul.tabs {
-				list-style: none;
-				padding: 15px 0 0 1em;
-				margin: 0 0 1em;
-				overflow: hidden;
-				position: relative;
-
-				li {
-					border: 1px solid $color-border-abbr;
-					display: inline-block;
-					position: relative;
-					z-index: 0;
-					border-radius: 4px 4px 0 0;
-					margin: 0 -5px;
-					padding: .5em 1em;
-				}
-
-				&::before {
-					position: absolute;
-					content: ' ';
-					width: 100%;
-					bottom: 0;
-					left: 0;
-					border-bottom: 1px solid $color-border-abbr;
-					z-index: 1;
-				}
-
-				.product-description {
-					display: block;
-				}
-			}
-		}
-	}
-
-	/* product taxonomy list/search */
-	&.rstore-list-product {
-
-		&.reseller_product {
-
-			div.product {
-				margin-bottom: 0;
-				position: relative;
+			.rstore-add-to-cart.button {
+				margin: 0px;
+				display: inline-block;
 			}
 
+			.rstore-loading,
+			.rstore-cart {
+				margin-right: 5px;
+			}
+		}
+
+		&.rstore-list-product {
 			.entry-summary {
 				height: 250px;
 				overflow: hidden;
@@ -197,42 +161,6 @@ article {
 				height: 2em;
 				pointer-events: none;
 				background: linear-gradient(rgba(255, 255, 255, 0), #fff);
-			}
-
-			.product-header {
-				header.entry-header {
-					h2.entry-title, .archive-title {
-						font-size: 1.8rem;
-						font-size: 1.8em;
-					}
-				}
-				.rstore-pricing {
-					margin-bottom: 0;
-				}
-			}
-
-			.entry-meta {
-				clear: both;
-			}
-
-			.rstore-add-to-cart-form {
-				clear: both;
-
-				.rstore-message {
-					display: inline-block;
-					height: 0px;
-				}
-
-				.rstore-add-to-cart.button {
-					margin: 0px;
-					display: inline-block;
-				}
-
-				.rstore-loading,
-				.rstore-cart {
-					margin-right: 5px;
-				}
-
 			}
 		}
 	}

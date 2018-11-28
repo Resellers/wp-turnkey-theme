@@ -3630,6 +3630,9 @@ body.page-template-page-builder-no-header #primary {
     .featured-content .read-more:hover {
       background-color: #0ea7eb; }
 
+#wpstats {
+  display: none; }
+
 /* reseller store plugin specific css */
 .rstore-top-nav {
   z-index: 9999;
@@ -3692,70 +3695,44 @@ body.page-template-page-builder-no-header #primary {
         .rstore-top-nav .tray-dropdown.show {
           margin-top: 16px; } }
 
-article {
-  /* product post page */
-  /* product taxonomy list/search */ }
-  article.rstore-product, article.rstore-list-product {
-    margin: 10px 0;
-    padding: 40px 50px 20px 50px;
-    -webkit-box-shadow: 0 1px 6px 0 rgba(102, 102, 102, 0.25);
-    box-shadow: 0 1px 6px 0 rgba(102, 102, 102, 0.25);
-    background-color: #FFF;
-    color: #444;
-    border: 0;
-    -webkit-border-radius: 6px;
-    border-radius: 6px; }
-  article.rstore-product .product {
+article.rstore-product, article.rstore-list-product {
+  margin: 10px 0;
+  padding: 40px 50px 20px 50px;
+  -webkit-box-shadow: 0 1px 6px 0 rgba(102, 102, 102, 0.25);
+  box-shadow: 0 1px 6px 0 rgba(102, 102, 102, 0.25);
+  background-color: #FFF;
+  color: #444;
+  border: 0;
+  -webkit-border-radius: 6px;
+  border-radius: 6px; }
+  article.rstore-product div.product, article.rstore-list-product div.product {
     margin-bottom: 0;
     position: relative; }
-  article.rstore-product .featured-image {
-    float: left;
-    width: 33%; }
-    @media only screen and (max-width: 40em) {
-      article.rstore-product .featured-image img {
-        max-width: 85%; } }
-  article.rstore-product .product-header {
-    float: right;
-    width: 66%; }
-    article.rstore-product .product-header .rstore-message {
+  article.rstore-product .product-header header.entry-header h2.entry-title, article.rstore-product .product-header header.entry-header .archive-title, article.rstore-list-product .product-header header.entry-header h2.entry-title, article.rstore-list-product .product-header header.entry-header .archive-title {
+    font-size: 1.8rem;
+    font-size: 1.8em; }
+  article.rstore-product .product-header .rstore-pricing, article.rstore-list-product .product-header .rstore-pricing {
+    margin-bottom: 0; }
+  article.rstore-product .entry-meta, article.rstore-list-product .entry-meta {
+    clear: both; }
+  article.rstore-product .rstore-add-to-cart-form, article.rstore-list-product .rstore-add-to-cart-form {
+    clear: both; }
+    article.rstore-product .rstore-add-to-cart-form .rstore-message, article.rstore-list-product .rstore-add-to-cart-form .rstore-message {
       display: inline-block;
       height: 0px; }
-  article.rstore-product .product-tabs {
-    clear: both; }
-    article.rstore-product .product-tabs ul.tabs {
-      list-style: none;
-      padding: 15px 0 0 1em;
-      margin: 0 0 1em;
-      overflow: hidden;
-      position: relative; }
-      article.rstore-product .product-tabs ul.tabs li {
-        border: 1px solid #666;
-        display: inline-block;
-        position: relative;
-        z-index: 0;
-        -webkit-border-radius: 4px 4px 0 0;
-        border-radius: 4px 4px 0 0;
-        margin: 0 -5px;
-        padding: .5em 1em; }
-      article.rstore-product .product-tabs ul.tabs::before {
-        position: absolute;
-        content: ' ';
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        border-bottom: 1px solid #666;
-        z-index: 1; }
-      article.rstore-product .product-tabs ul.tabs .product-description {
-        display: block; }
-  article.rstore-list-product.reseller_product div.product {
-    margin-bottom: 0;
-    position: relative; }
-  article.rstore-list-product.reseller_product .entry-summary {
+    article.rstore-product .rstore-add-to-cart-form .rstore-add-to-cart.button, article.rstore-list-product .rstore-add-to-cart-form .rstore-add-to-cart.button {
+      margin: 0px;
+      display: inline-block; }
+    article.rstore-product .rstore-add-to-cart-form .rstore-loading,
+    article.rstore-product .rstore-add-to-cart-form .rstore-cart, article.rstore-list-product .rstore-add-to-cart-form .rstore-loading,
+    article.rstore-list-product .rstore-add-to-cart-form .rstore-cart {
+      margin-right: 5px; }
+  article.rstore-product.rstore-list-product .entry-summary, article.rstore-list-product.rstore-list-product .entry-summary {
     height: 250px;
     overflow: hidden;
     position: relative;
     margin: 0; }
-  article.rstore-list-product.reseller_product .entry-summary:after {
+  article.rstore-product.rstore-list-product .entry-summary:after, article.rstore-list-product.rstore-list-product .entry-summary:after {
     position: absolute;
     content: '';
     bottom: 0;
@@ -3766,24 +3743,6 @@ article {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#fff));
     background: -webkit-linear-gradient(rgba(255, 255, 255, 0), #fff);
     background: linear-gradient(rgba(255, 255, 255, 0), #fff); }
-  article.rstore-list-product.reseller_product .product-header header.entry-header h2.entry-title, article.rstore-list-product.reseller_product .product-header header.entry-header .archive-title {
-    font-size: 1.8rem;
-    font-size: 1.8em; }
-  article.rstore-list-product.reseller_product .product-header .rstore-pricing {
-    margin-bottom: 0; }
-  article.rstore-list-product.reseller_product .entry-meta {
-    clear: both; }
-  article.rstore-list-product.reseller_product .rstore-add-to-cart-form {
-    clear: both; }
-    article.rstore-list-product.reseller_product .rstore-add-to-cart-form .rstore-message {
-      display: inline-block;
-      height: 0px; }
-    article.rstore-list-product.reseller_product .rstore-add-to-cart-form .rstore-add-to-cart.button {
-      margin: 0px;
-      display: inline-block; }
-    article.rstore-list-product.reseller_product .rstore-add-to-cart-form .rstore-loading,
-    article.rstore-list-product.reseller_product .rstore-add-to-cart-form .rstore-cart {
-      margin-right: 5px; }
 
 /* product widget */
 @media only screen and (min-width: 40.063em) {
@@ -3803,9 +3762,6 @@ article {
     display: block; }
   #rstore-popResults .rstore-domain-search .input-continue-btn {
     width: unset; } }
-
-#wpstats {
-  display: none; }
 
 .primer-wc-cart-menu {
   display: none !important; }
