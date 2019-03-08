@@ -3292,9 +3292,6 @@ body.page-template-page-builder-no-header #primary {
     .site-header {
       padding: 5px 0;
       position: inherit; } }
-  @media only screen and (min-width: 61.063em) {
-    .site-header {
-      min-height: 121px; } }
   @media only screen and (max-width: 40em) {
     .site-header .site-title-wrapper {
       max-width: 70%; } }

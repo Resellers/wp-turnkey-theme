@@ -61,6 +61,7 @@ Source: https://github.com/godaddy/wp-primer-theme
 * Fix: Price display on product
 * Fix: Search form on safari and firefox
 * Fix: Support phone number display
+* Update: CSS changes for form and header
 
 = 1.1.3 =
 * Update: Fix formatting for single product post

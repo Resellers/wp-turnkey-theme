@@ -51,10 +51,6 @@ $entry-title-bg: rgba(0, 0, 0, 0.6) !default;
 		position: inherit;
 	}
 
-	@media #{$large-up} {
-		min-height: 121px;
-	}
-
 	.site-title-wrapper {
 		@media #{$small-only} {
 			max-width: 70%;
