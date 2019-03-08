@@ -159,7 +159,7 @@ function turnkey_storefront_rstore_url( $url_key, $endpoint = '' ) {
 /**
  * Print the product price cart form from the Reseller Store plugin.
  *
- * @since  NEXT
+ * @since  1.1.4
  *
  * @param WP_Post $post Product WP_Post instance.
  */
