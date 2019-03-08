@@ -116,7 +116,7 @@ add_action( 'primer_header', 'turnkey_storefront_top_nav', 5 );
 /**
  * Toggle the visibility of the support phone in the header.
  *
- * @filter turnkey_storefront_support_phone
+ * @filter turnkey_storefront_support_phone_classes
  * @since  1.0.0
  *
  * @param string $classes  HTML snippet for the the support phone number.
@@ -131,7 +131,7 @@ function turnkey_storefront_support_phone_classes( $classes ) {
 
 	}
 
-	return esc_html( $classes );
+	return esc_attr( $classes );
 
 }
 add_filter( 'turnkey_storefront_support_phone_classes', 'turnkey_storefront_support_phone_classes' );
@@ -151,6 +151,29 @@ function turnkey_storefront_rstore_url( $url_key, $endpoint = '' ) {
 		$url = rstore()->api->url( $url_key, $endpoint );
 
 		echo esc_url( $url );
+
+	}
+
+}
+
+/**
+ * Print the product price cart form from the Reseller Store plugin.
+ *
+ * @since  NEXT
+ *
+ * @param WP_Post $post Product WP_Post instance.
+ */
+function turnkey_storefront_price( $post ) {
+
+	if ( function_exists( 'rstore_price' ) ) {
+
+		echo rstore_price( $post->ID );
+
+	}
+
+	if ( function_exists( 'rstore_add_to_cart_form' ) ) {
+
+		rstore_add_to_cart_form( $post->ID, true );
 
 	}
 

@@ -286,19 +286,6 @@ section.error-404 {
 			line-height: 54px;
 			height: 56px;
 			padding: 0 15px;
-			background: #f9f9f9;
-		}
-
-		.search-submit {
-			font-size: 24px;
-			font-weight: bold;
-			line-height: 54px;
-			height: 56px;
-			background: #f9f9f9;
-
-			&:hover {
-				background: $secondary-color;
-			}
 		}
 	}
 }

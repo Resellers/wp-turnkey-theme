@@ -2162,35 +2162,40 @@ legend {
   padding: 0 15px; }
 
 .search-form {
-  width: 100%;
-  margin: 1.5em auto 0; }
-  .search-form .search-field {
+  margin: 1.5em auto 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .search-form label {
+    -webkit-box-flex: 3;
+    -webkit-flex-grow: 3;
+    -moz-box-flex: 3;
+    -ms-flex-positive: 3;
+    flex-grow: 3; }
+    .search-form label .search-field {
+      width: 100%;
+      border-left: none;
+      -webkit-border-top-left-radius: 0;
+      border-top-left-radius: 0;
+      -webkit-border-bottom-left-radius: 0;
+      border-bottom-left-radius: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+  .search-form .search-submit {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
     -moz-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    width: 100%;
-    border-left: none;
-    -webkit-border-top-left-radius: 0;
-    border-top-left-radius: 0;
-    -webkit-border-bottom-left-radius: 0;
-    border-bottom-left-radius: 0; }
-  .search-form .search-submit {
     -webkit-border-top-right-radius: 0;
     border-top-right-radius: 0;
     -webkit-border-bottom-right-radius: 0;
     border-bottom-right-radius: 0;
     white-space: nowrap;
     min-width: unset; }
-    @media only screen and (max-width: 40em) {
-      .search-form .search-submit {
-        width: 100%; } }
-  @media only screen and (min-width: 40.063em) {
-    .search-form label {
-      display: block;
-      float: right;
-      min-width: 68%; } }
 
 a {
   color: #39BAF3; }
@@ -2899,16 +2904,7 @@ section.error-404 {
         font-size: 24px;
         line-height: 54px;
         height: 56px;
-        padding: 0 15px;
-        background: #f9f9f9; }
-      section.error-404 .search-submit {
-        font-size: 24px;
-        font-weight: bold;
-        line-height: 54px;
-        height: 56px;
-        background: #f9f9f9; }
-        section.error-404 .search-submit:hover {
-          background: #194F6E; } }
+        padding: 0 15px; } }
 
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
@@ -3756,12 +3752,6 @@ article.rstore-product, article.rstore-list-product {
 .hero .widget.rstore-Product {
   background: transparent;
   border: none; }
-
-@media (min-width: 1200px) {
-  #rstore-popResults .search-form {
-    display: block; }
-  #rstore-popResults .rstore-domain-search .input-continue-btn {
-    width: unset; } }
 
 .primer-wc-cart-menu {
   display: none !important; }

@@ -147,33 +147,31 @@ legend {
 }
 
 .search-form {
-	width: 100%;
+	//width: 100%;
 	margin: 1.5em auto 0;
+	display: flex;
 
-	.search-field {
-		flex-grow: 1;
-		width: 100%;
-		border-right: none;
-		border-top-right-radius: 0;
-		border-bottom-right-radius: 0;
+	label {
+		flex-grow: 3;
+
+		.search-field {
+			width: 100%;
+			border-right: none;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
 	}
 
+
+
 	.search-submit {
+		flex-grow: 1;
 		border-top-left-radius: 0;
 		border-bottom-left-radius: 0;
 		white-space: nowrap;
 		min-width: unset;
-
-		@media #{$small-only} {
-			width: 100%;
-		}
-	}
-
-	@media #{$medium-up} {
-		label {
-			display: block;
-			float: left;
-			min-width: 68%;
-		}
 	}
 }

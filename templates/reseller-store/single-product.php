@@ -41,8 +41,7 @@ get_header();
 					<div class="column medium-9">
 						<div class="product-header">
 							<?php get_template_part( 'templates/parts/loop/post', 'title' ); ?>
-							<?php rstore_price( $post->ID, true ); ?>
-							<?php rstore_add_to_cart_form( $post->ID, true ); ?>
+							<?php turnkey_storefront_price( $post ); ?>
 						</div>
 						<div class="product-summary">
 							<div class="entry-summary">
