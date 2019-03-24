@@ -4097,8 +4097,7 @@ body.woocommerce-cart .primer-wc-cart-sub-menu {
 
 @font-face {
   font-family: 'uxfont';
-  src: url("assets/icons/uxfont.eot");
-  src: url("assets/icons/uxfont.eot?#iefix") format("embedded-opentype"), url("assets/icons/uxfont.woff2") format("woff2"), url("assets/icons/uxfont.woff") format("woff"), url("assets/icons/uxfont.ttf") format("truetype"); }
+  src: url("assets/icons/uxfont.woff2") format("woff2"), url("assets/icons/uxfont.woff") format("woff"), url("assets/icons/uxfont.ttf") format("truetype"); }
 
 .uxicon-check-outline:before {
   content: "\e199"; }
