@@ -102,6 +102,11 @@ function turnkey_storefront_colors( $colors ) {
 		],
 		'footer_menu_text_color'           => [
 			'default' => $default['white'],
+			'css'     => [
+				'.site-info-wrapper .social-menu a:before' => [
+					'color' => '%1$s',
+				],
+			],
 		],
 		'footer_text_color'                => [
 			'default' => $default['white'],

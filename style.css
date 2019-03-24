@@ -3,7 +3,7 @@
  * Theme URI: https://github.com/Resellers/wp-turnkey-theme
  * Author: Bryan Focht
  * Author URI: https://twitter.com/fochtb
- * Description: Turnkey Storefront is an online store oriented theme designed to work with the Reseller Store plugin. The built in customizer allows you to to set your site identity, layout, colors, media, menu, widgets, and more. This is a Primer child theme.
+ * Description: Turnkey Storefront is an online store oriented theme designed to work with the Reseller Store plugin. The built in customizer allows you to to set your site identity, layout, colors, media, menu, widgets, social media menu and more. This is a Primer child theme.
  * Version: 1.2.0
  * License: GPL-2.0
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -2667,11 +2667,11 @@ body.no-max-width .main-navigation {
   border: none; }
 
 .hero .widget.widget_text p {
-  font-size: 2.625rem;
+  font-size: 1.5rem;
+  font-size: 1.5rem;
   font-weight: lighter;
   font-style: normal;
-  padding: 0;
-  line-height: 1.25; }
+  padding: 0; }
 
 .no-results .page-header,
 .not-found .page-header {
@@ -3411,7 +3411,7 @@ body.page-template-page-builder-no-header #primary {
       width: 50em; } }
   .hero aside {
     background: none;
-    max-width: 600px;
+    max-width: 992px;
     margin: 1.5em auto 0; }
     .hero aside:last-child {
       margin-bottom: 0; }
@@ -3420,6 +3420,10 @@ body.page-template-page-builder-no-header #primary {
     .home .hero aside {
       margin-left: auto;
       margin-right: auto; }
+    @media only screen and (min-width: 48.063em) {
+      .hero aside {
+        padding-left: 1rem;
+        padding-right: 1rem; } }
   .hero .page-header h1, .hero .page-header h2 {
     padding: 1.2em;
     margin: 0;
@@ -3554,19 +3558,6 @@ body.page-template-page-builder-no-header #primary {
     font-weight: normal; }
     .site-info-wrapper a:hover {
       text-decoration: none; }
-  .site-info-wrapper .social-menu {
-    margin-bottom: 2.25em;
-    margin-bottom: 2.25rem;
-    text-align: center; }
-    .site-info-wrapper .social-menu ul {
-      margin-right: 0;
-      display: inline-block; }
-      .site-info-wrapper .social-menu ul li {
-        margin: 0 15px 0 0; }
-        .site-info-wrapper .social-menu ul li:last-child {
-          margin: 0; }
-    .site-info-wrapper .social-menu a {
-      font-size: 0; }
   .site-info-wrapper .site-info-text,
   .site-info-wrapper .site-info-text p {
     text-align: center;
@@ -3574,6 +3565,56 @@ body.page-template-page-builder-no-header #primary {
     color: #757575; }
   .site-info-wrapper .site-info-text p {
     margin-bottom: 0.625rem; }
+
+.social-menu {
+  text-align: center; }
+  @media only screen and (min-width: 48.063em), only screen and (min-width: 48.063em) {
+    .social-menu {
+      margin-bottom: 1em; } }
+  .social-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0; }
+    .social-menu ul li {
+      display: inline-block;
+      position: relative;
+      padding: 0;
+      margin: 3px; }
+      @media only screen and (min-width: 62.063em) {
+        .social-menu ul li:first-child {
+          margin-left: 0; }
+        .social-menu ul li:last-child {
+          margin-right: 0; } }
+  .social-menu a {
+    font-size: 0; }
+    .social-menu a:before {
+      display: inline-block;
+      font-size: 1.9em;
+      font-size: 1.9rem; }
+  .social-menu a[href*="wordpress.org"]:before,
+  .social-menu a[href*="wordpress.com"]:before {
+    content: "\e372"; }
+  .social-menu a[href*="facebook.com"]:before {
+    content: "\e376"; }
+  .social-menu a[href*="twitter.com"]:before {
+    content: "\e377"; }
+  .social-menu a[href*="pinterest.com"]:before {
+    content: "\e358"; }
+  .social-menu a[href*="linkedin.com"]:before {
+    content: "\e374"; }
+  .social-menu a[href*="instagram.com"]:before {
+    content: "\e378"; }
+  .social-menu a[href*="youtube.com"]:before {
+    content: "\e375"; }
+  .social-menu a[href*="yelp.com"]:before {
+    content: "\e384"; }
+  .social-menu a[href*="tumblr.com"]:before {
+    content: "\e416"; }
+  .social-menu a[href*="vimeo.com"]:before {
+    content: "\e087"; }
+  .social-menu a[href*="amazon.com"]:before {
+    content: "\e371"; }
 
 .featured-content {
   -webkit-background-size: cover;
@@ -4542,6 +4583,788 @@ body.woocommerce-cart .primer-wc-cart-sub-menu {
 
 .uxicon-questionmark-fill:before {
   content: "\e452"; }
+
+@font-face {
+  font-family: 'uxfont-2';
+  src: url("assets/icons/uxfont-2.woff2") format("woff2"), url("assets/icons/uxfont-2.woff") format("woff"); }
+
+.uxicon-2, .social-menu a[href*="wordpress.org"],
+.social-menu a[href*="wordpress.com"], .social-menu a[href*="facebook.com"], .social-menu a[href*="twitter.com"], .social-menu a[href*="pinterest.com"], .social-menu a[href*="linkedin.com"], .social-menu a[href*="instagram.com"], .social-menu a[href*="youtube.com"], .social-menu a[href*="yelp.com"], .social-menu a[href*="tumblr.com"], .social-menu a[href*="vimeo.com"], .social-menu a[href*="amazon.com"], .uxicon-cloud, .uxicon-cloud-download, .uxicon-copy, .uxicon-grab-vert, .uxicon-link, .uxicon-link-delete, .uxicon-position-e, .uxicon-position-ne, .uxicon-position-nw, .uxicon-position-se, .uxicon-position-sw, .uxicon-position-w, .uxicon-redo, .uxicon-share, .uxicon-zoom-in, .uxicon-zoom-out, .uxicon-airplane, .uxicon-alarm, .uxicon-album, .uxicon-album-check, .uxicon-album-contacts, .uxicon-anchor, .uxicon-asterisk, .uxicon-backspace, .uxicon-backward, .uxicon-barcode, .uxicon-binoculars, .uxicon-bluetooth, .uxicon-briefcase, .uxicon-brightness-down, .uxicon-brightness-up, .uxicon-cart-add, .uxicon-cart-remove, .uxicon-circle-half, .uxicon-compass, .uxicon-cut, .uxicon-database-lock, .uxicon-db-add, .uxicon-db-delete, .uxicon-db-remove, .uxicon-divide, .uxicon-dollar, .uxicon-dropdown-outline, .uxicon-dropdown-solid, .uxicon-drops, .uxicon-eject, .uxicon-ellipses, .uxicon-euro, .uxicon-facebook-outline, .uxicon-fast-backward, .uxicon-fast-forward, .uxicon-file, .uxicon-file-add, .uxicon-file-delete, .uxicon-file-down, .uxicon-file-lock, .uxicon-file-up, .uxicon-fire, .uxicon-folder-add, .uxicon-folder-asterisk, .uxicon-folder-delete, .uxicon-folder-flag, .uxicon-folder-lock, .uxicon-forward, .uxicon-frame, .uxicon-gd-logo, .uxicon-gd-logo-outline, .uxicon-global-checked, .uxicon-global-east, .uxicon-global-remove, .uxicon-global-west, .uxicon-grid-960, .uxicon-heart-outline, .uxicon-laptop, .uxicon-leaf, .uxicon-lightbulb, .uxicon-lightning, .uxicon-location, .uxicon-mail-add, .uxicon-mail-add-2, .uxicon-mail-asterisk, .uxicon-mail-clear, .uxicon-mail-delete, .uxicon-mail-flag, .uxicon-mail-lock, .uxicon-mail-open2, .uxicon-mail-remove, .uxicon-microphone, .uxicon-mobile-add, .uxicon-mobile-delete, .uxicon-mobile-pair, .uxicon-mobile-transmit, .uxicon-moon, .uxicon-music, .uxicon-mute, .uxicon-note, .uxicon-note-full, .uxicon-paintbrush, .uxicon-paperclip, .uxicon-pause, .uxicon-pin-box, .uxicon-pointer-down, .uxicon-pointer-left, .uxicon-pointer-right, .uxicon-pointer-up, .uxicon-pound, .uxicon-power, .uxicon-qr-code, .uxicon-random, .uxicon-recycle, .uxicon-resize, .uxicon-resize-lg, .uxicon-resize-sm, .uxicon-ruler, .uxicon-save-delete, .uxicon-save-open, .uxicon-save-pull, .uxicon-saved, .uxicon-signal, .uxicon-step-backward, .uxicon-step-forward, .uxicon-stop, .uxicon-stop-delete, .uxicon-stopwatch, .uxicon-subscript, .uxicon-sun, .uxicon-tablet, .uxicon-tag, .uxicon-tags, .uxicon-thumbs-down, .uxicon-thumbs-up, .uxicon-tumbler, .uxicon-turtle, .uxicon-umbrella, .uxicon-user-add, .uxicon-user-delete, .uxicon-video-camera, .uxicon-volume-down, .uxicon-volume-up, .uxicon-wi-fi, .uxicon-wi-fi2, .uxicon-accelerator, .uxicon-at, .uxicon-bulleted-list, .uxicon-check-brush, .uxicon-clipboard, .uxicon-clipboard-copied, .uxicon-clipboard-text, .uxicon-clock-refresh, .uxicon-forward-2, .uxicon-gift, .uxicon-graph, .uxicon-grid-sm, .uxicon-horizontal-menu, .uxicon-orientation-lock, .uxicon-plug, .uxicon-remove-outline, .uxicon-reply, .uxicon-reply-all, .uxicon-server-add, .uxicon-server-asterisk, .uxicon-server-delete, .uxicon-server-flag, .uxicon-server-locked, .uxicon-server-remove, .uxicon-star-half, .uxicon-vertical-menu, .uxicon-windows08, .uxicon-align-center, .uxicon-align-justify, .uxicon-align-left, .uxicon-align-right, .uxicon-amazon-box, .uxicon-apps, .uxicon-at-box, .uxicon-blogger-box, .uxicon-bold, .uxicon-bounding-box, .uxicon-box-2, .uxicon-bring-forward, .uxicon-brush-pencil, .uxicon-clear-formatting, .uxicon-create-form, .uxicon-create-line, .uxicon-create-nav, .uxicon-crop, .uxicon-disc-delete, .uxicon-disc-save, .uxicon-disc-saved, .uxicon-dropdown, .uxicon-equal-width, .uxicon-eye-dropper, .uxicon-facebook-box, .uxicon-facebook-circle, .uxicon-facebook-shop, .uxicon-flatrate, .uxicon-full-width, .uxicon-google-plus-box, .uxicon-google-plus-circle, .uxicon-img-edit, .uxicon-img-gallery, .uxicon-img-link, .uxicon-img-resize, .uxicon-img-settings, .uxicon-img-slider, .uxicon-indent-left, .uxicon-indent-right, .uxicon-instagram, .uxicon-italics, .uxicon-line-curved, .uxicon-line-straight, .uxicon-linkedin-box, .uxicon-locu, .uxicon-locu-box, .uxicon-map, .uxicon-narrow, .uxicon-nav, .uxicon-numbered-list, .uxicon-page, .uxicon-picasa-box, .uxicon-pin, .uxicon-pinterest-box, .uxicon-remove-from-page, .uxicon-retweet, .uxicon-rotate, .uxicon-send-backward, .uxicon-settings3, .uxicon-shape-circle, .uxicon-shape-polygon, .uxicon-shape-square, .uxicon-social, .uxicon-strike-through, .uxicon-superscript, .uxicon-table, .uxicon-table-drop, .uxicon-tag-comment, .uxicon-tag-end, .uxicon-tag-open, .uxicon-text-decrease, .uxicon-text-highlight, .uxicon-text-increase, .uxicon-text-resize, .uxicon-text-scale-horiz, .uxicon-text-scale-vertically, .uxicon-text-tool, .uxicon-truck, .uxicon-twitter, .uxicon-twitter-box, .uxicon-twitter-circle, .uxicon-underline, .uxicon-video, .uxicon-website-send, .uxicon-weight, .uxicon-widen, .uxicon-yelp, .uxicon-yelp-box, .uxicon-youtube-box, .uxicon-youtube-circle {
+  font-family: 'uxfont-2'; }
+
+.uxicon-cloud:before {
+  content: "\2601"; }
+
+.uxicon-cloud-download:before {
+  content: "\e025"; }
+
+.uxicon-copy:before {
+  content: "\e076"; }
+
+.uxicon-grab-vert:before {
+  content: "\e269"; }
+
+.uxicon-link:before {
+  content: "\e027"; }
+
+.uxicon-link-delete:before {
+  content: "\e028"; }
+
+.uxicon-position-e:before {
+  content: "\e392"; }
+
+.uxicon-position-ne:before {
+  content: "\e253"; }
+
+.uxicon-position-nw:before {
+  content: "\e251"; }
+
+.uxicon-position-se:before {
+  content: "\e256"; }
+
+.uxicon-position-sw:before {
+  content: "\e254"; }
+
+.uxicon-position-w:before {
+  content: "\e393"; }
+
+.uxicon-redo:before {
+  content: "\e061"; }
+
+.uxicon-share:before {
+  content: "\e306"; }
+
+.uxicon-zoom-in:before {
+  content: "\e237"; }
+
+.uxicon-zoom-out:before {
+  content: "\e238"; }
+
+.uxicon-airplane:before {
+  content: "\e282"; }
+
+.uxicon-alarm:before {
+  content: "\e054"; }
+
+.uxicon-album:before {
+  content: "\e090"; }
+
+.uxicon-album-check:before {
+  content: "\e088"; }
+
+.uxicon-album-contacts:before {
+  content: "\e089"; }
+
+.uxicon-anchor:before {
+  content: "\2693"; }
+
+.uxicon-asterisk:before {
+  content: "\002a"; }
+
+.uxicon-backspace:before {
+  content: "\e257"; }
+
+.uxicon-backward:before {
+  content: "\e173"; }
+
+.uxicon-barcode:before {
+  content: "\e259"; }
+
+.uxicon-binoculars:before {
+  content: "\e239"; }
+
+.uxicon-bluetooth:before {
+  content: "\e226"; }
+
+.uxicon-briefcase:before {
+  content: "\e332"; }
+
+.uxicon-brightness-down:before {
+  content: "\e189"; }
+
+.uxicon-brightness-up:before {
+  content: "\e190"; }
+
+.uxicon-cart-add:before {
+  content: "\e210"; }
+
+.uxicon-cart-remove:before {
+  content: "\e209"; }
+
+.uxicon-circle-half:before {
+  content: "\e092"; }
+
+.uxicon-compass:before {
+  content: "\e240"; }
+
+.uxicon-cut:before {
+  content: "\e286"; }
+
+.uxicon-database-lock:before {
+  content: "\e141"; }
+
+.uxicon-db-add:before {
+  content: "\e142"; }
+
+.uxicon-db-delete:before {
+  content: "\e143"; }
+
+.uxicon-db-remove:before {
+  content: "\e144"; }
+
+.uxicon-divide:before {
+  content: "\f7"; }
+
+.uxicon-dollar:before {
+  content: "\e228"; }
+
+.uxicon-dropdown-outline:before {
+  content: "\e084"; }
+
+.uxicon-dropdown-solid:before {
+  content: "\e087"; }
+
+.uxicon-drops:before {
+  content: "\e093"; }
+
+.uxicon-eject:before {
+  content: "\e180"; }
+
+.uxicon-ellipses:before {
+  content: "\e188"; }
+
+.uxicon-euro:before {
+  content: "\20ac"; }
+
+.uxicon-facebook-outline:before {
+  content: "\e355"; }
+
+.uxicon-fast-backward:before {
+  content: "\e172"; }
+
+.uxicon-fast-forward:before {
+  content: "\e178"; }
+
+.uxicon-file:before {
+  content: "\e131"; }
+
+.uxicon-file-add:before {
+  content: "\e132"; }
+
+.uxicon-file-delete:before {
+  content: "\e133"; }
+
+.uxicon-file-down:before {
+  content: "\e135"; }
+
+.uxicon-file-lock:before {
+  content: "\e134"; }
+
+.uxicon-file-up:before {
+  content: "\e136"; }
+
+.uxicon-fire:before {
+  content: "\e347"; }
+
+.uxicon-folder-add:before {
+  content: "\e146"; }
+
+.uxicon-folder-asterisk:before {
+  content: "\e150"; }
+
+.uxicon-folder-delete:before {
+  content: "\e147"; }
+
+.uxicon-folder-flag:before {
+  content: "\e149"; }
+
+.uxicon-folder-lock:before {
+  content: "\e148"; }
+
+.uxicon-forward:before {
+  content: "\e177"; }
+
+.uxicon-frame:before {
+  content: "\e068"; }
+
+.uxicon-gd-logo:before {
+  content: "\e466"; }
+
+.uxicon-gd-logo-outline:before {
+  content: "\e468"; }
+
+.uxicon-global-checked:before {
+  content: "\e304"; }
+
+.uxicon-global-east:before {
+  content: "\e302"; }
+
+.uxicon-global-remove:before {
+  content: "\e303"; }
+
+.uxicon-global-west:before {
+  content: "\e300"; }
+
+.uxicon-grid-960:before {
+  content: "\e160"; }
+
+.uxicon-heart-outline:before {
+  content: "\e020"; }
+
+.uxicon-laptop:before {
+  content: "\e162"; }
+
+.uxicon-leaf:before {
+  content: "\e002"; }
+
+.uxicon-lightbulb:before {
+  content: "\e065"; }
+
+.uxicon-lightning:before {
+  content: "\e241"; }
+
+.uxicon-location:before {
+  content: "\e234"; }
+
+.uxicon-mail-add:before {
+  content: "\e125"; }
+
+.uxicon-mail-add-2:before {
+  content: "\e123"; }
+
+.uxicon-mail-asterisk:before {
+  content: "\e130"; }
+
+.uxicon-mail-clear:before {
+  content: "\e126"; }
+
+.uxicon-mail-delete:before {
+  content: "\e127"; }
+
+.uxicon-mail-flag:before {
+  content: "\e128"; }
+
+.uxicon-mail-lock:before {
+  content: "\e129"; }
+
+.uxicon-mail-open2:before {
+  content: "\e122"; }
+
+.uxicon-mail-remove:before {
+  content: "\e124"; }
+
+.uxicon-microphone:before {
+  content: "\e328"; }
+
+.uxicon-mobile-add:before {
+  content: "\e168"; }
+
+.uxicon-mobile-delete:before {
+  content: "\e167"; }
+
+.uxicon-mobile-pair:before {
+  content: "\e166"; }
+
+.uxicon-mobile-transmit:before {
+  content: "\e165"; }
+
+.uxicon-moon:before {
+  content: "\e231"; }
+
+.uxicon-music:before {
+  content: "\e181"; }
+
+.uxicon-mute:before {
+  content: "\e183"; }
+
+.uxicon-note:before {
+  content: "\e019"; }
+
+.uxicon-note-full:before {
+  content: "\e018"; }
+
+.uxicon-paintbrush:before {
+  content: "\e235"; }
+
+.uxicon-paperclip:before {
+  content: "\e344"; }
+
+.uxicon-pause:before {
+  content: "\e175"; }
+
+.uxicon-pin-box:before {
+  content: "\e086"; }
+
+.uxicon-pointer-down:before {
+  content: "\e343"; }
+
+.uxicon-pointer-left:before {
+  content: "\e338"; }
+
+.uxicon-pointer-right:before {
+  content: "\e337"; }
+
+.uxicon-pointer-up:before {
+  content: "\e341"; }
+
+.uxicon-pound:before {
+  content: "\e229"; }
+
+.uxicon-power:before {
+  content: "\e064"; }
+
+.uxicon-qr-code:before {
+  content: "\e258"; }
+
+.uxicon-random:before {
+  content: "\e182"; }
+
+.uxicon-recycle:before {
+  content: "\e083"; }
+
+.uxicon-resize:before {
+  content: "\e186"; }
+
+.uxicon-resize-lg:before {
+  content: "\e216"; }
+
+.uxicon-resize-sm:before {
+  content: "\e215"; }
+
+.uxicon-ruler:before {
+  content: "\e069"; }
+
+.uxicon-save-delete:before {
+  content: "\e320"; }
+
+.uxicon-save-open:before {
+  content: "\e322"; }
+
+.uxicon-save-pull:before {
+  content: "\e321"; }
+
+.uxicon-saved:before {
+  content: "\e319"; }
+
+.uxicon-signal:before {
+  content: "\e323"; }
+
+.uxicon-step-backward:before {
+  content: "\e171"; }
+
+.uxicon-step-forward:before {
+  content: "\e179"; }
+
+.uxicon-stop:before {
+  content: "\e176"; }
+
+.uxicon-stop-delete:before {
+  content: "\e400"; }
+
+.uxicon-stopwatch:before {
+  content: "\e056"; }
+
+.uxicon-subscript:before {
+  content: "\e278"; }
+
+.uxicon-sun:before {
+  content: "\e230"; }
+
+.uxicon-tablet:before {
+  content: "\e163"; }
+
+.uxicon-tag:before {
+  content: "\e066"; }
+
+.uxicon-tags:before {
+  content: "\e067"; }
+
+.uxicon-thumbs-down:before {
+  content: "\e335"; }
+
+.uxicon-thumbs-up:before {
+  content: "\e333"; }
+
+.uxicon-tumbler:before {
+  content: "\e416"; }
+
+.uxicon-turtle:before {
+  content: "\e331"; }
+
+.uxicon-umbrella:before {
+  content: "\e014"; }
+
+.uxicon-user-add:before {
+  content: "\e006"; }
+
+.uxicon-user-delete:before {
+  content: "\e007"; }
+
+.uxicon-video-camera:before {
+  content: "\e170"; }
+
+.uxicon-volume-down:before {
+  content: "\e184"; }
+
+.uxicon-volume-up:before {
+  content: "\e185"; }
+
+.uxicon-wi-fi:before {
+  content: "\e074"; }
+
+.uxicon-wi-fi2:before {
+  content: "\e033"; }
+
+.uxicon-accelerator:before {
+  content: "\e295"; }
+
+.uxicon-at:before {
+  content: "\e029"; }
+
+.uxicon-bulleted-list:before {
+  content: "\e158"; }
+
+.uxicon-check-brush:before {
+  content: "\e079"; }
+
+.uxicon-clipboard:before {
+  content: "\e030"; }
+
+.uxicon-clipboard-copied:before {
+  content: "\e034"; }
+
+.uxicon-clipboard-text:before {
+  content: "\e404"; }
+
+.uxicon-clock-refresh:before {
+  content: "\e057"; }
+
+.uxicon-forward-2:before {
+  content: "\e222"; }
+
+.uxicon-gift:before {
+  content: "\e070"; }
+
+.uxicon-graph:before {
+  content: "\e041"; }
+
+.uxicon-grid-sm:before {
+  content: "\e157"; }
+
+.uxicon-horizontal-menu:before {
+  content: "\e273"; }
+
+.uxicon-orientation-lock:before {
+  content: "\e059"; }
+
+.uxicon-plug:before {
+  content: "\e410"; }
+
+.uxicon-remove-outline:before {
+  content: "\e409"; }
+
+.uxicon-reply:before {
+  content: "\e221"; }
+
+.uxicon-reply-all:before {
+  content: "\e223"; }
+
+.uxicon-server-add:before {
+  content: "\e288"; }
+
+.uxicon-server-asterisk:before {
+  content: "\e293"; }
+
+.uxicon-server-delete:before {
+  content: "\e290"; }
+
+.uxicon-server-flag:before {
+  content: "\e291"; }
+
+.uxicon-server-locked:before {
+  content: "\e292"; }
+
+.uxicon-server-remove:before {
+  content: "\e289"; }
+
+.uxicon-star-half:before {
+  content: "\e415"; }
+
+.uxicon-vertical-menu:before {
+  content: "\e274"; }
+
+.uxicon-windows08:before {
+  content: "\e430"; }
+
+.uxicon-align-center:before {
+  content: "\e112"; }
+
+.uxicon-align-justify:before {
+  content: "\e114"; }
+
+.uxicon-align-left:before {
+  content: "\e111"; }
+
+.uxicon-align-right:before {
+  content: "\e113"; }
+
+.uxicon-amazon-box:before {
+  content: "\e371"; }
+
+.uxicon-apps:before {
+  content: "\e001"; }
+
+.uxicon-at-box:before {
+  content: "\e380"; }
+
+.uxicon-blogger-box:before {
+  content: "\e365"; }
+
+.uxicon-bold:before {
+  content: "\e103"; }
+
+.uxicon-bounding-box:before {
+  content: "\e100"; }
+
+.uxicon-box-2:before {
+  content: "\e437"; }
+
+.uxicon-bring-forward:before {
+  content: "\e154"; }
+
+.uxicon-brush-pencil:before {
+  content: "\e351"; }
+
+.uxicon-clear-formatting:before {
+  content: "\e279"; }
+
+.uxicon-create-form:before {
+  content: "\e398"; }
+
+.uxicon-create-line:before {
+  content: "\e403"; }
+
+.uxicon-create-nav:before {
+  content: "\e397"; }
+
+.uxicon-crop:before {
+  content: "\e094"; }
+
+.uxicon-disc-delete:before {
+  content: "\e317"; }
+
+.uxicon-disc-save:before {
+  content: "\e314"; }
+
+.uxicon-disc-saved:before {
+  content: "\e315"; }
+
+.uxicon-dropdown:before {
+  content: "\e438"; }
+
+.uxicon-equal-width:before {
+  content: "\e276"; }
+
+.uxicon-eye-dropper:before {
+  content: "\e091"; }
+
+.uxicon-facebook-box:before {
+  content: "\e376"; }
+
+.uxicon-facebook-circle:before {
+  content: "\e387"; }
+
+.uxicon-facebook-shop:before {
+  content: "\e414"; }
+
+.uxicon-flatrate:before {
+  content: "\e436"; }
+
+.uxicon-full-width:before {
+  content: "\e275"; }
+
+.uxicon-google-plus-box:before {
+  content: "\e360"; }
+
+.uxicon-google-plus-circle:before {
+  content: "\e389"; }
+
+.uxicon-img-edit:before {
+  content: "\e262"; }
+
+.uxicon-img-gallery:before {
+  content: "\e394"; }
+
+.uxicon-img-link:before {
+  content: "\e263"; }
+
+.uxicon-img-resize:before {
+  content: "\e265"; }
+
+.uxicon-img-settings:before {
+  content: "\e261"; }
+
+.uxicon-img-slider:before {
+  content: "\e395"; }
+
+.uxicon-indent-left:before {
+  content: "\e110"; }
+
+.uxicon-indent-right:before {
+  content: "\e109"; }
+
+.uxicon-instagram:before {
+  content: "\e378"; }
+
+.uxicon-italics:before {
+  content: "\e102"; }
+
+.uxicon-line-curved:before {
+  content: "\e099"; }
+
+.uxicon-line-straight:before {
+  content: "\e098"; }
+
+.uxicon-linkedin-box:before {
+  content: "\e374"; }
+
+.uxicon-locu:before {
+  content: "\e356"; }
+
+.uxicon-locu-box:before {
+  content: "\e373"; }
+
+.uxicon-map:before {
+  content: "\e247"; }
+
+.uxicon-narrow:before {
+  content: "\e407"; }
+
+.uxicon-nav:before {
+  content: "\e048"; }
+
+.uxicon-numbered-list:before {
+  content: "\e280"; }
+
+.uxicon-page:before {
+  content: "\e037"; }
+
+.uxicon-picasa-box:before {
+  content: "\e366"; }
+
+.uxicon-pin:before {
+  content: "\e051"; }
+
+.uxicon-pinterest-box:before {
+  content: "\e358"; }
+
+.uxicon-remove-from-page:before {
+  content: "\e326"; }
+
+.uxicon-retweet:before {
+  content: "\e081"; }
+
+.uxicon-rotate:before {
+  content: "\e075"; }
+
+.uxicon-send-backward:before {
+  content: "\e155"; }
+
+.uxicon-settings3:before {
+  content: "\e140"; }
+
+.uxicon-shape-circle:before {
+  content: "\e096"; }
+
+.uxicon-shape-polygon:before {
+  content: "\e097"; }
+
+.uxicon-shape-square:before {
+  content: "\e095"; }
+
+.uxicon-social:before {
+  content: "\e310"; }
+
+.uxicon-strike-through:before {
+  content: "\e105"; }
+
+.uxicon-superscript:before {
+  content: "\e101"; }
+
+.uxicon-table:before {
+  content: "\e284"; }
+
+.uxicon-table-drop:before {
+  content: "\e285"; }
+
+.uxicon-tag-comment:before {
+  content: "\e120"; }
+
+.uxicon-tag-end:before {
+  content: "\e119"; }
+
+.uxicon-tag-open:before {
+  content: "\e118"; }
+
+.uxicon-text-decrease:before {
+  content: "\e116"; }
+
+.uxicon-text-highlight:before {
+  content: "\e402"; }
+
+.uxicon-text-increase:before {
+  content: "\e117"; }
+
+.uxicon-text-resize:before {
+  content: "\e108"; }
+
+.uxicon-text-scale-horiz:before {
+  content: "\e107"; }
+
+.uxicon-text-scale-vertically:before {
+  content: "\e106"; }
+
+.uxicon-text-tool:before {
+  content: "\e277"; }
+
+.uxicon-truck:before {
+  content: "\e432"; }
+
+.uxicon-twitter:before {
+  content: "\e354"; }
+
+.uxicon-twitter-box:before {
+  content: "\e377"; }
+
+.uxicon-twitter-circle:before {
+  content: "\e388"; }
+
+.uxicon-underline:before {
+  content: "\e104"; }
+
+.uxicon-video:before {
+  content: "\e009"; }
+
+.uxicon-website-send:before {
+  content: "\e045"; }
+
+.uxicon-weight:before {
+  content: "\e435"; }
+
+.uxicon-widen:before {
+  content: "\e406"; }
+
+.uxicon-yelp:before {
+  content: "\e353"; }
+
+.uxicon-yelp-box:before {
+  content: "\e384"; }
+
+.uxicon-youtube-box:before {
+  content: "\e375"; }
+
+.uxicon-youtube-circle:before {
+  content: "\e390"; }
 
 .uxicon {
   position: relative;

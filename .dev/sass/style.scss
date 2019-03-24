@@ -3,7 +3,7 @@
  * Theme URI: https://github.com/Resellers/wp-turnkey-theme
  * Author: Bryan Focht
  * Author URI: https://twitter.com/fochtb
- * Description: Turnkey Storefront is an online store oriented theme designed to work with the Reseller Store plugin. The built in customizer allows you to to set your site identity, layout, colors, media, menu, widgets, and more. This is a Primer child theme.
+ * Description: Turnkey Storefront is an online store oriented theme designed to work with the Reseller Store plugin. The built in customizer allows you to to set your site identity, layout, colors, media, menu, widgets, social media menu and more. This is a Primer child theme.
  * Version: 1.2.0
  * License: GPL-2.0
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -36,6 +36,7 @@
 @import "partials/header";
 @import "partials/hero";
 @import "partials/footer";
+@import "partials/_social-menu";
 @import "partials/featured-content";
 @import "partials/jetpack";
 @import "compat/rstore";

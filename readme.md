@@ -4,7 +4,7 @@
 **Requires at least:** 4.6  
 **Tested up to:**      5.1  
 **Requires PHP:**      5.4  
-**Stable tag:**        1.2.0  
+**Stable tag:**        1.2.1  
 **License:**           GPL-2.0  
 **License URI:**       https://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -18,11 +18,25 @@ Turnkey is a Primer child theme with a business-oriented designed for the [Resel
 
 [![Play video on YouTube](https://img.youtube.com/vi/us3y7jK55YQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=us3y7jK55YQ)
 
-The plugin includes the following features:
+The child theme adds the following features:
 * 23 additional color schemes.
-* Top nav menu above primary navigation for shopper account management, support phone number, help link, and cart link.
+* Utility menu above primary navigation for shopper account management, support phone number, help link, and cart link.
 * Additional templates for Reseller Store single product and list product (search, archive).
 * Additional CSS to style Reseller Store widgets and short codes.
+
+**Features**
+
+* Responsive Layout
+* Color Scheme Presets
+* Customize Colors
+* Customize Fonts
+* One, Two, and Three Column Layouts
+* Fixed & Fluid Widths
+* Header Image Widget Area
+* Social Links Menu
+* WooCommerce-Ready
+* Available in 29 Languages
+* RTL Language Support
 
 **Contributing:**
 
@@ -54,11 +68,14 @@ GNU General Public License for more details.
 
 Turnkey is a child theme of Primer:
 
-Primer, Copyright 2018 GoDaddy Operating Company, LLC.
-License: GPL-2.0
+Primer WordPress theme, Copyright 2017 GoDaddy Operating Company, LLC.
+Primer is distributed under the terms of the GNU GPL.
 Source: https://github.com/godaddy/wp-primer-theme
 
 ## Changelog ##
+### 1.2.1 ###
+* Fix social media menu in the footer
+
 ### 1.2.0 ###
 * Update: Replace icons to match standard storefront
 * Update: Change screen size breakpoints to match standard storefront

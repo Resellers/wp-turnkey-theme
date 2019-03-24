@@ -1,0 +1,57 @@
+@import '../icons/variables';
+@import '../icons/mixins';
+
+.social-menu {
+  text-align: center;
+
+  @media #{$medium}, #{$small} {
+    margin-bottom: 1em;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+
+    li {
+      display: inline-block;
+      position: relative;
+      padding: 0;
+      margin: 3px;
+
+      @media #{$large-up} {
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  a {
+    font-size: 0;
+    &:before {
+      display: inline-block;
+      font-size: 1.9em;
+      font-size: 1.9rem;
+    }
+  }
+
+  a[href*="wordpress.org"],
+  a[href*="wordpress.com"]  {@include uxicon-mixin("e372", 2);}
+  a[href*="facebook.com"]   {@include uxicon-mixin("e376", 2);}
+  a[href*="twitter.com"]    {@include uxicon-mixin("e377", 2);}
+  a[href*="pinterest.com"]  {@include uxicon-mixin("e358", 2);}
+  a[href*="linkedin.com"]   {@include uxicon-mixin("e374", 2);}
+  a[href*="instagram.com"]  {@include uxicon-mixin("e378", 2);}
+  a[href*="youtube.com"]    {@include uxicon-mixin("e375", 2);}
+  a[href*="yelp.com"]       {@include uxicon-mixin("e384", 2);}
+  a[href*="tumblr.com"]     {@include uxicon-mixin("e416", 2);}
+  a[href*="vimeo.com"]      {@include uxicon-mixin("e087", 2);}
+  a[href*="amazon.com"]     {@include uxicon-mixin("e371", 2);}
+}
