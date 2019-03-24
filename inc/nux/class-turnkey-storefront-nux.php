@@ -224,9 +224,8 @@ class Turnkey_Storefront_NUX {
 	 */
 	private function is_admin_uri( $request_uri ) {
 
-		$current = isset( $_SERVER['REQUEST_URI'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) ) : null; // input var ok.
+		$current = sanitize_text_field( wp_unslash( filter_input( INPUT_SERVER, 'REQUEST_URI' ) ) ); // input var ok.
 		$strpos  = strpos( basename( $current ), $request_uri );
-
 		return ( is_admin() && ( false !== $strpos ) );
 
 	}

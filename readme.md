@@ -59,6 +59,13 @@ License: GPL-2.0
 Source: https://github.com/godaddy/wp-primer-theme
 
 ## Changelog ##
+### 1.2.0 ###
+* Update: Replace icons to match standard storefront
+* Update: Change screen size breakpoints to match standard storefront
+* Update: Utility bar
+* Fix: Utility bar tray z-index
+* Fix: Remove add to cart button on domain registration
+
 ### 1.1.4 ###
 * Fix: Price display on product
 * Fix: Search form on safari and firefox
@@ -130,7 +137,3 @@ Source: https://github.com/godaddy/wp-primer-theme
 
 ## Resources ##
 * Stock photography: Pixabay, License: Creative Commons Zero, Source: https://pixabay.com/photo-2386034/
-* Icons: CC BY 4.0 License (https://creativecommons.org/licenses/by/4.0/) In the Font Awesome Free download, the CC BY 4.0 license applies to all icons
-packaged as SVG and JS file types.
-* Fonts: SIL OFL 1.1 License (https://scripts.sil.org/OFL) In the Font Awesome Free download, the SIL OLF license applies to all icons
-packaged as web and desktop font files.

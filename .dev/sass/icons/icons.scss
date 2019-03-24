@@ -1,0 +1,29 @@
+
+@import "variables";
+@import "mixins";
+@import "uxfont";
+
+
+// Catchall baseclass
+.uxicon {
+  position: relative;
+  display: inline-block;
+  font-family: $icon-font-name;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: middle;
+
+  .btn & {
+    margin-right: .25em;
+    margin-top: -2px;
+  }
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

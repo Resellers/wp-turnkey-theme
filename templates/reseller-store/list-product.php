@@ -37,7 +37,7 @@
 				<div class="entry-summary">
 					<?php get_template_part( 'templates/parts/loop/post', 'content' ); ?>
 				</div>
-				<a class="link" href="<?php the_permalink(); ?>" aria-label="<?php printf( /* translators: post title */ esc_attr__( 'More info %s', 'turnkey-storefront' ), get_the_title() ); ?>"><?php printf( /* translators: right arrow (LTR) / left arrow (RTL) */ esc_html__( 'More Info %s', 'turnkey-storefront' ), is_rtl() ? '&larr;' : '&rarr;' ); ?></a>
+				<a class="link" href="<?php the_permalink(); ?>" aria-label="<?php printf( /* translators: post title */ esc_attr__( 'More info %s', 'turnkey-storefront' ), esc_html( get_the_title() ) ); ?>"><?php printf( /* translators: right arrow (LTR) / left arrow (RTL) */ esc_html__( 'More Info %s', 'turnkey-storefront' ), is_rtl() ? '&larr;' : '&rarr;' ); ?></a>
 			</div>
 		</div>
 	</div>

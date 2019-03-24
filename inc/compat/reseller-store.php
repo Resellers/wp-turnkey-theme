@@ -165,16 +165,27 @@ function turnkey_storefront_rstore_url( $url_key, $endpoint = '' ) {
  */
 function turnkey_storefront_price( $post ) {
 
-	if ( function_exists( 'rstore_price' ) ) {
+	if ( function_exists( 'rstore_get_product_meta' ) ) {
 
-		echo rstore_price( $post->ID );
+		$id = rstore_get_product_meta( $post->ID, 'id' );
 
-	}
+		if ( 'domain' === $id ) {
 
-	if ( function_exists( 'rstore_add_to_cart_form' ) ) {
+			return;
 
-		rstore_add_to_cart_form( $post->ID, true );
+		}
 
+		if ( function_exists( 'rstore_price' ) ) {
+
+			echo wp_kses_post( rstore_price( $post->ID ) );
+
+		}
+
+		if ( function_exists( 'rstore_add_to_cart_form' ) ) {
+
+			rstore_add_to_cart_form( $post->ID, true );
+
+		}
 	}
 
 }

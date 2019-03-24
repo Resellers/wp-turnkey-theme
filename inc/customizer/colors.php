@@ -60,7 +60,7 @@ function turnkey_storefront_colors( $colors ) {
 		'menu_text_color'                  => [
 			'default' => $default['black'],
 			'css'     => [
-				'.rstore-top-nav .support-link, .rstore-top-nav .help-link, .rstore-top-nav .login-link' => [
+				'.utility-bar .support-link, .utility-bar .help-link, .utility-bar .login-link' => [
 					'color' => '%1$s',
 				],
 			],
@@ -158,12 +158,9 @@ function turnkey_storefront_colors( $colors ) {
 		'account_info'                     => [
 			'label'   => esc_html__( 'Account info Text', 'turnkey-storefront' ),
 			'section' => 'colors-menu',
-			'default' => $default['gray'],
+			'default' => $default['black'],
 			'css'     => [
-				'.rstore-top-nav .tray-dropdown .account-info .columns' => [
-					'border-left' => '1px solid %1$s',
-				],
-				'.rstore-top-nav .tray-dropdown .account-info, .rstore-top-nav .tray-dropdown .account-info h3' => [
+				'.utility-bar .tray-dropdown .account-info, .utility-bar .tray-dropdown .account-info h3, .utility-bar .tray-dropdown .account-info a.quick-links' => [
 					'color' => '%1$s',
 				],
 			],
@@ -173,7 +170,7 @@ function turnkey_storefront_colors( $colors ) {
 			'section' => 'colors-menu',
 			'default' => $default['product.faint'],
 			'css'     => [
-				'.rstore-top-nav .tray-dropdown.show' => [
+				'.utility-bar .tray-dropdown' => [
 					'background-color' => '%1$s',
 				],
 			],
@@ -640,7 +637,7 @@ function turnkey_storefront_color_schemes( $color_schemes ) {
 			'footer_widget_background_color' => $args['gray.faint'],
 			// Gray.
 			'search_form_field'              => $args['gray.light'],
-			'account_info'                   => $args['gray'],
+			'account_info'                   => $args['black'],
 			'account_info_background'        => $args['product.faint'],
 			// White.
 			'footer_menu_text_color'         => $args['white'],

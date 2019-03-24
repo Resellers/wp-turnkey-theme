@@ -1,5 +1,3 @@
-.sticky {}
-
 .no-results,
 .not-found {
 	.page-header {
@@ -50,8 +48,8 @@
 }
 
 .sticky .entry-title a:before {
-	font-family: 'Font Awesome 5 Free';
-	content: '\f08d';
+	font-family: 'uxfont';
+	content: '\e206';
 	color: $body-secondary-color;
 	font-size: rem-calc(20);
 	line-height: 1.4;

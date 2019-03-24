@@ -13,7 +13,7 @@ Variables
 .text-justify {
   text-align: justify !important; }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 48em) {
   .small-only-text-left {
     text-align: left !important; }
   .small-only-text-right {
@@ -33,7 +33,7 @@ Variables
   .small-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width: 40.063em) and (max-width: 61em) {
+@media only screen and (min-width: 48.063em) and (max-width: 62em) {
   .medium-only-text-left {
     text-align: left !important; }
   .medium-only-text-right {
@@ -43,7 +43,7 @@ Variables
   .medium-only-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: 48.063em) {
   .medium-text-left {
     text-align: left !important; }
   .medium-text-right {
@@ -53,7 +53,7 @@ Variables
   .medium-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width: 61.063em) and (max-width: 90em) {
+@media only screen and (min-width: 62.063em) and (max-width: 90em) {
   .large-only-text-left {
     text-align: left !important; }
   .large-only-text-right {
@@ -63,7 +63,7 @@ Variables
   .large-only-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width: 61.063em) {
+@media only screen and (min-width: 62.063em) {
   .large-text-left {
     text-align: left !important; }
   .large-text-right {
@@ -140,8 +140,7 @@ td {
 a {
   color: #39BAF3;
   text-decoration: none;
-  line-height: inherit;
-  font-weight: bold; }
+  line-height: inherit; }
   a:hover, a:focus {
     color: rgba(57, 186, 243, 0.8); }
   a img {
@@ -159,10 +158,10 @@ p {
     font-size: 0.9375rem;
     font-weight: lighter;
     line-height: 1.8; }
-    @media only screen and (min-width: 40.063em) {
+    @media only screen and (min-width: 48.063em) {
       p.lead {
         font-size: 1.125rem; } }
-    @media only screen and (min-width: 61.063em) {
+    @media only screen and (min-width: 62.063em) {
       p.lead {
         font-size: 1.25rem; } }
   p aside {
@@ -388,7 +387,7 @@ blockquote.aligncenter {
   blockquote.aligncenter cite {
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: 48.063em) {
   blockquote,
   blockquote p {
     font-size: 1.375rem; }
@@ -405,12 +404,12 @@ blockquote.aligncenter {
   blockquote.alignright {
     text-align: right; } }
 
-@media only screen and (min-width: 61.063em) {
+@media only screen and (min-width: 62.063em) {
   blockquote,
   blockquote p {
     font-size: 1.5rem; } }
 
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: 48.063em) {
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.4; }
   h1 {
@@ -426,7 +425,7 @@ blockquote.aligncenter {
   h6 {
     font-size: 0.75rem; } }
 
-@media only screen and (min-width: 61.063em) {
+@media only screen and (min-width: 62.063em) {
   h1 {
     font-size: 3.125rem; }
   h2 {
@@ -873,8 +872,8 @@ legend {
   margin: 0 0 1.5em; }
 
 .sticky .entry-title a:before {
-  font-family: 'Font Awesome 5 Free';
-  content: '\f08d';
+  font-family: 'uxfont';
+  content: '\e206';
   color: #757575;
   font-size: 1.25rem;
   line-height: 1.4;
@@ -885,10 +884,10 @@ legend {
   font-size: 1.5625rem;
   font-weight: lighter;
   letter-spacing: -0.3px; }
-  @media only screen and (min-width: 40.063em) {
+  @media only screen and (min-width: 48.063em) {
     .entry-title, .archive-title {
       font-size: 2.03125rem; } }
-  @media only screen and (min-width: 61.063em) {
+  @media only screen and (min-width: 62.063em) {
     .entry-title, .archive-title {
       font-size: 2.5rem; } }
   .entry-title a, .archive-title a {
@@ -938,7 +937,7 @@ legend {
     .entry-meta .posted-author:last-child,
     .entry-meta .comments-number:last-child {
       margin-right: 0; }
-    @media only screen and (max-width: 40em) {
+    @media only screen and (max-width: 48em) {
       .entry-meta .posted-date,
       .entry-meta .posted-author,
       .entry-meta .comments-number {
@@ -953,7 +952,7 @@ legend {
 .entry-media-meta .button {
   margin-right: 1em;
   margin-right: 1rem; }
-  @media only screen and (max-width: 40em) {
+  @media only screen and (max-width: 48em) {
     .entry-media-meta .button {
       margin-bottom: 10px; } }
 
@@ -1034,12 +1033,12 @@ section > h2 {
   display: table;
   margin-left: auto;
   margin-right: auto; }
-  @media only screen and (min-width: 40.063em) {
+  @media only screen and (min-width: 48.063em) {
     section > h2 {
       font-size: 24px;
       padding-bottom: 11px;
       border-bottom: 2px solid rgba(117, 117, 117, 0.28); } }
-  @media only screen and (min-width: 61.063em) {
+  @media only screen and (min-width: 62.063em) {
     section > h2 {
       font-size: 30px;
       padding-bottom: 18px; } }
@@ -1050,7 +1049,7 @@ section.error-404 {
   section.error-404 p {
     color: #212121;
     font-weight: lighter; }
-  @media only screen and (min-width: 40.063em) {
+  @media only screen and (min-width: 48.063em) {
     section.error-404 {
       padding: 100px 0; }
       section.error-404 p {
