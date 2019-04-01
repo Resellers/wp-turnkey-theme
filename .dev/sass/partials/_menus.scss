@@ -4,29 +4,39 @@
 
 	@media #{$small-only} {
 		z-index: 9999;
-		width: 100%;
 		margin-top: emCalc(25);
 	}
 }
 
 .main-navigation {
 	display: none;
-	position: relative;
-	margin-top: 20px;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+	@media #{$small-only} {
+		position: fixed;
+		left: 0;
+		z-index: 9999;
+	}
 
 	@media #{$medium-up} {
+		margin-top: 20px;
 		float: right;
 		display: block;
 		border-top-width: 0;
+		position: relative;
 	}
 
 	&.open {
 		display: block;
+		box-shadow: 0 6px 20px 0 rgba(102,102,102,.5);
 
 		@include clearfix;
 
 		background-color: white;
+
+		@media #{$small-only} {
+			height: 100%;
+			min-width: 320px;
+		}
 
 		@media #{$medium-up} {
 			background-color: none;
@@ -35,7 +45,6 @@
 
 	.expand {
 		font-size: 1.8rem;
-		color: $color-text-screen;
 		position: absolute;
 		right: 0;
 		top: 0;
@@ -43,16 +52,12 @@
 		width: 50px;
 		line-height: 1;
 		text-align: center;
-		border-bottom: none;
-		border-left: 1px solid rgba(0, 0, 0, 0.1);
 		text-indent: 0;
 
-		&:hover {
-			color: white;
-		}
-
 		&:before {
-			content: "+";
+			font-size: 16px;
+			font-family: "uxfont";
+			content: "\e367";
 		}
 
 		@media #{$medium-up} {
@@ -64,7 +69,9 @@
 		position: relative;
 
 		&.open > .expand:before {
-			content: "-";
+			font-size: 16px;
+			font-family: "uxfont";
+			content: "\e370";
 		}
 	}
 
@@ -148,7 +155,6 @@
 		padding: .4em 0;
 		margin-left: 1em;
 		margin-right: 1em;
-		color: $secondary-color;
 
 		@media #{$small-only} {
 			padding-top: 1.2em;
@@ -157,18 +163,12 @@
 			margin-right: 0;
 			padding-left: 1em;
 			padding-right: 1em;
-			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 		}
 	}
 
 	li li a {
 		margin-left: 0;
 		margin-right: 0;
-
-		&:hover,
-		&:visited:hover {
-			color: white;
-		}
 	}
 
 	.sub-menu .menu-item-has-children > a::after {
@@ -198,23 +198,18 @@ body.no-max-width .main-navigation {
 	width: 3.5rem;
 	padding: 0.2rem;
 	cursor: pointer;
-	display: none;
 	top: 15px;
 	right: 0;
-	display: block;
 	z-index: 99999;
 
 	@media #{$medium-up} {
 		display: none;
 	}
 
-	div {
-		background-color: $color-text-screen;
-		margin: 0.43rem .86rem 0.43rem 0;
-		transform: rotate(0deg);
-		transition: .15s ease-in-out;
-		transform-origin: left center;
-		height: 0.32rem;
+	&:before {
+		content: '\E159';
+		font-family: uxfont;
+		left: 0;
 	}
 
 	&.open {

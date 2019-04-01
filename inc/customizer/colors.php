@@ -60,7 +60,7 @@ function turnkey_storefront_colors( $colors ) {
 		'menu_text_color'                  => [
 			'default' => $default['black'],
 			'css'     => [
-				'.utility-bar .support-link, .utility-bar .help-link, .utility-bar .login-link' => [
+				'.utility-bar .support-link, .utility-bar .help-link, .utility-bar .login-link, .main-navigation ul.sub-menu li a:hover, .main-navigation ul.sub-menu li a:visited:hover' => [
 					'color' => '%1$s',
 				],
 			],
@@ -70,7 +70,7 @@ function turnkey_storefront_colors( $colors ) {
 			'default' => $default['white'],
 			'section' => 'colors-menu',
 			'css'     => [
-				'.main-navigation ul.sub-menu li a, .main-navigation ul.sub-menu li a:visited, .main-navigation ul.sub-menu li a:hover, .main-navigation ul.sub-menu li a:focus, .main-navigation ul.sub-menu li a:visited:hover' => [
+				'.main-navigation.open ul li a, .main-navigation ul.sub-menu li a, .main-navigation ul.sub-menu li a:visited' => [
 					'color' => '%1$s',
 				],
 			],

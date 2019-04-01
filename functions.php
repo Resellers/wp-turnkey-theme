@@ -59,7 +59,7 @@ function turnkey_storefront_move_elements() {
 	add_action( 'primer_header', 'primer_add_primary_navigation', 11 );
 	add_action( 'primer_pre_hero', 'primer_video_header', 5 );
 
-	if ( ! is_front_page() || ! is_active_sidebar( 'hero' ) ) {
+	if (  get_theme_mod( 'show_page_header', true ) && ! is_front_page() || ! is_active_sidebar( 'hero' ) ) {
 
 		add_action( 'primer_hero', 'primer_add_page_title', 12 );
 
@@ -240,6 +240,28 @@ function turnkey_storefront_customize_register( WP_Customize_Manager $wp_customi
 			'priority' => 40,
 		)
 	);
+
+    $wp_customize->add_setting(
+        'show_page_header',
+        array(
+            'default'           => 1,
+            'sanitize_callback' => 'absint',
+        )
+    );
+
+    $wp_customize->add_control(
+        'show_page_header',
+        array(
+            'label'    => esc_html__( 'Add H1 tag on Posts and Pages.', 'turnkey-storefront' ),
+            'description' => esc_html__( '(excludes Home Page)', 'turnkey-storefront' ),
+            'section'  => 'layout',
+            'settings' => 'show_page_header',
+            'type'     => 'checkbox',
+            'priority' => 40,
+        )
+    );
+
+
 }
 add_action( 'customize_register', 'turnkey_storefront_customize_register' );
 
