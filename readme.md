@@ -73,8 +73,13 @@ Primer is distributed under the terms of the GNU GPL.
 Source: https://github.com/godaddy/wp-primer-theme
 
 ## Changelog ##
+### 1.2.2 ###
+* Update: Update response primary menu
+* Update: Center privacy policy on footer
+* Update: Add shortlinks for youtube and amazon social media icons
+
 ### 1.2.1 ###
-* Fix social media menu in the footer
+* Fix: social media menu in the footer
 
 ### 1.2.0 ###
 * Update: Replace icons to match standard storefront

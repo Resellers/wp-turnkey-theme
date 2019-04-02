@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://github.com/Resellers/wp-turnkey-theme/issues\n"
-"POT-Creation-Date: 2019-03-24 13:11:05+00:00\n"
+"POT-Creation-Date: 2019-04-02 02:28:54+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -27,6 +27,14 @@ msgstr ""
 msgid "Display reseller support phone number"
 msgstr ""
 
+#: functions.php:255
+msgid "Add Hero on Posts and Pages."
+msgstr ""
+
+#: functions.php:256
+msgid "This will add H1 tag using page title (excludes Home Page)"
+msgstr ""
+
 #: inc/customizer/colors.php:69
 msgid "Submenu Text"
 msgstr ""
@@ -35,137 +43,137 @@ msgstr ""
 msgid "Navigation Text"
 msgstr ""
 
-#: inc/customizer/colors.php:132
+#: inc/customizer/colors.php:137
 msgid "Background"
 msgstr ""
 
-#: inc/customizer/colors.php:149
+#: inc/customizer/colors.php:154
 msgid "Search form"
 msgstr ""
 
-#: inc/customizer/colors.php:159
+#: inc/customizer/colors.php:164
 msgid "Account info Text"
 msgstr ""
 
-#: inc/customizer/colors.php:169
+#: inc/customizer/colors.php:174
 msgid "Account info Background"
 msgstr ""
 
-#: inc/customizer/colors.php:179
+#: inc/customizer/colors.php:184
 msgid "Product icons"
 msgstr ""
 
-#: inc/customizer/colors.php:210
+#: inc/customizer/colors.php:215
 #. translators: color scheme name
 msgid "Autumn"
 msgstr ""
 
-#: inc/customizer/colors.php:228
+#: inc/customizer/colors.php:233
 #. translators: color scheme name
 msgid "Berry"
 msgstr ""
 
-#: inc/customizer/colors.php:246
+#: inc/customizer/colors.php:251
 #. translators: color scheme name
 msgid "California Sunset"
 msgstr ""
 
-#: inc/customizer/colors.php:264
+#: inc/customizer/colors.php:269
 #. translators: color scheme name
 msgid "Earth"
 msgstr ""
 
-#: inc/customizer/colors.php:282
+#: inc/customizer/colors.php:287
 #. translators: color scheme name
 msgid "Eggplant"
 msgstr ""
 
-#: inc/customizer/colors.php:300
+#: inc/customizer/colors.php:305
 #. translators: color scheme name
 msgid "Jetlag"
 msgstr ""
 
-#: inc/customizer/colors.php:318
+#: inc/customizer/colors.php:323
 #. translators: color scheme name
 msgid "Jewels"
 msgstr ""
 
-#: inc/customizer/colors.php:336
+#: inc/customizer/colors.php:341
 #. translators: color scheme name
 msgid "Modern"
 msgstr ""
 
-#: inc/customizer/colors.php:354
+#: inc/customizer/colors.php:359
 #. translators: color scheme name
 msgid "Museum"
 msgstr ""
 
-#: inc/customizer/colors.php:372
+#: inc/customizer/colors.php:377
 #. translators: color scheme name
 msgid "Muted"
 msgstr ""
 
-#: inc/customizer/colors.php:390
+#: inc/customizer/colors.php:395
 #. translators: color scheme name
 msgid "Nature"
 msgstr ""
 
-#: inc/customizer/colors.php:408
+#: inc/customizer/colors.php:413
 #. translators: color scheme name
 msgid "Ocean"
 msgstr ""
 
-#: inc/customizer/colors.php:426
+#: inc/customizer/colors.php:431
 #. translators: color scheme name
 msgid "Oh Lala"
 msgstr ""
 
-#: inc/customizer/colors.php:444
+#: inc/customizer/colors.php:449
 #. translators: color scheme name
 msgid "Papaya"
 msgstr ""
 
-#: inc/customizer/colors.php:462
+#: inc/customizer/colors.php:467
 #. translators: color scheme name
 msgid "Pink"
 msgstr ""
 
-#: inc/customizer/colors.php:480
+#: inc/customizer/colors.php:485
 #. translators: color scheme name
 msgid "Professional"
 msgstr ""
 
-#: inc/customizer/colors.php:498
+#: inc/customizer/colors.php:503
 #. translators: color scheme name
 msgid "Sand"
 msgstr ""
 
-#: inc/customizer/colors.php:516
+#: inc/customizer/colors.php:521
 #. translators: color scheme name
 msgid "Soft"
 msgstr ""
 
-#: inc/customizer/colors.php:534
+#: inc/customizer/colors.php:539
 #. translators: color scheme name
 msgid "Spa"
 msgstr ""
 
-#: inc/customizer/colors.php:552
+#: inc/customizer/colors.php:557
 #. translators: color scheme name
 msgid "Spring"
 msgstr ""
 
-#: inc/customizer/colors.php:570
+#: inc/customizer/colors.php:575
 #. translators: color scheme name
 msgid "Sunrise"
 msgstr ""
 
-#: inc/customizer/colors.php:588
+#: inc/customizer/colors.php:593
 #. translators: color scheme name
 msgid "Sunset"
 msgstr ""
 
-#: inc/customizer/colors.php:606
+#: inc/customizer/colors.php:611
 #. translators: color scheme name
 msgid "Terra Nova"
 msgstr ""
