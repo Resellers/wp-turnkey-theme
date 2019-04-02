@@ -175,7 +175,7 @@ function turnkey_storefront_colors( $colors ) {
 			'section' => 'colors-menu',
 			'default' => $default['product.faint'],
 			'css'     => [
-				'.utility-bar .tray-dropdown' => [
+				'.utility-bar .tray-dropdown, #rstore-popResults' => [
 					'background-color' => '%1$s',
 				],
 			],

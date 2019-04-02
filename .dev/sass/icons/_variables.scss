@@ -6,6 +6,8 @@ $icon-font-name-2:           "uxfont-2";
 
 $uxicon-phone: \e324;
 $uxicon-help: \e195;
+$uxicon-chevron-right-lt: \e367;
+$uxicon-chevron-up-lt: \e370;
 
 @function ux-content($ux-var) {
   @return unquote("\"#{ $ux-var }\"");

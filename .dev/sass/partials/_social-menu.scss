@@ -49,9 +49,11 @@
   a[href*="pinterest.com"]  {@include uxicon-mixin("e358", 2);}
   a[href*="linkedin.com"]   {@include uxicon-mixin("e374", 2);}
   a[href*="instagram.com"]  {@include uxicon-mixin("e378", 2);}
+  a[href*="youtu.be"],
   a[href*="youtube.com"]    {@include uxicon-mixin("e375", 2);}
   a[href*="yelp.com"]       {@include uxicon-mixin("e384", 2);}
   a[href*="tumblr.com"]     {@include uxicon-mixin("e416", 2);}
   a[href*="vimeo.com"]      {@include uxicon-mixin("e087", 2);}
+  a[href*="amzn.to"],
   a[href*="amazon.com"]     {@include uxicon-mixin("e371", 2);}
 }

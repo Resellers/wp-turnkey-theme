@@ -1,3 +1,5 @@
+@import '../icons/variables';
+
 .main-navigation-container {
 	clear: both;
 	float:left;
@@ -48,16 +50,16 @@
 		position: absolute;
 		right: 0;
 		top: 0;
-		padding: 19px 0;
-		width: 50px;
+		padding: 19px 10px 19px 0;
+		width: 30%;
 		line-height: 1;
-		text-align: center;
+		text-align: right;
 		text-indent: 0;
 
 		&:before {
 			font-size: 16px;
-			font-family: "uxfont";
-			content: "\e367";
+			content: ux-content($uxicon-chevron-right-lt);
+			font-family: $icon-font-name;
 		}
 
 		@media #{$medium-up} {
@@ -70,8 +72,8 @@
 
 		&.open > .expand:before {
 			font-size: 16px;
-			font-family: "uxfont";
-			content: "\e370";
+			content: ux-content($uxicon-chevron-up-lt);
+			font-family: $icon-font-name;
 		}
 	}
 
