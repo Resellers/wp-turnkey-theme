@@ -71,6 +71,11 @@ Primer is distributed under the terms of the GNU GPL.
 Source: https://github.com/godaddy/wp-primer-theme
 
 == Changelog ==
+= 1.2.3 =
+* Fix: Scroll on mobile nav menu.
+* Fix: Width on mobile nav menu.
+* Add: Close button x on mobile nav menu.
+
 = 1.2.2 =
 * Update: Update response primary menu
 * Update: Center privacy policy on footer

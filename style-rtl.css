@@ -2215,7 +2215,22 @@ a {
     .main-navigation {
       position: fixed;
       right: 0;
-      z-index: 9999; } }
+      top: 0;
+      z-index: 9999;
+      overflow-y: scroll;
+      overflow-x: hidden; }
+      .admin-bar .main-navigation {
+        top: 46px; }
+      .main-navigation .menu-primary-container {
+        margin-top: 45px;
+        position: relative;
+        border-top: 1px solid rgba(0, 0, 0, 0.1); }
+      .main-navigation .mobile-menu-close:before {
+        margin: 10px 15px;
+        content: "\e208";
+        font-family: "uxfont";
+        float: left;
+        cursor: pointer; } }
   @media only screen and (min-width: 48.063em) {
     .main-navigation {
       margin-top: 20px;
@@ -2236,7 +2251,10 @@ a {
     @media only screen and (max-width: 48em) {
       .main-navigation.open {
         height: 100%;
-        min-width: 320px; } }
+        width: 320px; } }
+    @media only screen and (max-width: 320px) {
+      .main-navigation.open {
+        width: 100%; } }
     @media only screen and (min-width: 48.063em) {
       .main-navigation.open {
         background-color: none; } }
@@ -2261,7 +2279,7 @@ a {
     position: relative; }
     .main-navigation .menu-item-has-children.open > .expand:before {
       font-size: 16px;
-      content: "\e370";
+      content: "\e369";
       font-family: "uxfont"; }
   @media only screen and (min-width: 48.063em) {
     .main-navigation .menu-main-menu-container {
@@ -2317,8 +2335,8 @@ a {
     margin-left: 1em; }
     @media only screen and (max-width: 48em) {
       .main-navigation a {
-        padding-top: 1.2em;
-        padding-bottom: 1.2em;
+        padding-top: .6em;
+        padding-bottom: .6em;
         margin-right: 0;
         margin-left: 0;
         padding-right: 1em;
@@ -2358,7 +2376,7 @@ body.no-max-width .main-navigation {
     .menu-toggle {
       display: none; } }
   .menu-toggle:before {
-    content: '\E159';
+    content: "\e159";
     font-family: uxfont;
     right: 0; }
   .menu-toggle.open div:nth-child(1) {

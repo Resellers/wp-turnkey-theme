@@ -42,5 +42,9 @@
 				$( '.utility-bar .rstore-cart-count-wrapper' ).show();
 			}
 		} );
+
+		$( '.mobile-menu-close' ).on( 'click', function() {
+			$( '#site-navigation' ).add( '#menu-toggle' ).toggleClass( 'open' );
+		} );
 	} );
 }( jQuery ) );

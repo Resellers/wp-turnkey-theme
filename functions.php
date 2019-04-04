@@ -58,8 +58,9 @@ function turnkey_storefront_move_elements() {
 	add_action( 'primer_header', 'turnkey_storefront_after_site_header_wrapper', 5 );
 	add_action( 'primer_header', 'primer_add_primary_navigation', 11 );
 	add_action( 'primer_pre_hero', 'primer_video_header', 5 );
+	add_action( 'primer_site_navigation', 'turnkey_mobile_menu', 7 );
 
-	if ( get_theme_mod( 'show_page_header', true ) && ! is_front_page() || ! is_active_sidebar( 'hero' ) ) {
+	if ( get_theme_mod( 'show_page_header', true ) && ! is_front_page() ) {
 
 		add_action( 'primer_hero', 'primer_add_page_title', 12 );
 
@@ -77,6 +78,18 @@ add_action( 'template_redirect', 'turnkey_storefront_move_elements' );
 function turnkey_storefront_after_site_header_wrapper() {
 
 	echo '<div class="site-title-wrapper-after"></div>';
+
+}
+
+/**
+ * Add mobile menu.
+ *
+ * @action primer_site_navigation
+ * @since  NEXT
+ */
+function turnkey_mobile_menu() {
+
+	echo '<div class="mobile-menu-close"></div>';
 
 }
 
@@ -194,7 +207,6 @@ function turnkey_storefront_font_types( $font_types ) {
 
 }
 add_filter( 'primer_font_types', 'turnkey_storefront_font_types' );
-
 
 /**
  * Enqueue theme scripts and styles.

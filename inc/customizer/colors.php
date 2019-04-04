@@ -70,7 +70,7 @@ function turnkey_storefront_colors( $colors ) {
 			'default' => $default['white'],
 			'section' => 'colors-menu',
 			'css'     => [
-				'.main-navigation.open ul li a, .main-navigation ul.sub-menu li a, .main-navigation ul.sub-menu li a:visited' => [
+				'.main-navigation.open ul li a, .main-navigation ul.sub-menu li a, .main-navigation ul.sub-menu li a:visited, .main-navigation .mobile-menu-close' => [
 					'color' => '%1$s',
 				],
 			],
