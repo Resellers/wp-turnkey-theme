@@ -23,7 +23,7 @@
  *
  * @var string
  */
-define( 'PRIMER_CHILD_VERSION', '1.2.2' );
+define( 'PRIMER_CHILD_VERSION', '1.2.3' );
 
 /**
  * Load Reseller Store compatibility file.
@@ -85,7 +85,7 @@ function turnkey_storefront_after_site_header_wrapper() {
  * Add mobile menu.
  *
  * @action primer_site_navigation
- * @since  NEXT
+ * @since  1.2.3
  */
 function turnkey_mobile_menu() {
 
