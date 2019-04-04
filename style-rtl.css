@@ -2221,6 +2221,7 @@ a {
       overflow-x: hidden; }
       .admin-bar .main-navigation {
         top: 46px; }
+      .main-navigation .menu-principal-container,
       .main-navigation .menu-primary-container {
         margin-top: 45px;
         position: relative;
@@ -3583,54 +3584,76 @@ body.page-template-page-builder-no-header #primary {
     .site-info-wrapper .site-info-inner .site-info-text p {
       margin-bottom: 0.625rem; }
 
+.menu-social-container,
 .social-menu {
   text-align: center; }
   @media only screen and (min-width: 48.063em), only screen and (min-width: 48.063em) {
+    .menu-social-container,
     .social-menu {
       margin-bottom: 1em; } }
+  .menu-social-container ul,
   .social-menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
     font-size: 0; }
+    .menu-social-container ul li,
     .social-menu ul li {
       display: inline-block;
       position: relative;
       padding: 0;
       margin: 3px; }
       @media only screen and (min-width: 62.063em) {
+        .menu-social-container ul li:first-child,
         .social-menu ul li:first-child {
           margin-right: 0; }
+        .menu-social-container ul li:last-child,
         .social-menu ul li:last-child {
           margin-left: 0; } }
+  .menu-social-container a,
   .social-menu a {
     font-size: 0; }
+    .menu-social-container a:before,
     .social-menu a:before {
       display: inline-block;
       font-size: 1.9em;
       font-size: 1.9rem; }
+  .menu-social-container a[href*="wordpress.org"]:before,
+  .menu-social-container a[href*="wordpress.com"]:before,
   .social-menu a[href*="wordpress.org"]:before,
   .social-menu a[href*="wordpress.com"]:before {
     content: "\e372"; }
+  .menu-social-container a[href*="facebook.com"]:before,
   .social-menu a[href*="facebook.com"]:before {
     content: "\e376"; }
+  .menu-social-container a[href*="twitter.com"]:before,
   .social-menu a[href*="twitter.com"]:before {
     content: "\e377"; }
+  .menu-social-container a[href*="pinterest.com"]:before,
   .social-menu a[href*="pinterest.com"]:before {
     content: "\e358"; }
+  .menu-social-container a[href*="linkedin.com"]:before,
   .social-menu a[href*="linkedin.com"]:before {
     content: "\e374"; }
+  .menu-social-container a[href*="instagram.com"]:before,
   .social-menu a[href*="instagram.com"]:before {
     content: "\e378"; }
+  .menu-social-container a[href*="youtu.be"]:before,
+  .menu-social-container a[href*="youtube.com"]:before,
   .social-menu a[href*="youtu.be"]:before,
   .social-menu a[href*="youtube.com"]:before {
     content: "\e375"; }
+  .menu-social-container a[href*="yelp.com"]:before,
   .social-menu a[href*="yelp.com"]:before {
     content: "\e384"; }
+  .menu-social-container a[href*="tumblr.com"]:before,
   .social-menu a[href*="tumblr.com"]:before {
     content: "\e416"; }
+  .menu-social-container a[href*="vimeo.com"]:before,
   .social-menu a[href*="vimeo.com"]:before {
     content: "\e087"; }
+  .menu-social-container a[href*="amzn.to"]:before,
+  .menu-social-container a[href*="amazon.com"]:before,
   .social-menu a[href*="amzn.to"]:before,
   .social-menu a[href*="amazon.com"]:before {
     content: "\e371"; }
@@ -4607,9 +4630,23 @@ body.woocommerce-cart .primer-wc-cart-sub-menu {
   font-family: 'uxfont-2';
   src: url("assets/icons/uxfont-2.woff2") format("woff2"), url("assets/icons/uxfont-2.woff") format("woff"); }
 
-.uxicon-2, .social-menu a[href*="wordpress.org"],
-.social-menu a[href*="wordpress.com"], .social-menu a[href*="facebook.com"], .social-menu a[href*="twitter.com"], .social-menu a[href*="pinterest.com"], .social-menu a[href*="linkedin.com"], .social-menu a[href*="instagram.com"], .social-menu a[href*="youtu.be"],
-.social-menu a[href*="youtube.com"], .social-menu a[href*="yelp.com"], .social-menu a[href*="tumblr.com"], .social-menu a[href*="vimeo.com"], .social-menu a[href*="amzn.to"],
+.uxicon-2, .menu-social-container a[href*="wordpress.org"],
+.menu-social-container a[href*="wordpress.com"],
+.social-menu a[href*="wordpress.org"],
+.social-menu a[href*="wordpress.com"], .menu-social-container a[href*="facebook.com"],
+.social-menu a[href*="facebook.com"], .menu-social-container a[href*="twitter.com"],
+.social-menu a[href*="twitter.com"], .menu-social-container a[href*="pinterest.com"],
+.social-menu a[href*="pinterest.com"], .menu-social-container a[href*="linkedin.com"],
+.social-menu a[href*="linkedin.com"], .menu-social-container a[href*="instagram.com"],
+.social-menu a[href*="instagram.com"], .menu-social-container a[href*="youtu.be"],
+.menu-social-container a[href*="youtube.com"],
+.social-menu a[href*="youtu.be"],
+.social-menu a[href*="youtube.com"], .menu-social-container a[href*="yelp.com"],
+.social-menu a[href*="yelp.com"], .menu-social-container a[href*="tumblr.com"],
+.social-menu a[href*="tumblr.com"], .menu-social-container a[href*="vimeo.com"],
+.social-menu a[href*="vimeo.com"], .menu-social-container a[href*="amzn.to"],
+.menu-social-container a[href*="amazon.com"],
+.social-menu a[href*="amzn.to"],
 .social-menu a[href*="amazon.com"], .uxicon-cloud, .uxicon-cloud-download, .uxicon-copy, .uxicon-grab-vert, .uxicon-link, .uxicon-link-delete, .uxicon-position-e, .uxicon-position-ne, .uxicon-position-nw, .uxicon-position-se, .uxicon-position-sw, .uxicon-position-w, .uxicon-redo, .uxicon-share, .uxicon-zoom-in, .uxicon-zoom-out, .uxicon-airplane, .uxicon-alarm, .uxicon-album, .uxicon-album-check, .uxicon-album-contacts, .uxicon-anchor, .uxicon-asterisk, .uxicon-backspace, .uxicon-backward, .uxicon-barcode, .uxicon-binoculars, .uxicon-bluetooth, .uxicon-briefcase, .uxicon-brightness-down, .uxicon-brightness-up, .uxicon-cart-add, .uxicon-cart-remove, .uxicon-circle-half, .uxicon-compass, .uxicon-cut, .uxicon-database-lock, .uxicon-db-add, .uxicon-db-delete, .uxicon-db-remove, .uxicon-divide, .uxicon-dollar, .uxicon-dropdown-outline, .uxicon-dropdown-solid, .uxicon-drops, .uxicon-eject, .uxicon-ellipses, .uxicon-euro, .uxicon-facebook-outline, .uxicon-fast-backward, .uxicon-fast-forward, .uxicon-file, .uxicon-file-add, .uxicon-file-delete, .uxicon-file-down, .uxicon-file-lock, .uxicon-file-up, .uxicon-fire, .uxicon-folder-add, .uxicon-folder-asterisk, .uxicon-folder-delete, .uxicon-folder-flag, .uxicon-folder-lock, .uxicon-forward, .uxicon-frame, .uxicon-gd-logo, .uxicon-gd-logo-outline, .uxicon-global-checked, .uxicon-global-east, .uxicon-global-remove, .uxicon-global-west, .uxicon-grid-960, .uxicon-heart-outline, .uxicon-laptop, .uxicon-leaf, .uxicon-lightbulb, .uxicon-lightning, .uxicon-location, .uxicon-mail-add, .uxicon-mail-add-2, .uxicon-mail-asterisk, .uxicon-mail-clear, .uxicon-mail-delete, .uxicon-mail-flag, .uxicon-mail-lock, .uxicon-mail-open2, .uxicon-mail-remove, .uxicon-microphone, .uxicon-mobile-add, .uxicon-mobile-delete, .uxicon-mobile-pair, .uxicon-mobile-transmit, .uxicon-moon, .uxicon-music, .uxicon-mute, .uxicon-note, .uxicon-note-full, .uxicon-paintbrush, .uxicon-paperclip, .uxicon-pause, .uxicon-pin-box, .uxicon-pointer-down, .uxicon-pointer-left, .uxicon-pointer-right, .uxicon-pointer-up, .uxicon-pound, .uxicon-power, .uxicon-qr-code, .uxicon-random, .uxicon-recycle, .uxicon-resize, .uxicon-resize-lg, .uxicon-resize-sm, .uxicon-ruler, .uxicon-save-delete, .uxicon-save-open, .uxicon-save-pull, .uxicon-saved, .uxicon-signal, .uxicon-step-backward, .uxicon-step-forward, .uxicon-stop, .uxicon-stop-delete, .uxicon-stopwatch, .uxicon-subscript, .uxicon-sun, .uxicon-tablet, .uxicon-tag, .uxicon-tags, .uxicon-thumbs-down, .uxicon-thumbs-up, .uxicon-tumbler, .uxicon-turtle, .uxicon-umbrella, .uxicon-user-add, .uxicon-user-delete, .uxicon-video-camera, .uxicon-volume-down, .uxicon-volume-up, .uxicon-wi-fi, .uxicon-wi-fi2, .uxicon-accelerator, .uxicon-at, .uxicon-bulleted-list, .uxicon-check-brush, .uxicon-clipboard, .uxicon-clipboard-copied, .uxicon-clipboard-text, .uxicon-clock-refresh, .uxicon-forward-2, .uxicon-gift, .uxicon-graph, .uxicon-grid-sm, .uxicon-horizontal-menu, .uxicon-orientation-lock, .uxicon-plug, .uxicon-remove-outline, .uxicon-reply, .uxicon-reply-all, .uxicon-server-add, .uxicon-server-asterisk, .uxicon-server-delete, .uxicon-server-flag, .uxicon-server-locked, .uxicon-server-remove, .uxicon-star-half, .uxicon-vertical-menu, .uxicon-windows08, .uxicon-align-center, .uxicon-align-justify, .uxicon-align-left, .uxicon-align-right, .uxicon-amazon-box, .uxicon-apps, .uxicon-at-box, .uxicon-blogger-box, .uxicon-bold, .uxicon-bounding-box, .uxicon-box-2, .uxicon-bring-forward, .uxicon-brush-pencil, .uxicon-clear-formatting, .uxicon-create-form, .uxicon-create-line, .uxicon-create-nav, .uxicon-crop, .uxicon-disc-delete, .uxicon-disc-save, .uxicon-disc-saved, .uxicon-dropdown, .uxicon-equal-width, .uxicon-eye-dropper, .uxicon-facebook-box, .uxicon-facebook-circle, .uxicon-facebook-shop, .uxicon-flatrate, .uxicon-full-width, .uxicon-google-plus-box, .uxicon-google-plus-circle, .uxicon-img-edit, .uxicon-img-gallery, .uxicon-img-link, .uxicon-img-resize, .uxicon-img-settings, .uxicon-img-slider, .uxicon-indent-left, .uxicon-indent-right, .uxicon-instagram, .uxicon-italics, .uxicon-line-curved, .uxicon-line-straight, .uxicon-linkedin-box, .uxicon-locu, .uxicon-locu-box, .uxicon-map, .uxicon-narrow, .uxicon-nav, .uxicon-numbered-list, .uxicon-page, .uxicon-picasa-box, .uxicon-pin, .uxicon-pinterest-box, .uxicon-remove-from-page, .uxicon-retweet, .uxicon-rotate, .uxicon-send-backward, .uxicon-settings3, .uxicon-shape-circle, .uxicon-shape-polygon, .uxicon-shape-square, .uxicon-social, .uxicon-strike-through, .uxicon-superscript, .uxicon-table, .uxicon-table-drop, .uxicon-tag-comment, .uxicon-tag-end, .uxicon-tag-open, .uxicon-text-decrease, .uxicon-text-highlight, .uxicon-text-increase, .uxicon-text-resize, .uxicon-text-scale-horiz, .uxicon-text-scale-vertically, .uxicon-text-tool, .uxicon-truck, .uxicon-twitter, .uxicon-twitter-box, .uxicon-twitter-circle, .uxicon-underline, .uxicon-video, .uxicon-website-send, .uxicon-weight, .uxicon-widen, .uxicon-yelp, .uxicon-yelp-box, .uxicon-youtube-box, .uxicon-youtube-circle {
   font-family: 'uxfont-2'; }
 
