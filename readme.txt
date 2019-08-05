@@ -2,7 +2,7 @@
 Contributors:      bfocht
 Tags:              one-column, two-columns, three-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-image-header, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, e-commerce
 Requires at least: 4.6
-Tested up to:      5.1
+Tested up to:      5.2
 Requires PHP:      5.4
 Stable tag:        1.2.3
 License:           GPL-2.0

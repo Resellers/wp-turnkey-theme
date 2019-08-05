@@ -7,7 +7,6 @@
   "license": "GPL-2.0",
   "repository": "Resellers/wp-turnkey-theme",
   "homepage": "https://www.turnkeystorefront.dev",
-  "badgekey": "L0k5aTRJOUlhanB2bUIvTHVzWEtleHlPaDVYTmRoZ0xqWlF4aDRPTU1Naz0tLUM1NWY4TkJGNkdlOVJKSmZ1OGRhVlE9PQ==--2eaf25204bb6603b1a001244de08111ef587fa08",
   "bugs": {
     "url": "https://github.com/Resellers/wp-turnkey-theme/issues"
   },
@@ -17,7 +16,6 @@
   },
   "badges": [
     "[![Build Status](https://travis-ci.org/<%= pkg.repository %>.svg?branch=master)](https://travis-ci.org/<%= pkg.repository %>)",
-    "[![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=<%= pkg.badgekey %>)](https://www.browserstack.com/automate/public-build/<%= pkg.badgekey %>)",
     "[![devDependencies Status](https://david-dm.org/<%= pkg.repository %>/master/dev-status.svg)](https://david-dm.org/<%= pkg.repository %>/master?type=dev)",
     "[![License](https://img.shields.io/badge/license-GPL--2.0-brightgreen.svg)](https://github.com/<%= pkg.repository %>/blob/master/license.txt)",
     "[![PHP <%= pkg.engines.php %>](https://img.shields.io/badge/php-<% print(encodeURI(pkg.engines.php)) %>-8892bf.svg)](https://secure.php.net/supported-versions.php)",
