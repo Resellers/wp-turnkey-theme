@@ -41,7 +41,7 @@
     "load-grunt-tasks": "^5.1.0",
     "matchdep": "^2.0.0",
     "ms": "^2.1.1",
-    "node-sass": "^4.9.3"
+    "node-sass": "^4.13.1"
   },
   "scripts": {
     "version": "grunt version && git add -A .",
